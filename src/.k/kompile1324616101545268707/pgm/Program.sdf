@@ -1,0 +1,2737 @@
+module Program
+
+imports Common
+imports KBuiltinsBasic
+exports
+
+context-free syntax
+context-free start-symbols
+ArrayDdimensionFeatrueContrained ArrayElementImplList BehaviorVariableDdecl ImportDdeclPlus Mphyentity Mmonitor ModeName ElseEx String IdentifierList FetRefinement EventDdata ModesSubclause Msink MMul PkgDdeclations DdestFetRef ExecPlateformCategory UniPpeConstantId SubPgmGroupAccessSpec RecordFieldIdIdList MSemicolon Meffort StartSubCmpFlowOrEtefId SrcPortConnectionRef SubPgmCallSeqList Mcompute OutputExpressionList PpeOwnerList PpeListValue AnnexSubclauseList AliasDdecl DdefaultPpeListValue AnnexSubclause DzFloat PortType Mproperty FlowImpl Mdelay DdataUniCmpClassifierRef PpeListValueMidSymbol ForEquation FetGroupContainedPpeAssocList Mconstant RealLiteral LogicalExpression PpeDdefDdeclAssocDdef BasicPpeAssocList Mcomplete RealPpeConstantTerm BehaviorVariableDdeclList FetGroupTypeExtAssocDdef ArithmeticExpressionSymbol MPointAdd AnnexSpecLangConstructsElem ModeNameList MPointDdiv FeatureList MSpecalArrows2 BasicPpeAssoc MSpecalArrows1 AnnexLibrary RealRangeTerm FlowSinkSpecRefinement Mcontinuous ExpressionLists Mstates SubPgmAccessRefinement Mprovides QualifiedMetaModelId RelOp ClassifierQualifiedMetaModelId FetProtoType InModesAndTransitions Minitial EndToEndSpecRefinementDdefault Mrequirs Menumeration UniClassifierRef ElseExIf ListOf PpeTerm MultiValuedPpeConstant BehaviorState NamedArgument Mvirtual RefTerm SourceFetGroupRef FetGroupRef SomeRefinements SubPgmCallSeq Term Mcalls NoneStatement ProcessorUniCmpClassifierRef Equations Mabstract Maadlstring UnitIdList DdataAccessRefinement ProtoTypeDdef PpeAssocInModes FlowSourceSpec PortSpec FlowSinkSpec ProtoTypeRefinementList LogicalTerm SignedAadlrealOrConstant Mfeatures FetGroupConnectionRefinement Mrange CmpImplAssocDdefElem FlowPathSpec Melsewhen UniPortId Mset Relation MGreaterThan ConstantPpeListValue IntegerRangeTerm MulOp Mproperties DzInt NameVisDdeclList UnitsList PortConnectionRefinement Msystem CmpImpl EnumerationType SignedAadlreal MBraceLeft Mapplies ArrayDdimensionSize CalledSubPgm PkgDdecls MetaModelClassId PpeSet MDdoubleBracket FetGroupSpecAssocDdef FlowSpecList SourceParameterRef Mhybrid ConnectionSubcompenentFlowAssocDdef Msensor AccessRef SimpleExpression ModePpeAssoc Assignment FetConnection IfEquation CmpType SrcFetRef BooleanValue RealRangePpeConstantTerm Minitially Mdata EndToEndSpecRefinement SoftwareCategory MDdiv Mcomentity DdefaultPpeExpression PpeContainedPpeAssocList ModeOrTransitionList ComputedTerm SubPgmGroupAccessRefinement InModes FeatrueContrainedPpeAssoc BidirectConnectSymb SubCmpAssocDdef ProtoTypeBinding MAdd ImportDdecls NumberType StringTerm FlowSourceSpecRefinement UnitPpeConstantTerm Id ActionList MPoint ModeTransition Mdevice Mend Munits SubCmpAssocDdefElem EquationList Mcontrolled FlowImplRefinement PpeSetAssocDdef Expressions SignedAadlinteger MLessThanEqual CmpImplAssocDdef Melseif LogicalFactor Mself EndToEndFlowSpec Mwhen Mtype Expression ParameterConnection Mfor Else Msource ModeTransitionPpeAssoc Maadlreal AddOp MEqual SourceAccessRef Mpath FetGroupTypeProtoTypeActual VirtualProcessorUniCmpClassifierRef DdestinationParameterRef Mstate ModeTransitionTriggerList RefType PpeConstant FormatEffector Factor Primary UniCmpImplRef IntegerLiteral DzString MQuestion PositiveExponent IntegerTerm CmpAssocDdefElem CmpInModes ForIndices SubCmpAccessRefinement Ma Mb Mc Mthread Md Me Mf ConnectionIdFlowPathList FlowSinkSpecRefinementAssocDdef Mfunction Mprototypes SinglePpeValue MComma Require SomeConnections BehaviorStateList StateKeywordList Mrefined MPointSub Mprocess Mfalse Mpackage CmpAssocDdef ProtoTypePpeAssoc Minverse Mconnections RecordType EnumerationTerm ClassifierDdecl Mbinding SubCmpPpeAssocList FetRef Mode Equation MPointExp Mflows ElseIfList Sign NetUniCmpClassifierRef PhyEntityCmpCategory CmpCategoryType Numeral FetGroupTypeProtoType Mlist SubPgmCallPpeAssocList FlowSourceImpl CompositeDdecl CmpProtoTypeActuralListTmp Mpublic ArrayElementImplListTmp Feature PkgName CmpProtoType PpeExpression CmpImplExtAssocDdefElem Mall ContainedPpeAssoc ConnectionRefinement Mnet FetProtoTypeActual MLeftBracket MDdoubleDdiont CmpClassifierTerm FlowSinkImpl AnnexSpecLangConstructs FetGroupRefinement UnitsUniPpeTypeId FetGroupTypeAssocDdef Mif Mclassifier Float CompositeCategory DdecimalRealLiteral Mreturn PortRefinement Mprocessor Min ArrayElementImplListTmps Mis MPlusRoughArrow BooleanPpeConstantTerm MAsteriskBrace1 Mcolon MAsteriskBrace2 Mport MAsteriskBrace3 ClassifierType ModeTransitionPpeAssocList EnumerationId NumericLiteral FunctionCallArgs Mcomputation Mand EndToEndFlowSpecRefinement AnnexPath NamedElementArraySelectionName Mfeature UnitTerm FlowSourceSpecRefinementAssocDdef Mhistory Communication MDdoubleColon CmpImplExtAssocDdef Statement Mparamenter Connection ModalPpeValue BusDdataSubPgm CompositeDdeclList Mimplementation InverseOfUniProtoType FlowSourceSinkPathImplementAssocDdef Mcomposite ParameterRef EnumerationPpeConstantTerm PpeTypeDdecl PpeValue ParameterRefinement ClassifierCategoryRef UniFetGroupTypeRef Msubprogram DdestPortConnectionRef Mexit BehaviorParameterBindings InBinding Mexists Mmemory PpeInMode CmpProtoTypeActualList Name ProtoType MArrows Murgent Mflow MSub Mdiscrete Mtranstitions UniPpeTypeId AADdLDdeclList Mmodes AbstractCmpCategory PpeDdecls BooleanTerm Mdelta SubCmpRefinementList BusAccessRefinement InteEntityCmpCategory SignedAadlintegerOrConstant AccessConnectionRefinement PpeTypeDdesignator PlatformClassifierRef MDdoubleEqual DdecimalIntegerLiteral MBracketRight MExp AbstractFetSpec RealInteger MLessThan FlowPathSpecAssocDdef EndToEndFlowSpecAssocDdefault CallSequencePpeAssocList Mannex NameVisDdecl Minherit BusAccessSpec ContainedModelElementList PortConnectionRefence SubCmpAccessSpec PpeConstantTerm SigleValuedPpeConstant NamedArguments MBrace DdataAccessSpec ExpressionList ModeTransitionList SingleValuedPpe FetGroupTypeExt RecordTerm RefCategoryList FlowSpecRefinement Maadlboolen Mof Mvariables Mwith ParameterConnectionRefinement Mon ProtoTypeRefinement FetGroupTypeAssocDdefElem SubPgmAccessSpec Mor NODdEF ElseWhen FlowSpec ContainedModelElementPathList AbstractFetRefinement Mmode FunctionArguments PlatformClassifierRefList ModePpeAssocList UniPpeId ClassifierCategoryRefList PpeAssocList FetGroupClassifierDdecl MGreaterThanEqual Mgroup FlowPathSpecRefinementAssocDdef FetGroupTypeExtAssocDdefElem Bool CmpProtoTypeActual FlowPathImplDdefault NetAccessRefinement SubCmpList FunctionArgument UniCmpTypeRef ConnectIdSubcompenentFlowIdnetifierList MultiValuedPpe AnnexSubclauseAssocDdef Mtrue MemoryUniCmpClassifierRef SubPgmCallList ElseExIfList PortConnection MRightBracket ProtoTypeBindings StringLiteral MRoughArrow Mbus CmpImplExt ModeIdList PpeTempDdecls AnnexSpecificPath CPSNewCmpCategory ContainedModelElementPath FetConnectionRefinement Mnot ConnectionList SubCmp FetGroupType Mevent MDdArrows Mextends FlowPathImpl FlowSourceSpecAssocDdef MBraceRight VirtualBusUniCmpClassifierRef RequiresModesSubclause ProtoTypeList ArraySelectionName RangeType FlowPathSpecRefinement ComEntityCmpCategory ArrayDdimensions Mrecord Mvirtrual FetRefinementList IntegerRange FlowImplList SubCmpRefinement MDdoubleArrows Mparameter Melse PpeOwner FlowImplListElem Mreference ArithmeticExpression Mprivate DdestinationAccessRef MBracketLeft MNotEqual ImportDdecl DdirectionalConnectionSymbol ArrayDdimension ModeTransitionTrigger UnitsType OtherControlCharacter Maadlinterger RecordField ElseWhenList AADdLDdecl ContainedModelElement Mto Msubcomponents SubPgmCall DdestinationFetGroupRef ForIndex CmpImplName SubcompentConnectionAssocDdef Maccess BehaviorStateTransitionList RecordFieldList DzBool BehaviorEvent CmpCategory DdirecConnectSymb StateKeyword BehaviorGuard ElseIf PpeDdefDdecl Mcontext MPointMul EnumerationLiteralIdList CmpTypePpeAssoc CmpTypeExt MSigh Exponent Mout FlowSinkSpecAssocDdef FetGroupSpec Mactuator UniCmpClassifierRef FetGroupConnection Int ConstantPpeExpression BusUniCmpClassifierRef ConnectionRefinementList CmpClassifierDdecl StringPpeConstantTerm PpeType SubCmpFlowId PkgSpec Mrequires Mrenames RealTerm FlowFetIdentifer MPlus RealRange ParameterSpec IntegerRangePpeConstantTerm ModeList WhenEquation PpeAssoc AccessConnectionKeyword ConnectionSymbol IntegerPpeConstantTerm MMinus SelectionRange UnitsDdesignator SubPgmUniCmpClassifierRef AccessConnection ProtoTypePpeAssocList SubCmpFlowOrEtefId NetAccessSpec InOut BehaviorStateTransition K
+context-free syntax
+    PpeListValue -> ConstantPpeListValue {}
+    "applies" -> Mapplies {cons("Mapplies12275Syn")}
+    "virtual" -> Mvirtrual {cons("Mvirtrual12256Syn")}
+    AADdLDdecl -> AADdLDdeclList {}
+    "renames" -> Mrenames {cons("Mrenames12267Syn")}
+    FetGroupConnection PpeInMode -> SomeConnections {cons("SomeConnections1854Syn")}
+    Melse InsertDzMBraceLeft InsertDzExpression MBraceRight -> ElseEx {cons("ElseEx1660Syn")}
+    Term InsertDzAddOp ArithmeticExpression -> ArithmeticExpression {cons("ArithmeticExpression1668Syn")}
+    "discrete" -> Mdiscrete {cons("Mdiscrete12388Syn")}
+    Mclassifier -> ClassifierType {}
+    Expression -> FunctionArgument {}
+    DdirecConnectSymb -> ConnectionSymbol {}
+    Id InsertDzMcolon InsertDzMmode MSemicolon -> Mode {cons("Mode12050Syn")}
+    ClassifierType -> PpeType {}
+    InModesAndTransitions -> EndToEndSpecRefinementDdefault {}
+    EndToEndFlowSpec -> FlowImplListElem {}
+    ModeName -> ModeNameList {}
+    AccessRef -> DdestinationAccessRef {}
+    SubCmpFlowOrEtefId -> StartSubCmpFlowOrEtefId {}
+    FetGroupTypeExt -> FetGroupClassifierDdecl {}
+    MLeftBracket MRightBracket -> ArrayDdimension {cons("ArrayDdimension1549Syn")}
+    Mfeature InsertDzMgroup InsertDzId InsertDzMextends InsertDzUniFetGroupTypeRef InsertDzProtoTypeBindings InsertDzFetGroupTypeExtAssocDdef InsertDzMend InsertDzId MSemicolon -> FetGroupTypeExt {cons("FetGroupTypeExt1777Syn")}
+    Mfunction InsertDzName "(" ")" -> FunctionArgument {cons("FunctionArgument1688Syn")}
+    Id InsertDzMcolon InsertDzPpeTypeDdesignator MSemicolon -> RecordField {cons("RecordField1959Syn")}
+    Mtranstitions BehaviorStateTransitionList -> AnnexSpecLangConstructsElem {cons("AnnexSpecLangConstructsElem1607Syn")}
+    Id InsertDzMSpecalArrows1 InsertDzBehaviorGuard InsertDzMSpecalArrows2 InsertDzId MSemicolon -> BehaviorStateTransition {cons("BehaviorStateTransition1698Syn")}
+    Maadlinterger IntegerRange -> RealInteger {cons("RealInteger1934Syn")}
+    FetProtoType -> ProtoTypeDdef {}
+    RealInteger InsertDzMunits UnitsDdesignator -> NumberType {cons("NumberType1932Syn")}
+    PpeAssoc PpeContainedPpeAssocList -> PpeContainedPpeAssocList {cons("PpeContainedPpeAssocList1484Syn")}
+    UniCmpClassifierRef -> UniClassifierRef {}
+    Id InsertDzMcolon InsertDzMBraceLeft InsertDzSubPgmCallList InsertDzMBraceRight MSemicolon -> SubPgmCallSeq {cons("SubPgmCallSeq1723Syn")}
+    ParameterSpec InsertDzArrayDdimensionFeatrueContrained MSemicolon -> Feature {cons("Feature1745Syn")}
+    InModes MSemicolon -> FlowSourceSpecAssocDdef {cons("FlowSourceSpecAssocDdef1884Syn")}
+    RealLiteral -> SignedAadlreal {}
+    "true" -> Mtrue {cons("Mtrue12284Syn")}
+    Id InsertDzMRoughArrow InsertDzPpeValue MSemicolon -> RecordFieldIdIdList {cons("RecordFieldIdIdList12036Syn")}
+    Id InsertDzMrenames InsertDzMpackage InsertDzPkgName MSemicolon -> AliasDdecl {cons("AliasDdecl1464Syn")}
+    "=" -> MEqual {cons("MEqual12396Syn")}
+    "subprogram" -> Msubprogram {cons("Msubprogram12206Syn")}
+    "*" -> MMul {cons("MMul12406Syn")}
+    FetGroupType -> FetGroupClassifierDdecl {}
+    "states" -> Mstates {cons("Mstates12365Syn")}
+    ParameterSpec MSemicolon -> Feature {cons("Feature1739Syn")}
+    MBracketLeft InsertDzBooleanTerm MBracketRight -> ConstantPpeExpression {cons("ConstantPpeExpression1976Syn")}
+    MBracketLeft InsertDzRecordFieldIdIdList MBracketRight -> RecordTerm {cons("RecordTerm12035Syn")}
+    Id InsertDzMcolon InsertDzMrefined InsertDzMto InsertDzMin Mfeature -> AbstractFetRefinement {cons("AbstractFetRefinement1758Syn")}
+    Menumeration InsertDzMBracketLeft InsertDzEnumerationLiteralIdList MBracketRight -> EnumerationType {cons("EnumerationType1924Syn")}
+    ModeTransitionTrigger -> ModeTransitionTriggerList {}
+    Mfeature InsertDzMgroup UniFetGroupTypeRef -> FetGroupTypeProtoTypeActual {cons("FetGroupTypeProtoTypeActual1584Syn")}
+    PlatformClassifierRef InsertDzMComma PlatformClassifierRefList -> PlatformClassifierRefList {cons("PlatformClassifierRefList12005Syn")}
+    Id -> UniPpeTypeId {}
+    "composite" -> Mcomposite {cons("Mcomposite12382Syn")}
+    FetGroupSpec InsertDzArrayDdimensionFeatrueContrained MSemicolon -> Feature {cons("Feature1743Syn")}
+    MPointDdiv -> MulOp {}
+    ".." -> MDdoubleDdiont {cons("MDdoubleDdiont12334Syn")}
+    PortConnection PpeInMode -> SomeConnections {cons("SomeConnections1850Syn")}
+    NODdEF -> EndToEndFlowSpecRefinement {}
+    Id InsertDzMcolon InsertDzMflow InsertDzMpath InsertDzId InsertDzFlowPathImplDdefault InsertDzMArrows SubCmpFlowId -> FlowPathImpl {cons("FlowPathImpl12082Syn")}
+    UniClassifierRef -> PpeOwner {}
+    AccessConnectionKeyword InsertDzMaccess InsertDzSourceAccessRef InsertDzConnectionSymbol DdestinationAccessRef -> AccessConnection {cons("AccessConnection1870Syn")}
+    FetGroupSpec MSemicolon -> Feature {cons("Feature1737Syn")}
+    SoftwareCategory -> ComEntityCmpCategory {}
+    BehaviorVariableDdecl BehaviorVariableDdeclList -> BehaviorVariableDdeclList {cons("BehaviorVariableDdeclList1620Syn")}
+    Expression InsertDzMArrows InsertDzId InsertDzMComma BehaviorParameterBindings -> BehaviorParameterBindings {cons("BehaviorParameterBindings1706Syn")}
+    "(" InsertDzFunctionArguments ")" -> FunctionCallArgs {cons("FunctionCallArgs1683Syn")}
+    ArrayElementImplListTmp -> ArrayElementImplListTmps {}
+    MBracketLeft InsertDzArrayElementImplListTmps MBracketRight -> ArrayElementImplList {cons("ArrayElementImplList1552Syn")}
+    IntegerLiteral -> SignedAadlinteger {}
+    ParameterRefinement -> AbstractFetRefinement {}
+    Id InsertDzMcolon InsertDzMout PortType -> PortSpec {cons("PortSpec1798Syn")}
+    UniCmpClassifierRef -> SubCmpAssocDdefElem {}
+    Mproperties PpeContainedPpeAssocList -> CmpImplAssocDdefElem {cons("CmpImplAssocDdefElem1505Syn")}
+    DzInt -> Int {}
+    Id InsertDzMcolon InsertDzMrefined InsertDzMto InsertDzMout InsertDzMparameter DdataUniCmpClassifierRef -> ParameterRefinement {cons("ParameterRefinement1835Syn")}
+    ConnectionRefinement ConnectionList -> ConnectionList {cons("ConnectionList1522Syn")}
+    "state" -> Mstate {cons("Mstate12363Syn")}
+    RealTerm InsertDzMDdoubleDdiont InsertDzRealTerm InsertDzMdelta RealTerm -> RealRangeTerm {cons("RealRangeTerm12028Syn")}
+    "exit" -> Mexit {cons("Mexit12383Syn")}
+    Id InsertDzMcolon InsertDzMrefined InsertDzMto InsertDzProtoTypeDdef MSemicolon -> ProtoTypeRefinement {cons("ProtoTypeRefinement1569Syn")}
+    FetGroupTypeExtAssocDdefElem -> FetGroupTypeExtAssocDdef {}
+    CmpImplAssocDdefElem -> CmpImplAssocDdef {}
+    "computation" -> Mcomputation {cons("Mcomputation12386Syn")}
+    NODdEF -> ArraySelectionName {}
+    NODdEF -> FormatEffector {}
+    "else" -> Melse {cons("Melse12370Syn")}
+    FlowSpec -> FlowSpecList {}
+    Mconnections -> CmpImplAssocDdefElem {}
+    VirtualBusUniCmpClassifierRef -> PlatformClassifierRef {}
+    Mproperties NoneStatement -> FetGroupTypeExtAssocDdefElem {cons("FetGroupTypeExtAssocDdefElem1786Syn")}
+    UnitsUniPpeTypeId -> UnitsDdesignator {}
+    MArrows InsertDzId InsertDzMArrows SubCmpFlowId -> ConnectionSubcompenentFlowAssocDdef {cons("ConnectionSubcompenentFlowAssocDdef12079Syn")}
+    Id -> PpeOwner {}
+    NODdEF -> OtherControlCharacter {}
+    MBraceLeft InsertDzPpeAssocList MBraceRight -> FlowSourceSpecRefinementAssocDdef {cons("FlowSourceSpecRefinementAssocDdef1892Syn")}
+    Sign IntegerPpeConstantTerm -> SignedAadlintegerOrConstant {cons("SignedAadlintegerOrConstant1939Syn")}
+    Id InsertDzMcolon InsertDzMsubprogram InsertDzCalledSubPgm InsertDzMBraceLeft InsertDzSubPgmCallPpeAssocList InsertDzMBraceRight MSemicolon -> SubPgmCall {cons("SubPgmCall1730Syn")}
+    "flow" -> Mflow {cons("Mflow12243Syn")}
+    Id MetaModelClassId -> MetaModelClassId {cons("MetaModelClassId1952Syn")}
+    Mnot BooleanTerm -> BooleanTerm {cons("BooleanTerm12022Syn")}
+    UniPpeId InsertDzMPlusRoughArrow InsertDzMconstant InsertDzPpeValue MSemicolon -> BasicPpeAssoc {cons("BasicPpeAssoc12009Syn")}
+    Mfeature InsertDzMgroup InsertDzId InsertDzMextends InsertDzUniFetGroupTypeRef InsertDzProtoTypeBindings InsertDzMend InsertDzId MSemicolon -> FetGroupTypeExt {cons("FetGroupTypeExt1775Syn")}
+    Id InsertDzMcolon InsertDzMtype InsertDzPpeType MSemicolon -> PpeTypeDdecl {cons("PpeTypeDdecl1923Syn")}
+    PpeAssoc -> FeatrueContrainedPpeAssoc {}
+    "}**" -> MAsteriskBrace3 {cons("MAsteriskBrace312337Syn")}
+    Id -> ForIndex {}
+    Mprovides -> Require {}
+    AbstractFetSpec MSemicolon -> Feature {cons("Feature1735Syn")}
+    Min InsertDzMmodes InsertDzMBracketLeft InsertDzModeIdList MBracketRight -> InModes {cons("InModes12063Syn")}
+    Id -> AccessRef {}
+    AnnexSubclause -> CmpImplAssocDdefElem {}
+    Id InsertDzMcolon InsertDzMrefined InsertDzMto InsertDzMend InsertDzMto InsertDzMend InsertDzMflow InsertDzEndToEndSpecRefinementDdefault MSemicolon -> EndToEndSpecRefinement {cons("EndToEndSpecRefinement1903Syn")}
+    Mevent Mport -> PortType {cons("PortType1808Syn")}
+    Mdevice -> ExecPlateformCategory {}
+    MBraceLeft InsertDzPpeAssocList InsertDzMBraceRight InModesAndTransitions -> PpeAssocInModes {cons("PpeAssocInModes12088Syn")}
+    PpeAssoc -> CallSequencePpeAssocList {}
+    Factor -> Term {}
+    "prototypes" -> Mprototypes {cons("Mprototypes12226Syn")}
+    Mflows -> CmpImplAssocDdefElem {}
+    BooleanPpeConstantTerm -> BooleanTerm {}
+    UniPpeId InsertDzMPlusRoughArrow InsertDzPpeValue MSemicolon -> BasicPpeAssoc {cons("BasicPpeAssoc12020Syn")}
+    DdataAccessRefinement -> SubCmpAccessRefinement {}
+    Mdata InsertDzMport DdataUniCmpClassifierRef -> PortType {cons("PortType1804Syn")}
+    "processor" -> Mprocessor {cons("Mprocessor12209Syn")}
+    "<=" -> MLessThanEqual {cons("MLessThanEqual12398Syn")}
+    NODdEF -> ModePpeAssoc {}
+    CmpCategoryType CPSNewCmpCategory -> CmpCategory {cons("CmpCategory12428Syn")}
+    Id InsertDzMDdoubleColon Id -> PpeTerm {cons("PpeTerm12029Syn")}
+    AnnexPath -> ContainedModelElementPath {}
+    PkgName ImportDdeclPlus -> ImportDdecls {cons("ImportDdecls1458Syn")}
+    Id InsertDzMcolon InsertDzMrefined InsertDzMto InsertDzMflow InsertDzMsource InsertDzFlowSourceSpecRefinementAssocDdef MSemicolon -> FlowSourceSpecRefinement {cons("FlowSourceSpecRefinement1889Syn")}
+    Minitial -> StateKeyword {}
+    ListOf PpeTypeDdesignator -> MultiValuedPpe {cons("MultiValuedPpe1970Syn")}
+    RecordType -> PpeType {}
+    "variables" -> Mvariables {cons("Mvariables12364Syn")}
+    MultiValuedPpeConstant -> PpeConstant {}
+    SubCmpRefinement -> SubCmpRefinementList {}
+    Mfeature UniCmpClassifierRef -> FetProtoType {cons("FetProtoType1568Syn")}
+    Mstate Mvariables -> AnnexSpecLangConstructsElem {cons("AnnexSpecLangConstructsElem1603Syn")}
+    AnnexSubclauseList -> FetGroupTypeExtAssocDdefElem {}
+    UnitPpeConstantTerm -> UnitTerm {}
+    UniFetGroupTypeRef -> UniClassifierRef {}
+    QualifiedMetaModelId -> ClassifierQualifiedMetaModelId {}
+    ModeName InsertDzMComma ModeNameList -> ModeNameList {cons("ModeNameList12066Syn")}
+    Mpublic InsertDzMprivate PkgDdeclations -> PkgDdecls {cons("PkgDdecls1449Syn")}
+    Mpublic InsertDzPkgDdeclations Mprivate -> PkgDdecls {cons("PkgDdecls1450Syn")}
+    Id InsertDzMcolon InsertDzMprovides InsertDzMbus InsertDzMaccess BusUniCmpClassifierRef -> BusAccessSpec {cons("BusAccessSpec1842Syn")}
+    Id InsertDzMcolon InsertDzMprovides InsertDzMbus InsertDzMaccess BusUniCmpClassifierRef -> BusAccessSpec {cons("BusAccessSpec1844Syn")}
+    "+" -> MAdd {cons("MAdd12404Syn")}
+    "package" -> Mpackage {cons("Mpackage12263Syn")}
+    ContainedModelElementList -> ContainedModelElementPath {}
+    Mfeature -> FetConnectionRefinement {}
+    Mproperties NoneStatement -> FetGroupTypeAssocDdefElem {cons("FetGroupTypeAssocDdefElem1769Syn")}
+    StringPpeConstantTerm -> StringTerm {}
+    DdataAccessSpec -> SubCmpAccessSpec {}
+    NameVisDdecl -> NameVisDdeclList {}
+    PpeValue InModes -> ModalPpeValue {cons("ModalPpeValue1998Syn")}
+    Mprivate PkgDdeclations -> PkgDdecls {cons("PkgDdecls1448Syn")}
+    CmpCategory InsertDzMimplementation InsertDzCmpImplName InsertDzMextends InsertDzUniCmpImplRef InsertDzMend InsertDzCmpImplName MSemicolon -> CmpImplExt {cons("CmpImplExt1524Syn")}
+    ArrayDdimension -> ArrayDdimensionFeatrueContrained {}
+    LogicalTerm -> LogicalExpression {}
+    MultiValuedPpe InsertDzMapplies InsertDzMto InsertDzMBracketLeft InsertDzPpeOwnerList MBracketRight -> PpeDdefDdeclAssocDdef {cons("PpeDdefDdeclAssocDdef1966Syn")}
+    Mbus -> ExecPlateformCategory {}
+    MBraceLeft InsertDzFunctionArguments MBraceRight -> Primary {cons("Primary1677Syn")}
+    SubCmpRefinement SubCmpList -> SubCmpList {cons("SubCmpList1508Syn")}
+    FlowSourceSpecRefinementAssocDdef -> FlowPathSpecRefinementAssocDdef {}
+    Numeral InsertDzMPoint InsertDzNumeral Exponent -> DdecimalRealLiteral {cons("DdecimalRealLiteral12095Syn")}
+    NameVisDdeclList -> PkgDdeclations {}
+    PhyEntityCmpCategory -> CPSNewCmpCategory {}
+    "{**" -> MAsteriskBrace1 {cons("MAsteriskBrace112307Syn")}
+    Mreference -> RefType {}
+    Id -> FlowFetIdentifer {}
+    MDdiv -> MulOp {}
+    Mfeatures FeatureList -> FetGroupTypeAssocDdefElem {cons("FetGroupTypeAssocDdefElem1766Syn")}
+    Id InsertDzMcolon InsertDzMrequires InsertDzMnet InsertDzMaccess NetUniCmpClassifierRef -> NetAccessSpec {cons("NetAccessSpec12343Syn")}
+    Id InsertDzMcolon InsertDzMrequires InsertDzMnet InsertDzMaccess Id -> NetAccessSpec {cons("NetAccessSpec12345Syn")}
+    "+=>" -> MPlusRoughArrow {cons("MPlusRoughArrow12333Syn")}
+    MBracketLeft InsertDzId InsertDzUnitIdList MBracketRight -> UnitsList {cons("UnitsList1927Syn")}
+    Id InsertDzMrenames InsertDzMfeature InsertDzMgroup InsertDzUniFetGroupTypeRef MSemicolon -> AliasDdecl {cons("AliasDdecl1467Syn")}
+    MComma InsertDzId InsertDzMRoughArrow InsertDzId InsertDzMBrace NumericLiteral -> UnitIdList {cons("UnitIdList1929Syn")}
+    Id InsertDzMcolon InsertDzMinitial InsertDzMmode InsertDzMBraceLeft InsertDzModePpeAssocList InsertDzMBraceRight MSemicolon -> Mode {cons("Mode12047Syn")}
+    Mif InsertDzMBracketLeft InsertDzExpression InsertDzMBracketRight InsertDzMBraceLeft InsertDzExpression InsertDzMBraceRight ElseExIfList -> Expression {cons("Expression1656Syn")}
+    MArrows -> DdirecConnectSymb {}
+    Id InsertDzMcolon InsertDzMrequires InsertDzMbus InsertDzMaccess BusUniCmpClassifierRef -> BusAccessSpec {cons("BusAccessSpec1843Syn")}
+    Id InsertDzMcolon InsertDzMrequires InsertDzMbus InsertDzMaccess BusUniCmpClassifierRef -> BusAccessSpec {cons("BusAccessSpec1845Syn")}
+    Feature FeatureList -> FeatureList {cons("FeatureList1480Syn")}
+    Id InsertDzMPoint Id -> AccessRef {cons("AccessRef1874Syn")}
+    Id InsertDzMcolon InsertDzMrefined InsertDzMto InsertDzMprovides InsertDzMdata InsertDzMaccess DdataUniCmpClassifierRef -> DdataAccessRefinement {cons("DdataAccessRefinement1839Syn")}
+    MComma InsertDzPkgName ImportDdeclPlus -> ImportDdeclPlus {cons("ImportDdeclPlus1462Syn")}
+    PpeAssoc FeatrueContrainedPpeAssoc -> FeatrueContrainedPpeAssoc {cons("FeatrueContrainedPpeAssoc1749Syn")}
+    Mprototypes -> CmpImplExtAssocDdefElem {}
+    CmpCategory InsertDzId InsertDzCmpAssocDdef InsertDzMend InsertDzId MSemicolon -> CmpType {cons("CmpType1472Syn")}
+    PpeExpression -> SinglePpeValue {}
+    IntegerRangeTerm -> PpeExpression {}
+    Id InsertDzMcolon InsertDzMend InsertDzMto InsertDzMend InsertDzMflow InsertDzStartSubCmpFlowOrEtefId InsertDzConnectionIdFlowPathList MSemicolon -> EndToEndFlowSpec {cons("EndToEndFlowSpec1897Syn")}
+    Id InsertDzMcolon InsertDzMout InsertDzMparameter DdataUniCmpClassifierRef -> ParameterSpec {cons("ParameterSpec1832Syn")}
+    ForIndex -> ForIndices {}
+    PpeConstant -> PpeTempDdecls {}
+    RealLiteral Id -> SignedAadlreal {cons("SignedAadlreal1946Syn")}
+    Mevent InsertDzMdata InsertDzMport DdataUniCmpClassifierRef -> PortType {cons("PortType1806Syn")}
+    ProtoType -> ProtoTypeList {}
+    Mfor InsertDzMBracketLeft InsertDzForIndices InsertDzMBracketRight InsertDzMBraceLeft InsertDzEquationList InsertDzMBraceRight InsertDzMend Mfor -> ForEquation {cons("ForEquation1646Syn")}
+    RealPpeConstantTerm -> SignedAadlrealOrConstant {}
+    DdecimalIntegerLiteral -> IntegerLiteral {}
+    "set" -> Mset {cons("Mset12292Syn")}
+    Id InsertDzMComma EnumerationLiteralIdList -> EnumerationLiteralIdList {cons("EnumerationLiteralIdList1925Syn")}
+    Mfeature -> FetProtoType {}
+    MAsteriskBrace1 InsertDzAnnexSpecLangConstructs MAsteriskBrace2 -> AnnexSubclauseAssocDdef {cons("AnnexSubclauseAssocDdef1598Syn")}
+    Mactuator -> InteEntityCmpCategory {}
+    SubPgmGroupAccessSpec -> SubCmpAccessSpec {}
+    Expression InsertDzMComma BehaviorParameterBindings -> BehaviorParameterBindings {cons("BehaviorParameterBindings1705Syn")}
+    "**}" -> MAsteriskBrace2 {cons("MAsteriskBrace212308Syn")}
+    Mout Mfeature -> FetProtoType {cons("FetProtoType1565Syn")}
+    Maccess InsertDzSourceAccessRef InsertDzConnectionSymbol DdestinationAccessRef -> AccessConnection {cons("AccessConnection1869Syn")}
+    UniCmpClassifierRef -> NetUniCmpClassifierRef {}
+    Id InsertDzMcolon InsertDzMin PortType -> PortSpec {cons("PortSpec1797Syn")}
+    Mprototypes ProtoTypeList -> CmpImplExtAssocDdefElem {cons("CmpImplExtAssocDdefElem1527Syn")}
+    Mconnections ConnectionList -> CmpImplExtAssocDdefElem {cons("CmpImplExtAssocDdefElem1530Syn")}
+    "delta" -> Mdelta {cons("Mdelta12286Syn")}
+    Id InsertDzMcolon InsertDzMrefined InsertDzMto InsertDzMin InsertDzMfeature Id -> AbstractFetRefinement {cons("AbstractFetRefinement1757Syn")}
+    Msubprogram Mgroup -> SoftwareCategory {cons("SoftwareCategory1486Syn")}
+    WhenEquation -> Equation {}
+    UniCmpImplRef ProtoTypeBindings -> ArrayElementImplListTmp {cons("ArrayElementImplListTmp1550Syn")}
+    Id InsertDzMcolon InsertDzMflow InsertDzMsink InsertDzId MSemicolon -> FlowSinkSpec {cons("FlowSinkSpec1886Syn")}
+    FlowSourceSpecRefinement -> FlowSpecRefinement {}
+    Melsewhen InsertDzMBracketLeft InsertDzExpression InsertDzMBracketRight InsertDzMBraceLeft InsertDzEquationList MBraceRight -> ElseWhen {cons("ElseWhen1653Syn")}
+    ProtoTypeRefinementList -> ProtoTypeList {}
+    ElseIf -> ElseIfList {}
+    LogicalExpression InsertDzMcolon LogicalExpression -> SimpleExpression {cons("SimpleExpression1662Syn")}
+    Id -> PpeConstantTerm {}
+    "system" -> Msystem {cons("Msystem12238Syn")}
+    ModeTransitionPpeAssoc ModeTransitionPpeAssocList -> ModeTransitionPpeAssocList {cons("ModeTransitionPpeAssocList12057Syn")}
+    Mrequirs InsertDzMmodes InsertDzMBracketLeft MBracketRight -> RequiresModesSubclause {cons("RequiresModesSubclause12044Syn")}
+    MBracketLeft MBracketRight -> PpeListValue {cons("PpeListValue12000Syn")}
+    "initially" -> Minitially {cons("Minitially12366Syn")}
+    UniCmpImplRef -> UniCmpClassifierRef {}
+    ProtoTypeBindings -> CmpImplAssocDdefElem {}
+    Id InsertDzMcolon InsertDzMrefined InsertDzMto InsertDzSomeRefinements MSemicolon -> ConnectionRefinement {cons("ConnectionRefinement1858Syn")}
+    FetConnectionRefinement -> SomeRefinements {}
+    ArrayDdimension -> SubCmpAssocDdefElem {}
+    DzString -> String {}
+    Mcontext -> PhyEntityCmpCategory {}
+    PpeAssoc -> SubPgmCallPpeAssocList {}
+    ExecPlateformCategory -> ComEntityCmpCategory {}
+    Id InsertDzMPoint Id -> FetRef {cons("FetRef1862Syn")}
+    "mode" -> Mmode {cons("Mmode12367Syn")}
+    IntegerLiteral Id -> SignedAadlinteger {cons("SignedAadlinteger1943Syn")}
+    Int -> IntegerLiteral {}
+    "mode" -> Mmode {cons("Mmode12260Syn")}
+    Mout InsertDzMfeature UniCmpClassifierRef -> FetProtoType {cons("FetProtoType1567Syn")}
+    Mprocessor InsertDzMPoint Id -> ModeTransitionTrigger {cons("ModeTransitionTrigger12060Syn")}
+    Mif InsertDzMBracketLeft InsertDzExpression InsertDzMBracketRight InsertDzMBraceLeft InsertDzExpression MBraceRight -> Expression {cons("Expression1654Syn")}
+    NODdEF -> StringLiteral {}
+    Id -> MetaModelClassId {}
+    Mevent -> EventDdata {}
+    CmpCategory InsertDzMimplementation InsertDzCmpImplName InsertDzMextends InsertDzUniCmpImplRef InsertDzCmpImplExtAssocDdef InsertDzMend InsertDzCmpImplName MSemicolon -> CmpImplExt {cons("CmpImplExt1525Syn")}
+    IntegerLiteral -> NumericLiteral {}
+    CmpType -> CmpClassifierDdecl {}
+    Mode -> ModeList {}
+    FlowSourceImpl -> FlowSourceSinkPathImplementAssocDdef {}
+    MGreaterThan -> RelOp {}
+    Id InsertDzMcolon InsertDzMflow InsertDzMsink InsertDzId InsertDzFlowSinkSpecAssocDdef MSemicolon -> FlowSinkSpec {cons("FlowSinkSpec1885Syn")}
+    BidirectConnectSymb -> ConnectionSymbol {}
+    CmpCategory InsertDzMimplementation InsertDzCmpImplName InsertDzCmpImplAssocDdef InsertDzMend InsertDzCmpImplName MSemicolon -> CmpImpl {cons("CmpImpl1497Syn")}
+    SubPgmAccessSpec -> SubCmpAccessSpec {}
+    DzFloat -> Float {}
+    ConnectIdSubcompenentFlowIdnetifierList InsertDzMArrows SubCmpFlowId -> FlowPathImplDdefault {cons("FlowPathImplDdefault12084Syn")}
+    Mcompute InsertDzMBracketLeft InsertDzId MBracketRight -> ComputedTerm {cons("ComputedTerm12038Syn")}
+    "effort" -> Meffort {cons("Meffort12359Syn")}
+    Id -> FetGroupRef {}
+    FetGroupTypeExtAssocDdefElem FetGroupTypeExtAssocDdef -> FetGroupTypeExtAssocDdef {cons("FetGroupTypeExtAssocDdef1787Syn")}
+    FlowImpl -> FlowImplListElem {}
+    BooleanTerm -> PpeExpression {}
+    PpeConstantTerm -> RealRangePpeConstantTerm {}
+    Mrequirs InsertDzMmodes InsertDzMBracketLeft InsertDzModeList MBracketRight -> RequiresModesSubclause {cons("RequiresModesSubclause12045Syn")}
+    MPlus -> Sign {}
+    Id -> ModeIdList {}
+    RequiresModesSubclause -> CmpAssocDdefElem {}
+    SubCmpRefinement SubCmpRefinementList -> SubCmpRefinementList {cons("SubCmpRefinementList1535Syn")}
+    UnitTerm -> PpeExpression {}
+    ProtoType ProtoTypeList -> ProtoTypeList {cons("ProtoTypeList1478Syn")}
+    ArithmeticExpression -> ArithmeticExpressionSymbol {}
+    "modes" -> Mmodes {cons("Mmodes12257Syn")}
+    "range" -> Mrange {cons("Mrange12302Syn")}
+    "annex" -> Mannex {cons("Mannex12220Syn")}
+    "for" -> Mfor {cons("Mfor12373Syn")}
+    Mprocessor -> ExecPlateformCategory {}
+    Mrenames InsertDzPkgName InsertDzMDdoubleColon InsertDzMall MSemicolon -> AliasDdecl {cons("AliasDdecl1469Syn")}
+    Id -> SubCmpAssocDdefElem {}
+    Mabstract -> AbstractCmpCategory {}
+    ListOf InsertDzPpeTypeDdesignator InsertDzMRoughArrow DdefaultPpeListValue -> MultiValuedPpe {cons("MultiValuedPpe1969Syn")}
+    Id InsertDzMDdoubleColon Id -> UnitsUniPpeTypeId {cons("UnitsUniPpeTypeId1935Syn")}
+    Mprototypes -> CmpImplAssocDdefElem {}
+    "comentity" -> Mcomentity {cons("Mcomentity12357Syn")}
+    UniPpeId InsertDzMRoughArrow InsertDzMconstant InsertDzAssignment InsertDzMapplies InsertDzMto InsertDzContainedModelElementPathList MSemicolon -> ContainedPpeAssoc {cons("ContainedPpeAssoc1992Syn")}
+    SimpleExpression -> Expression {}
+    "a" -> Ma {cons("Ma12250Syn")}
+    Id InsertDzMcolon InsertDzMend InsertDzMto InsertDzMend InsertDzMflow InsertDzStartSubCmpFlowOrEtefId InsertDzConnectionIdFlowPathList InsertDzEndToEndFlowSpecAssocDdefault MSemicolon -> EndToEndFlowSpec {cons("EndToEndFlowSpec1896Syn")}
+    FunctionArgument -> FunctionArguments {}
+    "b" -> Mb {cons("Mb12252Syn")}
+    Mreference InsertDzMBracketLeft InsertDzRefCategoryList MBracketRight -> RefType {cons("RefType1953Syn")}
+    "c" -> Mc {cons("Mc12253Syn")}
+    Mproperties BasicPpeAssocList -> PpeDdecls {cons("PpeDdecls1454Syn")}
+    "d" -> Md {cons("Md12254Syn")}
+    "e" -> Me {cons("Me12249Syn")}
+    "f" -> Mf {cons("Mf12255Syn")}
+    FetGroupRef -> DdestinationFetGroupRef {}
+    "process" -> Mprocess {cons("Mprocess12237Syn")}
+    EnumerationPpeConstantTerm -> EnumerationTerm {}
+    AbstractFetRefinement MSemicolon -> FetRefinement {cons("FetRefinement1750Syn")}
+    CmpCategory UniCmpClassifierRef -> CmpProtoType {cons("CmpProtoType1559Syn")}
+    Id InsertDzMcolon InsertDzMout Mfeature -> AbstractFetSpec {cons("AbstractFetSpec1756Syn")}
+    Int -> Numeral {}
+    Mode ModeList -> ModeList {cons("ModeList12046Syn")}
+    "./" -> MPointDdiv {cons("MPointDdiv12422Syn")}
+    Mdata -> SoftwareCategory {}
+    Id InsertDzMPoint Id -> ParameterRef {cons("ParameterRef1868Syn")}
+    Id InsertDzMin Expression -> ForIndex {cons("ForIndex1648Syn")}
+    SubCmpFlowId InsertDzMArrows InsertDzId MArrows -> SubcompentConnectionAssocDdef {cons("SubcompentConnectionAssocDdef12075Syn")}
+    AnnexSpecLangConstructsElem -> AnnexSpecLangConstructs {}
+    VirtualProcessorUniCmpClassifierRef -> PlatformClassifierRef {}
+    Mproperties FetGroupContainedPpeAssocList -> FetGroupTypeAssocDdefElem {cons("FetGroupTypeAssocDdefElem1768Syn")}
+    Minverse InsertDzMof UniFetGroupTypeRef -> InverseOfUniProtoType {cons("InverseOfUniProtoType1794Syn")}
+    UniPpeId InsertDzMRoughArrow InsertDzAssignment InsertDzMapplies InsertDzMto InsertDzContainedModelElementPathList MSemicolon -> ContainedPpeAssoc {cons("ContainedPpeAssoc1993Syn")}
+    Expression MSemicolon -> ActionList {cons("ActionList1707Syn")}
+    IntegerPpeConstantTerm -> SignedAadlintegerOrConstant {}
+    Sign RealPpeConstantTerm -> SignedAadlrealOrConstant {cons("SignedAadlrealOrConstant1938Syn")}
+    Id InsertDzMcolon InsertDzMin InsertDzMout PortType -> PortSpec {cons("PortSpec1799Syn")}
+    CmpImplExtAssocDdefElem CmpImplExtAssocDdef -> CmpImplExtAssocDdef {cons("CmpImplExtAssocDdef1534Syn")}
+    Msystem -> CompositeCategory {}
+    Id InsertDzMcolon InsertDzMin InsertDzMfeature Id -> AbstractFetSpec {cons("AbstractFetSpec1753Syn")}
+    "<->" -> MDdoubleArrows {cons("MDdoubleArrows12324Syn")}
+    IfEquation -> Equation {}
+    Id InsertDzMcolon InsertDzMflow InsertDzMsource InsertDzId InsertDzFlowSourceSpecAssocDdef MSemicolon -> FlowSourceSpec {cons("FlowSourceSpec1879Syn")}
+    "context" -> Mcontext {cons("Mcontext12355Syn")}
+    NamedArguments -> FunctionArguments {}
+    "sink" -> Msink {cons("Msink12247Syn")}
+    ExpressionList -> ExpressionLists {}
+    MNotEqual -> RelOp {}
+    NamedArgument -> NamedArguments {}
+    MBracketLeft InsertDzCmpProtoTypeActuralListTmp MBracketRight -> CmpProtoTypeActualList {cons("CmpProtoTypeActualList1583Syn")}
+    Mself InsertDzMPoint Id -> ModeTransitionTrigger {cons("ModeTransitionTrigger12059Syn")}
+    AnnexSubclause -> CmpAssocDdefElem {}
+    Id InsertDzMcolon InsertDzMrefined InsertDzMto InsertDzMflow InsertDzMpath InsertDzFlowPathSpecRefinementAssocDdef MSemicolon -> FlowPathSpecRefinement {cons("FlowPathSpecRefinement1894Syn")}
+    "[" -> MLeftBracket {cons("MLeftBracket12339Syn")}
+    AccessConnection PpeInMode -> SomeConnections {cons("SomeConnections1853Syn")}
+    MArrows InsertDzId InsertDzMArrows InsertDzSubCmpFlowId ConnectionSubcompenentFlowAssocDdef -> ConnectionSubcompenentFlowAssocDdef {cons("ConnectionSubcompenentFlowAssocDdef12080Syn")}
+    "end" -> Mend {cons("Mend12225Syn")}
+    PpeTerm -> PpeExpression {}
+    Id InsertDzMEqual FunctionArgument -> NamedArgument {cons("NamedArgument1687Syn")}
+    Sign IntegerLiteral -> SignedAadlinteger {cons("SignedAadlinteger1942Syn")}
+    MArrows InsertDzId InsertDzMArrows InsertDzSubCmpFlowId ConnectIdSubcompenentFlowIdnetifierList -> ConnectIdSubcompenentFlowIdnetifierList {cons("ConnectIdSubcompenentFlowIdnetifierList12086Syn")}
+    Id InsertDzMcolon InsertDzMrefined InsertDzMto InsertDzMout Mfeature -> AbstractFetRefinement {cons("AbstractFetRefinement1760Syn")}
+    Id InsertDzMRoughArrow FetGroupTypeProtoTypeActual -> ProtoTypeBinding {cons("ProtoTypeBinding1576Syn")}
+    AliasDdecl -> NameVisDdecl {}
+    NamedArgument InsertDzMComma NamedArguments -> NamedArguments {cons("NamedArguments1686Syn")}
+    MGreaterThanEqual -> RelOp {}
+    MBraceLeft InsertDzPpeAssocList InsertDzMBraceRight InModesAndTransitions -> PpeInMode {cons("PpeInMode1855Syn")}
+    BooleanTerm InsertDzMor BooleanTerm -> BooleanTerm {cons("BooleanTerm12024Syn")}
+    Mproperties FetGroupContainedPpeAssocList -> FetGroupTypeExtAssocDdefElem {cons("FetGroupTypeExtAssocDdefElem1785Syn")}
+    PpeAssoc SubPgmCallPpeAssocList -> SubPgmCallPpeAssocList {cons("SubPgmCallPpeAssocList1732Syn")}
+    EnumerationType -> PpeType {}
+    MemoryUniCmpClassifierRef -> PlatformClassifierRef {}
+    UniCmpImplRef -> ArrayElementImplListTmp {}
+    CalledSubPgm MSigh -> BehaviorEvent {cons("BehaviorEvent1699Syn")}
+    NODdEF -> VirtualProcessorUniCmpClassifierRef {}
+    Feature -> FeatureList {}
+    Mdiscrete -> CmpCategoryType {}
+    Maadlstring -> PpeType {}
+    UniCmpTypeRef -> UniCmpClassifierRef {}
+    Id InsertDzMcolon InsertDzCmpCategory MSemicolon -> SubCmp {cons("SubCmp1539Syn")}
+    MLeftBracket InsertDzExpressionLists MRightBracket -> Primary {cons("Primary1676Syn")}
+    EquationList -> ActionList {}
+    Id InsertDzMDdoubleColon Id -> PpeConstantTerm {cons("PpeConstantTerm12030Syn")}
+    PortSpec MSemicolon -> Feature {cons("Feature1736Syn")}
+    RefTerm -> PpeExpression {}
+    ContainedPpeAssoc FetGroupContainedPpeAssocList -> FetGroupContainedPpeAssocList {cons("FetGroupContainedPpeAssocList1772Syn")}
+    Expression InsertDzMSigh BehaviorParameterBindings -> Communication {cons("Communication1636Syn")}
+    Mfeature InsertDzMgroup InsertDzSourceFetGroupRef InsertDzConnectionSymbol DdestinationFetGroupRef -> FetGroupConnection {cons("FetGroupConnection1876Syn")}
+    MBraceLeft InsertDzFeatrueContrainedPpeAssoc MBraceRight -> ArrayDdimensionFeatrueContrained {cons("ArrayDdimensionFeatrueContrained1746Syn")}
+    PpeExpression -> PpeListValueMidSymbol {}
+    "^" -> MExp {cons("MExp12423Syn")}
+    SoftwareCategory -> CmpCategory {}
+    PpeAssoc BasicPpeAssocList -> BasicPpeAssocList {cons("BasicPpeAssocList1455Syn")}
+    Id -> ModeName {}
+    SubPgmGroupAccessRefinement -> SubCmpAccessRefinement {}
+    PpeConstantTerm -> IntegerPpeConstantTerm {}
+    Mreturn -> StateKeyword {}
+    UnitsList -> UnitsDdesignator {}
+    Mrecord InsertDzMBracketLeft InsertDzRecordFieldList MBracketRight -> RecordType {cons("RecordType1956Syn")}
+    "access" -> Maccess {cons("Maccess12204Syn")}
+    IntegerTerm -> PpeExpression {}
+    Mproperty InsertDzMset InsertDzId InsertDzMis InsertDzPpeSetAssocDdef InsertDzMend InsertDzId MSemicolon -> PpeSet {cons("PpeSet1906Syn")}
+    Msubcomponents -> CmpImplAssocDdefElem {}
+    DdecimalRealLiteral -> RealLiteral {}
+    "record" -> Mrecord {cons("Mrecord12303Syn")}
+    Mvirtual Mprocessor -> ExecPlateformCategory {cons("ExecPlateformCategory1488Syn")}
+    Id InsertDzMDdoubleColon Id -> UniPpeTypeId {cons("UniPpeTypeId1955Syn")}
+    ArithmeticExpressionSymbol InsertDzRelOp ArithmeticExpressionSymbol -> Relation {cons("Relation1667Syn")}
+    IntegerRangePpeConstantTerm -> IntegerRangeTerm {}
+    "not define" -> NODdEF {cons("NODdEF1440Syn")}
+    CmpCategory InsertDzUniCmpClassifierRef ProtoTypeBindings -> CmpProtoTypeActual {cons("CmpProtoTypeActual1578Syn")}
+    Mpublic -> PkgDdecls {}
+    Numeral -> ArrayDdimensionSize {}
+    AADdLDdeclList -> PkgDdeclations {}
+    Statement MSemicolon -> Equations {cons("Equations1630Syn")}
+    Mode -> ModeTransitionList {}
+    Id InsertDzMcolon InsertDzMrefined InsertDzMto InsertDzMin InsertDzMparameter DdataUniCmpClassifierRef -> ParameterRefinement {cons("ParameterRefinement1834Syn")}
+    MBraceLeft InsertDzPpeAssocList InsertDzMBraceRight MSemicolon -> FlowSourceSpecAssocDdef {cons("FlowSourceSpecAssocDdef1883Syn")}
+    PpeDdefDdecl -> PpeTempDdecls {}
+    Id InsertDzMcolon InsertDzMrefined InsertDzMto InsertDzMin InsertDzMout InsertDzMparameter DdataUniCmpClassifierRef -> ParameterRefinement {cons("ParameterRefinement1836Syn")}
+    Mnot Relation -> LogicalFactor {cons("LogicalFactor1666Syn")}
+    Mfeatures FeatureList -> FetGroupTypeExtAssocDdefElem {cons("FetGroupTypeExtAssocDdefElem1782Syn")}
+    MBraceLeft InsertDzPpeAssocList MBraceRight -> PpeInMode {cons("PpeInMode1856Syn")}
+    Id InsertDzMcolon InsertDzId InsertDzMPoint InsertDzId MSemicolon -> BehaviorVariableDdecl {cons("BehaviorVariableDdecl1628Syn")}
+    ProtoTypeBindings -> CmpImplExtAssocDdefElem {}
+    PpeAssoc ProtoTypePpeAssoc -> ProtoTypePpeAssoc {cons("ProtoTypePpeAssoc1557Syn")}
+    Mif InsertDzMBracketLeft InsertDzExpression InsertDzMBracketRight InsertDzMBraceLeft InsertDzEquationList InsertDzMBraceRight InsertDzMend Mif -> IfEquation {cons("IfEquation1638Syn")}
+    "==" -> MDdoubleEqual {cons("MDdoubleEqual12397Syn")}
+    Id InsertDzMcolon InsertDzMlist InsertDzMof InsertDzPpeTypeDdesignator MSemicolon -> RecordField {cons("RecordField1958Syn")}
+    ContainedPpeAssoc -> PpeContainedPpeAssocList {}
+    FetGroupRef -> SourceFetGroupRef {}
+    CmpCategory UniCmpClassifierRef -> CmpProtoTypeActual {cons("CmpProtoTypeActual1579Syn")}
+    Id InsertDzMcolon InsertDzMprovides InsertDzMnet InsertDzMaccess Id -> NetAccessSpec {cons("NetAccessSpec12344Syn")}
+    Maadlboolen -> PpeType {}
+    CmpCategory InsertDzId InsertDzMend InsertDzId MSemicolon -> CmpType {cons("CmpType1470Syn")}
+    FetRefinement -> FetRefinementList {}
+    UniCmpClassifierRef -> BusUniCmpClassifierRef {}
+    "requires" -> Mrequires {cons("Mrequires12223Syn")}
+    Mcontrolled -> PhyEntityCmpCategory {}
+    "::" -> MDdoubleColon {cons("MDdoubleColon12309Syn")}
+    Mprototypes -> CmpAssocDdefElem {}
+    Id -> FetRef {}
+    Mexit -> StateKeyword {}
+    "private" -> Mprivate {cons("Mprivate12265Syn")}
+    InModesAndTransitions -> PpeAssocInModes {}
+    SubPgmCall SubPgmCallList -> SubPgmCallList {cons("SubPgmCallList1727Syn")}
+    FetGroupTypeAssocDdefElem -> FetGroupTypeAssocDdef {}
+    PpeExpression -> DdefaultPpeExpression {}
+    String -> StringLiteral {}
+    ClassifierCategoryRef InsertDzMComma ClassifierCategoryRefList -> ClassifierCategoryRefList {cons("ClassifierCategoryRefList1960Syn")}
+    Mcomposite -> StateKeyword {}
+    Mself InsertDzMPoint Id -> PortConnectionRefence {cons("PortConnectionRefence1866Syn")}
+    MLessThan -> RelOp {}
+    Connection -> ConnectionList {}
+    RecordField -> RecordFieldList {}
+    ComputedTerm -> PpeExpression {}
+    NoneStatement InModes -> AnnexSubclauseAssocDdef {cons("AnnexSubclauseAssocDdef1600Syn")}
+    StringTerm -> PpeExpression {}
+    Mport InsertDzSrcPortConnectionRef InsertDzConnectionSymbol DdestPortConnectionRef -> PortConnection {cons("PortConnection1863Syn")}
+    Id InsertDzMcolon InsertDzMrefined InsertDzMto InsertDzMout InsertDzMfeature Id -> AbstractFetRefinement {cons("AbstractFetRefinement1759Syn")}
+    PpeTypeDdecl -> PpeTempDdecls {}
+    Id InsertDzMDdoubleColon Id -> UniPpeId {cons("UniPpeId1988Syn")}
+    AbstractCmpCategory -> CmpCategory {}
+    FetRefinement FeatureList -> FeatureList {cons("FeatureList1482Syn")}
+    Mprototypes ProtoTypeList -> FetGroupTypeAssocDdefElem {cons("FetGroupTypeAssocDdefElem1764Syn")}
+    "if" -> Mif {cons("Mif12369Syn")}
+    AbstractFetSpec InsertDzArrayDdimensionFeatrueContrained MSemicolon -> Feature {cons("Feature1740Syn")}
+    BehaviorEvent -> BehaviorGuard {}
+    Mfeature InsertDzMgroup InsertDzId InsertDzMextends InsertDzUniFetGroupTypeRef InsertDzMend InsertDzId MSemicolon -> FetGroupTypeExt {cons("FetGroupTypeExt1774Syn")}
+    Id -> IdentifierList {}
+    Id -> UniPpeConstantId {}
+    Communication -> Equation {}
+    Id InsertDzMSpecalArrows1 InsertDzBehaviorGuard InsertDzMSpecalArrows2 InsertDzId InsertDzMBraceLeft InsertDzActionList InsertDzMBraceRight MSemicolon -> BehaviorStateTransition {cons("BehaviorStateTransition1696Syn")}
+    CompositeDdecl CompositeDdeclList -> CompositeDdeclList {cons("CompositeDdeclList1626Syn")}
+    InModesAndTransitions -> FlowSourceSpecRefinementAssocDdef {}
+    "extends" -> Mextends {cons("Mextends12233Syn")}
+    "actuator" -> Mactuator {cons("Mactuator12353Syn")}
+    Maadlreal RealRange -> RealInteger {cons("RealInteger1933Syn")}
+    PkgName -> ImportDdecls {}
+    "in" -> Min {cons("Min12098Syn")}
+    "implementation" -> Mimplementation {cons("Mimplementation12224Syn")}
+    Mprototypes ProtoTypeList -> CmpImplAssocDdefElem {cons("CmpImplAssocDdefElem1499Syn")}
+    ContainedModelElement -> ContainedModelElementList {}
+    LogicalExpression -> SimpleExpression {}
+    "is" -> Mis {cons("Mis12293Syn")}
+    Mdata Mport -> PortType {cons("PortType1805Syn")}
+    Melseif InsertDzMBracketLeft InsertDzExpression InsertDzMBracketRight InsertDzMBraceLeft InsertDzExpression MBraceRight -> ElseExIf {cons("ElseExIf1659Syn")}
+    "virtual" -> Mvirtual {cons("Mvirtual12242Syn")}
+    "initial" -> Minitial {cons("Minitial12377Syn")}
+    "initial" -> Minitial {cons("Minitial12259Syn")}
+    NODdEF -> FlowImplRefinement {}
+    Id InsertDzMComma ModeIdList -> ModeIdList {cons("ModeIdList12064Syn")}
+    Id InsertDzMcolon InsertDzMout InsertDzMfeature Id -> AbstractFetSpec {cons("AbstractFetSpec1755Syn")}
+    Id InsertDzMRoughArrow FetProtoTypeActual -> ProtoTypeBinding {cons("ProtoTypeBinding1577Syn")}
+    Id -> UnitsUniPpeTypeId {}
+    Maccess -> AccessConnectionRefinement {}
+    NODdEF -> ModeTransitionPpeAssoc {}
+    ParameterRef -> SourceParameterRef {}
+    Mcalls SubPgmCallSeqList -> CmpImplAssocDdefElem {cons("CmpImplAssocDdefElem1502Syn")}
+    ModalPpeValue -> Assignment {}
+    AccessConnectionKeyword Maccess -> AccessConnectionRefinement {cons("AccessConnectionRefinement1873Syn")}
+    SubCmp SubCmpList -> SubCmpList {cons("SubCmpList1507Syn")}
+    Min InsertDzMbinding InsertDzMBracketLeft InsertDzPlatformClassifierRefList MBracketRight -> InBinding {cons("InBinding12004Syn")}
+    FetGroupConnectionRefinement -> SomeRefinements {}
+    Mproperties -> CmpAssocDdefElem {}
+    ComEntityCmpCategory -> CPSNewCmpCategory {}
+    Msubcomponents SubCmpList -> CmpImplExtAssocDdefElem {cons("CmpImplExtAssocDdefElem1528Syn")}
+    ".-" -> MPointSub {cons("MPointSub12409Syn")}
+    Id InsertDzMQuestion BehaviorParameterBindings -> BehaviorEvent {cons("BehaviorEvent1703Syn")}
+    Id InsertDzMcolon InsertDzMflow InsertDzMsource InsertDzId MSemicolon -> FlowSourceSpec {cons("FlowSourceSpec1880Syn")}
+    PortConnectionRefinement -> SomeRefinements {}
+    PpeConstantTerm -> UnitPpeConstantTerm {}
+    CmpImplAssocDdefElem CmpImplAssocDdef -> CmpImplAssocDdef {cons("CmpImplAssocDdef1506Syn")}
+    Mthread Mgroup -> SoftwareCategory {cons("SoftwareCategory1487Syn")}
+    BehaviorStateTransition -> BehaviorStateTransitionList {}
+    "]->" -> MSpecalArrows2 {cons("MSpecalArrows212329Syn")}
+    Id InsertDzMcolon InsertDzMBraceLeft InsertDzSubPgmCallList InsertDzMBraceRight InsertDzMBraceLeft InsertDzCallSequencePpeAssocList InsertDzMBraceRight InsertDzInModes MSemicolon -> SubPgmCallSeq {cons("SubPgmCallSeq1726Syn")}
+    ImportDdecls -> PpeSetAssocDdef {}
+    CmpCategory -> CmpProtoType {}
+    ContainedPpeAssoc FeatrueContrainedPpeAssoc -> FeatrueContrainedPpeAssoc {cons("FeatrueContrainedPpeAssoc1748Syn")}
+    NamedElementArraySelectionName -> ContainedModelElement {}
+    Id InsertDzMcolon InsertDzMrefined InsertDzMto InsertDzMprovides InsertDzMsubprogram InsertDzMgroup InsertDzMaccess UniCmpClassifierRef -> SubPgmGroupAccessRefinement {cons("SubPgmGroupAccessRefinement1828Syn")}
+    Mdelay InsertDzMBracketLeft InsertDzExpressions MBracketRight -> Equation {cons("Equation1634Syn")}
+    Mrange InsertDzMof Id -> RangeType {cons("RangeType1948Syn")}
+    SimpleExpression InsertDzMEqual Expression -> Equation {cons("Equation1632Syn")}
+    Min Mfeature -> FetProtoType {cons("FetProtoType1564Syn")}
+    CmpAssocDdefElem -> CmpAssocDdef {}
+    ContainedModelElementList AnnexPath -> ContainedModelElementPath {cons("ContainedModelElementPath1995Syn")}
+    BooleanValue -> BooleanTerm {}
+    Mprototypes NoneStatement -> FetGroupTypeAssocDdefElem {cons("FetGroupTypeAssocDdefElem1765Syn")}
+    UniPpeId InsertDzMRoughArrow InsertDzMconstant InsertDzPpeValue MSemicolon -> BasicPpeAssoc {cons("BasicPpeAssoc12007Syn")}
+    Mcalls -> CmpImplAssocDdefElem {}
+    Id InsertDzMrefined InsertDzMto InsertDzCmpCategory InsertDzSubCmpAssocDdef MSemicolon -> SubCmpRefinement {cons("SubCmpRefinement1546Syn")}
+    Id -> ParameterRef {}
+    Sign InsertDzIntegerLiteral Id -> SignedAadlinteger {cons("SignedAadlinteger1940Syn")}
+    Id InsertDzMPoint Id -> FlowFetIdentifer {cons("FlowFetIdentifer1895Syn")}
+    Id InsertDzMcolon InsertDzMrefined InsertDzMto InsertDzMrequires InsertDzMnet InsertDzMaccess NetUniCmpClassifierRef -> NetAccessRefinement {cons("NetAccessRefinement12347Syn")}
+    Id -> UniFetGroupTypeRef {}
+    SubCmpFlowId -> SubCmpFlowOrEtefId {}
+    Mevent Mdata -> EventDdata {cons("EventDdata1595Syn")}
+    UniPpeId InsertDzMPlusRoughArrow InsertDzMconstant InsertDzAssignment InsertDzInBinding MSemicolon -> PpeAssoc {cons("PpeAssoc1984Syn")}
+    Mout InsertDzMfeature Id -> FetProtoTypeActual {cons("FetProtoTypeActual1593Syn")}
+    Name FunctionCallArgs -> Primary {cons("Primary1674Syn")}
+    Id InsertDzMcolon InsertDzMBraceLeft InsertDzSubPgmCallList InsertDzMBraceRight InsertDzInModes MSemicolon -> SubPgmCallSeq {cons("SubPgmCallSeq1725Syn")}
+    InModesAndTransitions -> EndToEndFlowSpecAssocDdefault {}
+    Mproperties PpeContainedPpeAssocList -> CmpImplExtAssocDdefElem {cons("CmpImplExtAssocDdefElem1533Syn")}
+    Mode ModeTransitionList -> ModeTransitionList {cons("ModeTransitionList12043Syn")}
+    ContainedModelElementPath InsertDzMComma ContainedModelElementPathList -> ContainedModelElementPathList {cons("ContainedModelElementPathList1994Syn")}
+    Id InsertDzMcolon FetGroupSpecAssocDdef -> FetGroupSpec {cons("FetGroupSpec1789Syn")}
+    Min InsertDzMfeature UniCmpClassifierRef -> FetProtoType {cons("FetProtoType1566Syn")}
+    "monitor" -> Mmonitor {cons("Mmonitor12360Syn")}
+    PpeAssoc SubCmpPpeAssocList -> SubCmpPpeAssocList {cons("SubCmpPpeAssocList1545Syn")}
+    RealTerm InsertDzMDdoubleDdiont RealTerm -> RealRangeTerm {cons("RealRangeTerm12027Syn")}
+    PpeTypeDdesignator InsertDzMRoughArrow DdefaultPpeExpression -> SingleValuedPpe {cons("SingleValuedPpe1967Syn")}
+    CompositeDdeclList -> AnnexSpecLangConstructsElem {}
+    Mproperties -> CmpImplAssocDdefElem {}
+    PpeAssoc -> PpeAssocList {}
+    "public" -> Mpublic {cons("Mpublic12264Syn")}
+    Mprocessor InsertDzMPoint Id -> AccessRef {cons("AccessRef1875Syn")}
+    FetConnection PpeInMode -> SomeConnections {cons("SomeConnections1849Syn")}
+    ArrayDdimensions ArrayElementImplList -> SubCmpAssocDdefElem {cons("SubCmpAssocDdefElem1542Syn")}
+    Mconnections ConnectionList -> CmpImplAssocDdefElem {cons("CmpImplAssocDdefElem1503Syn")}
+    PortConnectionRefence -> SrcPortConnectionRef {}
+    "net" -> Mnet {cons("Mnet12354Syn")}
+    "net" -> Mnet {cons("Mnet12362Syn")}
+    "all" -> Mall {cons("Mall12268Syn")}
+    Mfeature InsertDzMgroup InsertDzId InsertDzMextends InsertDzUniFetGroupTypeRef InsertDzFetGroupTypeExtAssocDdef InsertDzMend InsertDzId MSemicolon -> FetGroupTypeExt {cons("FetGroupTypeExt1776Syn")}
+    "event" -> Mevent {cons("Mevent12273Syn")}
+    "group" -> Mgroup {cons("Mgroup12207Syn")}
+    PkgName InsertDzMDdoubleColon Id -> PkgName {cons("PkgName1445Syn")}
+    Id InsertDzMRoughArrow CmpProtoTypeActualList -> ProtoTypeBinding {cons("ProtoTypeBinding1575Syn")}
+    MBracketLeft InsertDzBooleanTerm MBracketRight -> DdefaultPpeExpression {cons("DdefaultPpeExpression1968Syn")}
+    Id MQuestion -> BehaviorEvent {cons("BehaviorEvent1700Syn")}
+    "enumeration" -> Menumeration {cons("Menumeration12297Syn")}
+    PpeListValue -> DdefaultPpeListValue {}
+    PpeValue InsertDzInModes InsertDzMComma ModalPpeValue -> ModalPpeValue {cons("ModalPpeValue1999Syn")}
+    UniCmpClassifierRef -> DdataUniCmpClassifierRef {}
+    Id -> ImportDdecls {}
+    Id ImportDdeclPlus -> ImportDdecls {cons("ImportDdecls1459Syn")}
+    LogicalTerm InsertDzMor LogicalExpression -> LogicalExpression {cons("LogicalExpression1664Syn")}
+    Id InsertDzMcolon InsertDzMflow InsertDzMsource Id -> FlowSourceImpl {cons("FlowSourceImpl12074Syn")}
+    CmpImplExtAssocDdefElem -> CmpImplExtAssocDdef {}
+    Min InsertDzMfeature InsertDzMgroup InverseOfUniProtoType -> FetGroupSpecAssocDdef {cons("FetGroupSpecAssocDdef1790Syn")}
+    Mpackage InsertDzPkgName InsertDzPkgDdecls InsertDzPpeDdecls InsertDzMend InsertDzPkgName MSemicolon -> PkgSpec {cons("PkgSpec1444Syn")}
+    "properties" -> Mproperties {cons("Mproperties12232Syn")}
+    ElseWhen -> ElseWhenList {}
+    Id InsertDzMcolon InsertDzMrefined InsertDzMto InsertDzMout PortType -> PortRefinement {cons("PortRefinement1802Syn")}
+    NetAccessSpec -> SubCmpAccessSpec {}
+    ArrayDdimension -> ArrayDdimensions {}
+    Id -> UniCmpTypeRef {}
+    ArrayDdimension InsertDzMBraceLeft InsertDzFeatrueContrainedPpeAssoc MBraceRight -> ArrayDdimensionFeatrueContrained {cons("ArrayDdimensionFeatrueContrained1747Syn")}
+    "delay" -> Mdelay {cons("Mdelay12387Syn")}
+    Id -> RefCategoryList {}
+    Mmodes InsertDzMBracketLeft MBracketRight -> ModesSubclause {cons("ModesSubclause12039Syn")}
+    Id InsertDzMDdoubleColon Id -> UniPpeConstantId {cons("UniPpeConstantId1978Syn")}
+    CmpClassifierTerm -> PpeExpression {}
+    Id InsertDzMcolon InsertDzId InsertDzMSpecalArrows1 InsertDzModeTransitionTriggerList InsertDzMSpecalArrows2 InsertDzId MSemicolon -> ModeTransition {cons("ModeTransition12054Syn")}
+    PpeListValueMidSymbol InsertDzMComma PpeListValueMidSymbol -> PpeListValueMidSymbol {cons("PpeListValueMidSymbol12003Syn")}
+    MBracketLeft InsertDzId MBracketRight -> UnitsList {cons("UnitsList1928Syn")}
+    FlowSinkImpl -> FlowSourceSinkPathImplementAssocDdef {}
+    PortRefinement -> AbstractFetRefinement {}
+    SignedAadlinteger -> SignedAadlintegerOrConstant {}
+    Mprototypes ProtoTypeList -> CmpAssocDdefElem {cons("CmpAssocDdefElem1473Syn")}
+    CalledSubPgm InsertDzMSigh BehaviorParameterBindings -> BehaviorEvent {cons("BehaviorEvent1702Syn")}
+    LogicalExpression InsertDzMcolon InsertDzLogicalExpression InsertDzMcolon LogicalExpression -> SimpleExpression {cons("SimpleExpression1663Syn")}
+    NODdEF -> NamedElementArraySelectionName {}
+    MMul -> MulOp {}
+    Id InsertDzMcolon InsertDzMrequires InsertDzMdata InsertDzMaccess DdataUniCmpClassifierRef -> DdataAccessSpec {cons("DdataAccessSpec1838Syn")}
+    Id InsertDzMPoint Id -> CmpImplName {cons("CmpImplName1498Syn")}
+    "memory" -> Mmemory {cons("Mmemory12239Syn")}
+    Munits UnitsList -> UnitsType {cons("UnitsType1926Syn")}
+    FetConnection -> SomeConnections {}
+    Mif InsertDzMBracketLeft InsertDzExpression InsertDzMBracketRight InsertDzMBraceLeft InsertDzExpression InsertDzMBraceRight ElseEx -> Expression {cons("Expression1655Syn")}
+    Id InsertDzMcolon InsertDzMrefined InsertDzMto InsertDzMrequires InsertDzMsubprogram InsertDzMaccess UniCmpClassifierRef -> SubPgmAccessRefinement {cons("SubPgmAccessRefinement1825Syn")}
+    "phyentity" -> Mphyentity {cons("Mphyentity12358Syn")}
+    SubPgmCallSeq -> SubPgmCallSeqList {}
+    AnnexSubclause AnnexSubclauseList -> AnnexSubclauseList {cons("AnnexSubclauseList1773Syn")}
+    Mprototypes ProtoTypeRefinementList -> FetGroupTypeExtAssocDdefElem {cons("FetGroupTypeExtAssocDdefElem1779Syn")}
+    ProtoTypeRefinement ProtoTypeRefinementList -> ProtoTypeRefinementList {cons("ProtoTypeRefinementList1537Syn")}
+    Expression InsertDzMComma Expressions -> Expressions {cons("Expressions1635Syn")}
+    Mfeature InsertDzMgroup InsertDzId InsertDzMend InsertDzId MSemicolon -> FetGroupType {cons("FetGroupType1762Syn")}
+    "and" -> Mand {cons("Mand12282Syn")}
+    Mthread -> SoftwareCategory {}
+    MLessThanEqual -> RelOp {}
+    Mproperties PpeAssocList -> CmpAssocDdefElem {cons("CmpAssocDdefElem1476Syn")}
+    Id -> ModeOrTransitionList {}
+    "{" -> MBraceLeft {cons("MBraceLeft12320Syn")}
+    RecordTerm -> PpeExpression {}
+    Msubprogram -> BusDdataSubPgm {}
+    Mvirtrual Mbus -> ExecPlateformCategory {cons("ExecPlateformCategory1489Syn")}
+    Id -> PlatformClassifierRef {}
+    IdentifierList InsertDzMcolon InsertDzStateKeywordList InsertDzMstate MSemicolon -> BehaviorState {cons("BehaviorState1692Syn")}
+    IntegerTerm InsertDzMDdoubleDdiont InsertDzIntegerTerm InsertDzMdelta IntegerTerm -> IntegerRangeTerm {cons("IntegerRangeTerm12026Syn")}
+    ContainedModelElement InsertDzMPoint ContainedModelElementList -> ContainedModelElementList {cons("ContainedModelElementList1996Syn")}
+    "urgent" -> Murgent {cons("Murgent12380Syn")}
+    Mlist InsertDzMof ListOf -> ListOf {cons("ListOf1973Syn")}
+    NODdEF -> EnumerationId {}
+    Id InsertDzMcolon InsertDzMflow InsertDzMpath InsertDzId InsertDzMArrows InsertDzId MSemicolon -> FlowPathSpec {cons("FlowPathSpec1888Syn")}
+    SubPgmCall -> SubPgmCallList {}
+    UniPpeId InsertDzMPlusRoughArrow InsertDzAssignment InsertDzInBinding MSemicolon -> PpeAssoc {cons("PpeAssoc1986Syn")}
+    Mflows FlowSpecList -> CmpAssocDdefElem {cons("CmpAssocDdefElem1475Syn")}
+    NODdEF -> SelectionRange {}
+    Mparameter InsertDzSourceParameterRef InsertDzDdirectionalConnectionSymbol DdestinationParameterRef -> ParameterConnection {cons("ParameterConnection1867Syn")}
+    Id InsertDzMSpecalArrows1 InsertDzModeTransitionTriggerList InsertDzMSpecalArrows2 InsertDzId MSemicolon -> ModeTransition {cons("ModeTransition12056Syn")}
+    SignedAadlrealOrConstant -> RealTerm {}
+    CmpCategory Id -> CmpProtoTypeActual {cons("CmpProtoTypeActual1580Syn")}
+    Id -> EnumerationLiteralIdList {}
+    MPointMul -> MulOp {}
+    Id InsertDzMComma IdentifierList -> IdentifierList {cons("IdentifierList1693Syn")}
+    MLeftBracket InsertDzArrayDdimensionSize MRightBracket -> ArrayDdimension {cons("ArrayDdimension1548Syn")}
+    ">" -> MGreaterThan {cons("MGreaterThan12403Syn")}
+    Id -> SubCmpFlowId {}
+    Id InsertDzMcolon InsertDzMin Mfeature -> AbstractFetSpec {cons("AbstractFetSpec1754Syn")}
+    Mfeature Mgroup -> FetGroupConnectionRefinement {cons("FetGroupConnectionRefinement1877Syn")}
+    "none" MSemicolon -> NoneStatement {cons("NoneStatement1442Syn")}
+    SubCmpAccessSpec MSemicolon -> Feature {cons("Feature1738Syn")}
+    PpeListValue -> PpeListValueMidSymbol {}
+    PpeTempDdecls -> PpeSetAssocDdef {}
+    Mlist Mof -> ListOf {cons("ListOf1972Syn")}
+    ElseExIf -> ElseExIfList {}
+    Id InsertDzMPoint Id -> UniPortId {cons("UniPortId12062Syn")}
+    SubCmpFlowId InsertDzMArrows InsertDzId InsertDzMArrows SubcompentConnectionAssocDdef -> SubcompentConnectionAssocDdef {cons("SubcompentConnectionAssocDdef12076Syn")}
+    CompositeDdecl -> CompositeDdeclList {}
+    SubCmpAssocDdefElem -> SubCmpAssocDdef {}
+    "complete" -> Mcomplete {cons("Mcomplete12378Syn")}
+    FetGroupRefinement -> AbstractFetRefinement {}
+    "source" -> Msource {cons("Msource12246Syn")}
+    Id InsertDzMcolon InsertDzMflow InsertDzMpath InsertDzId InsertDzMArrows SubCmpFlowId -> FlowPathImpl {cons("FlowPathImpl12083Syn")}
+    MBracketLeft InsertDzOutputExpressionList MBracketRight -> Primary {cons("Primary1675Syn")}
+    FetRefinement -> FeatureList {}
+    Numeral -> DdecimalIntegerLiteral {}
+    SingleValuedPpe InsertDzMapplies InsertDzMto InsertDzMBracketLeft InsertDzPpeOwnerList MBracketRight -> PpeDdefDdeclAssocDdef {cons("PpeDdefDdeclAssocDdef1965Syn")}
+    Id InsertDzMPoint Id -> CalledSubPgm {cons("CalledSubPgm1733Syn")}
+    "requires" -> Mrequirs {cons("Mrequirs12258Syn")}
+    MAdd -> AddOp {}
+    UniCmpClassifierRef ProtoTypeBindings -> SubCmpAssocDdefElem {cons("SubCmpAssocDdefElem1540Syn")}
+    "abstract" -> Mabstract {cons("Mabstract12235Syn")}
+    "of" -> Mof {cons("Mof12245Syn")}
+    "of" -> Mof {cons("Mof12279Syn")}
+    Assignment -> Primary {}
+    ImportDdecl -> ImportDdecls {}
+    Mstate InsertDzMvariables BehaviorVariableDdeclList -> AnnexSpecLangConstructsElem {cons("AnnexSpecLangConstructsElem1604Syn")}
+    "property" -> Mproperty {cons("Mproperty12290Syn")}
+    "}" -> MBraceRight {cons("MBraceRight12322Syn")}
+    "on" -> Mon {cons("Mon12384Syn")}
+    ExecPlateformCategory -> CmpCategory {}
+    BehaviorVariableDdecl -> BehaviorVariableDdeclList {}
+    UniPpeId InsertDzMRoughArrow InsertDzMconstant InsertDzAssignment MSemicolon -> PpeAssoc {cons("PpeAssoc1980Syn")}
+    "self" -> Mself {cons("Mself12262Syn")}
+    "exists" -> Mexists {cons("Mexists12385Syn")}
+    Id -> ContainedModelElement {}
+    "none" -> AnnexLibrary {cons("AnnexLibrary1602Syn")}
+    Mcomplete -> StateKeyword {}
+    Id InsertDzMRoughArrow Id -> ModeName {cons("ModeName12067Syn")}
+    Id -> UniPpeId {}
+    "or" -> Mor {cons("Mor12283Syn")}
+    Id InsertDzMcolon InsertDzMsubprogram InsertDzCalledSubPgm MSemicolon -> SubPgmCall {cons("SubPgmCall1729Syn")}
+    Id InsertDzMcolon InsertDzMmode InsertDzMBraceLeft InsertDzModePpeAssocList InsertDzMBraceRight MSemicolon -> Mode {cons("Mode12048Syn")}
+    Minverse InsertDzMof UniFetGroupTypeRef -> FetGroupTypeExtAssocDdefElem {cons("FetGroupTypeExtAssocDdefElem1784Syn")}
+    PpeConstantTerm -> BooleanPpeConstantTerm {}
+    "]" -> MRightBracket {cons("MRightBracket12340Syn")}
+    Expression InsertDzMSemicolon ActionList -> ActionList {cons("ActionList1708Syn")}
+    "false" -> Mfalse {cons("Mfalse12285Syn")}
+    Mevent InsertDzMdata Mport -> PortType {cons("PortType1807Syn")}
+    Expression -> BehaviorParameterBindings {}
+    ContainedPpeAssoc PpeContainedPpeAssocList -> PpeContainedPpeAssocList {cons("PpeContainedPpeAssocList1485Syn")}
+    "type" -> Mtype {cons("Mtype12350Syn")}
+    "type" -> Mtype {cons("Mtype12294Syn")}
+    "when" -> Mwhen {cons("Mwhen12374Syn")}
+    "subcomponents" -> Msubcomponents {cons("Msubcomponents12227Syn")}
+    Connection ConnectionList -> ConnectionList {cons("ConnectionList1520Syn")}
+    Mwhen InsertDzMBracketLeft InsertDzExpression InsertDzMBracketRight InsertDzMBraceLeft InsertDzEquationList InsertDzMBraceRight InsertDzElseWhenList InsertDzMend Mwhen -> WhenEquation {cons("WhenEquation1650Syn")}
+    Mnet -> InteEntityCmpCategory {}
+    ContainedPpeAssoc -> FeatrueContrainedPpeAssoc {}
+    Murgent -> StateKeyword {}
+    "elseif" -> Melseif {cons("Melseif12372Syn")}
+    "feature" -> Mfeature {cons("Mfeature12099Syn")}
+    "history" -> Mhistory {cons("Mhistory12392Syn")}
+    SignedAadlintegerOrConstant -> IntegerTerm {}
+    FetGroupTypeAssocDdefElem FetGroupTypeAssocDdef -> FetGroupTypeAssocDdef {cons("FetGroupTypeAssocDdef1770Syn")}
+    Maadlinterger -> RealInteger {}
+    ".*" -> MPointMul {cons("MPointMul12420Syn")}
+    NameVisDdeclList PkgDdeclations -> PkgDdeclations {cons("PkgDdeclations1457Syn")}
+    Id InsertDzMcolon InsertDzMflow InsertDzMsink Id -> FlowSinkImpl {cons("FlowSinkImpl12077Syn")}
+    Mpublic Mprivate -> PkgDdecls {cons("PkgDdecls1446Syn")}
+    Primary InsertDzMPointExp Primary -> Factor {cons("Factor1673Syn")}
+    Id InsertDzMcolon InsertDzMrefined InsertDzMto InsertDzMrequires InsertDzMsubprogram InsertDzMgroup InsertDzMaccess UniCmpClassifierRef -> SubPgmGroupAccessRefinement {cons("SubPgmGroupAccessRefinement1829Syn")}
+    Id InsertDzMcolon InsertDzMrefined InsertDzMto InsertDzMprovides InsertDzMnet InsertDzMaccess NetUniCmpClassifierRef -> NetAccessRefinement {cons("NetAccessRefinement12346Syn")}
+    Numeral InsertDzMPoint Numeral -> DdecimalRealLiteral {cons("DdecimalRealLiteral12094Syn")}
+    PpeOwner InsertDzMComma PpeOwnerList -> PpeOwnerList {cons("PpeOwnerList1974Syn")}
+    Equation -> Statement {}
+    Mprivate -> PkgDdecls {}
+    "/" -> MDdiv {cons("MDdiv12407Syn")}
+    Id InsertDzMcolon InsertDzProtoTypeDdef MSemicolon -> ProtoType {cons("ProtoType1554Syn")}
+    Id -> UniPortId {}
+    Melse InsertDzMBraceLeft InsertDzEquationList MBraceRight -> Else {cons("Else1645Syn")}
+    Mport -> PortConnectionRefinement {}
+    Mpublic InsertDzPkgDdeclations InsertDzMprivate PkgDdeclations -> PkgDdecls {cons("PkgDdecls1452Syn")}
+    Mmodes InsertDzMBracketLeft InsertDzModeTransitionList MBracketRight -> ModesSubclause {cons("ModesSubclause12040Syn")}
+    PpeAssoc CallSequencePpeAssocList -> CallSequencePpeAssocList {cons("CallSequencePpeAssocList1728Syn")}
+    Id InsertDzMcolon InsertDzMflow InsertDzMpath InsertDzId InsertDzMArrows InsertDzId InsertDzFlowPathSpecAssocDdef MSemicolon -> FlowPathSpec {cons("FlowPathSpec1887Syn")}
+    CmpImplName -> UniCmpImplRef {}
+    Mdata -> AccessConnectionKeyword {}
+    "*" -> MBrace {cons("MBrace12394Syn")}
+    "*" -> MBrace {cons("MBrace12335Syn")}
+    "inverse" -> Minverse {cons("Minverse12244Syn")}
+    ModeTransitionTrigger InsertDzMComma ModeTransitionTriggerList -> ModeTransitionTriggerList {cons("ModeTransitionTriggerList12058Syn")}
+    "device" -> Mdevice {cons("Mdevice12240Syn")}
+    "return" -> Mreturn {cons("Mreturn12379Syn")}
+    Id InsertDzMcolon InsertDzProtoTypeDdef InsertDzMBraceLeft InsertDzProtoTypePpeAssocList InsertDzMBraceRight MSemicolon -> ProtoType {cons("ProtoType1555Syn")}
+    Mif InsertDzMBracketLeft InsertDzExpression InsertDzMBracketRight InsertDzMBraceLeft InsertDzExpression InsertDzMBraceRight InsertDzElseExIfList ElseEx -> Expression {cons("Expression1657Syn")}
+    ModeTransitionPpeAssoc -> ModeTransitionPpeAssocList {}
+    Min InsertDzMfeature Id -> FetProtoTypeActual {cons("FetProtoTypeActual1592Syn")}
+    Mstates BehaviorStateList -> AnnexSpecLangConstructsElem {cons("AnnexSpecLangConstructsElem1605Syn")}
+    PpeTypeDdesignator -> SingleValuedPpe {}
+    NODdEF -> MemoryUniCmpClassifierRef {}
+    Equations -> EquationList {}
+    MDdoubleEqual -> RelOp {}
+    Id InsertDzMcolon InsertDzCmpCategory InsertDzSubCmpAssocDdef MSemicolon -> SubCmp {cons("SubCmp1538Syn")}
+    PpeValue -> Assignment {}
+    Mfeature InsertDzMgroup UniFetGroupTypeRef -> FetGroupTypeProtoType {cons("FetGroupTypeProtoType1563Syn")}
+    PkgName InsertDzMDdoubleColon CmpImplName -> UniCmpImplRef {cons("UniCmpImplRef1526Syn")}
+    Id -> PpeTerm {}
+    Mfeature Mgroup -> FetGroupTypeProtoType {cons("FetGroupTypeProtoType1562Syn")}
+    PpeType -> PpeTypeDdesignator {}
+    Id InsertDzMrenames InsertDzCmpCategory InsertDzUniCmpTypeRef MSemicolon -> AliasDdecl {cons("AliasDdecl1465Syn")}
+    Mcalls -> CmpImplExtAssocDdefElem {}
+    PpeAssoc -> PpeContainedPpeAssocList {}
+    NumberType -> PpeType {}
+    ParameterConnectionRefinement -> SomeRefinements {}
+    MPointAdd -> AddOp {}
+    "aadlstring" -> Maadlstring {cons("Maadlstring12296Syn")}
+    "?" -> MQuestion {cons("MQuestion12427Syn")}
+    FlowSpec FlowSpecList -> FlowSpecList {cons("FlowSpecList1483Syn")}
+    RealInteger -> NumberType {}
+    CmpCategory InsertDzUniCmpClassifierRef MDdoubleBracket -> CmpProtoType {cons("CmpProtoType1560Syn")}
+    UniFetGroupTypeRef -> InverseOfUniProtoType {}
+    PpeAssoc -> BasicPpeAssocList {}
+    FlowSourceSinkPathImplementAssocDdef InsertDzPpeAssocInModes MSemicolon -> FlowImpl {cons("FlowImpl12070Syn")}
+    ClassifierCategoryRef -> ClassifierCategoryRefList {}
+    CmpProtoTypeActual InsertDzMComma CmpProtoTypeActual -> CmpProtoTypeActuralListTmp {cons("CmpProtoTypeActuralListTmp1582Syn")}
+    BusAccessRefinement -> SubCmpAccessRefinement {}
+    "." -> MPoint {cons("MPoint12305Syn")}
+    Mprototypes NoneStatement -> FetGroupTypeExtAssocDdefElem {cons("FetGroupTypeExtAssocDdefElem1780Syn")}
+    PlatformClassifierRef -> PlatformClassifierRefList {}
+    Mif InsertDzMBracketLeft InsertDzExpression InsertDzMBracketRight InsertDzMBraceLeft InsertDzEquationList InsertDzMBraceRight InsertDzElseIfList InsertDzMend Mif -> IfEquation {cons("IfEquation1640Syn")}
+    UniPpeId InsertDzMRoughArrow InsertDzAssignment MSemicolon -> PpeAssoc {cons("PpeAssoc1983Syn")}
+    Mprototypes ProtoTypeList -> FetGroupTypeExtAssocDdefElem {cons("FetGroupTypeExtAssocDdefElem1778Syn")}
+    Min Mout -> InOut {cons("InOut1594Syn")}
+    Id InsertDzMcolon InsertDzId MSemicolon -> BehaviorVariableDdecl {cons("BehaviorVariableDdecl1627Syn")}
+    Mfeature InsertDzMgroup Id -> FetGroupTypeProtoTypeActual {cons("FetGroupTypeProtoTypeActual1586Syn")}
+    CmpClassifierDdecl -> ClassifierDdecl {}
+    Mfeatures FetRefinementList -> FetGroupTypeExtAssocDdefElem {cons("FetGroupTypeExtAssocDdefElem1783Syn")}
+    Me InsertDzMPlus Numeral -> PositiveExponent {cons("PositiveExponent12093Syn")}
+    FetGroupConnection -> SomeConnections {}
+    FlowSourceSpecAssocDdef -> FlowPathSpecAssocDdef {}
+    Mwith InsertDzImportDdecls MSemicolon -> ImportDdecl {cons("ImportDdecl1463Syn")}
+    Id InsertDzMcolon InsertDzMrefined InsertDzMto InsertDzMprovides InsertDzMnet InsertDzMaccess Id -> NetAccessRefinement {cons("NetAccessRefinement12348Syn")}
+    FetRef -> DdestFetRef {}
+    PpeOwner -> PpeOwnerList {}
+    Id InsertDzMcolon InsertDzMconstant InsertDzPpeTypeDdesignator InsertDzMRoughArrow InsertDzConstantPpeExpression MSemicolon -> SigleValuedPpeConstant {cons("SigleValuedPpeConstant1975Syn")}
+    Mannex InsertDzId InsertDzAnnexSubclauseAssocDdef MSemicolon -> AnnexSubclause {cons("AnnexSubclause1597Syn")}
+    Mcomputation InsertDzMBracketLeft InsertDzExpressions MBracketRight -> Equation {cons("Equation1633Syn")}
+    Id InsertDzMcolon InsertDzMBraceLeft InsertDzSubPgmCallList InsertDzMBraceRight InsertDzMBraceLeft InsertDzCallSequencePpeAssocList InsertDzMBraceRight MSemicolon -> SubPgmCallSeq {cons("SubPgmCallSeq1724Syn")}
+    Id InsertDzMcolon InsertDzMinitial InsertDzMmode MSemicolon -> Mode {cons("Mode12049Syn")}
+    LogicalFactor -> LogicalTerm {}
+    NODdEF -> VirtualBusUniCmpClassifierRef {}
+    ClassifierDdecl -> AADdLDdecl {}
+    FlowImplRefinement -> FlowImplListElem {}
+    PpeAssoc -> ProtoTypePpeAssoc {}
+    Id InsertDzMComma ModeOrTransitionList -> ModeOrTransitionList {cons("ModeOrTransitionList12069Syn")}
+    "bus" -> Mbus {cons("Mbus12205Syn")}
+    ContainedPpeAssoc -> FetGroupContainedPpeAssocList {}
+    InOut InsertDzEventDdata Mport -> FetProtoTypeActual {cons("FetProtoTypeActual1587Syn")}
+    Mfeature InsertDzMgroup InsertDzId InsertDzFetGroupTypeAssocDdef InsertDzMend InsertDzId MSemicolon -> FetGroupType {cons("FetGroupType1763Syn")}
+    "data" -> Mdata {cons("Mdata12208Syn")}
+    "elsewhen" -> Melsewhen {cons("Melsewhen12375Syn")}
+    Min -> InOut {}
+    Mall InsertDzMBracketLeft InsertDzId InsertDzMin InsertDzExpression InsertDzMBracketRight InsertDzMcolon Expression -> Primary {cons("Primary1678Syn")}
+    MDdoubleArrows -> BidirectConnectSymb {}
+    Mconnections -> CmpImplExtAssocDdefElem {}
+    RefType -> PpeType {}
+    InOut InsertDzEventDdata InsertDzMport UniCmpClassifierRef -> FetProtoTypeActual {cons("FetProtoTypeActual1588Syn")}
+    Primary InsertDzMExp Primary -> Factor {cons("Factor1672Syn")}
+    PkgName InsertDzMDdoubleColon Id -> UniCmpTypeRef {cons("UniCmpTypeRef1495Syn")}
+    MArrows InsertDzId InsertDzMArrows SubCmpFlowId -> ConnectIdSubcompenentFlowIdnetifierList {cons("ConnectIdSubcompenentFlowIdnetifierList12085Syn")}
+    UniPpeId InsertDzMRoughArrow InsertDzAssignment InsertDzMapplies InsertDzMto InsertDzContainedModelElementPathList InsertDzInBinding MSemicolon -> ContainedPpeAssoc {cons("ContainedPpeAssoc1990Syn")}
+    "binding" -> Mbinding {cons("Mbinding12276Syn")}
+    PpeAssoc -> SubCmpPpeAssocList {}
+    PortConnection -> SomeConnections {}
+    "-->" -> MDdArrows {cons("MDdArrows12425Syn")}
+    CmpProtoType -> ProtoTypeDdef {}
+    Mif InsertDzMBracketLeft InsertDzExpression InsertDzMBracketRight InsertDzMBraceLeft InsertDzEquationList InsertDzMBraceRight InsertDzElse InsertDzMend Mif -> IfEquation {cons("IfEquation1639Syn")}
+    Me Numeral -> PositiveExponent {cons("PositiveExponent12092Syn")}
+    "calls" -> Mcalls {cons("Mcalls12228Syn")}
+    NetAccessRefinement -> SubCmpAccessRefinement {}
+    Id InsertDzMcolon InsertDzMprovides InsertDzMsubprogram InsertDzMgroup InsertDzMaccess UniCmpClassifierRef -> SubPgmGroupAccessSpec {cons("SubPgmGroupAccessSpec1826Syn")}
+    RealRangeTerm -> PpeExpression {}
+    ClassifierQualifiedMetaModelId -> ClassifierCategoryRef {}
+    AnnexSpecLangConstructsElem AnnexSpecLangConstructs -> AnnexSpecLangConstructs {cons("AnnexSpecLangConstructs1609Syn")}
+    SignedAadlreal -> SignedAadlrealOrConstant {}
+    UniPpeId InsertDzMPlusRoughArrow InsertDzAssignment MSemicolon -> PpeAssoc {cons("PpeAssoc1987Syn")}
+    StateKeyword -> StateKeywordList {}
+    ";" -> MSemicolon {cons("MSemicolon12306Syn")}
+    MetaModelClassId -> QualifiedMetaModelId {}
+    CmpCategory InsertDzId InsertDzMextends InsertDzUniCmpTypeRef InsertDzProtoTypeBindings InsertDzCmpAssocDdef InsertDzMend InsertDzId MSemicolon -> CmpTypeExt {cons("CmpTypeExt1494Syn")}
+    Id InsertDzMcolon InsertDzMrefined InsertDzMto InsertDzMrequires InsertDzMbus InsertDzMaccess BusUniCmpClassifierRef -> BusAccessRefinement {cons("BusAccessRefinement1847Syn")}
+    "provides" -> Mprovides {cons("Mprovides12222Syn")}
+    Mrequires -> Require {}
+    AnnexSubclause -> AnnexSubclauseList {}
+    Mfeatures FeatureList -> CmpAssocDdefElem {cons("CmpAssocDdefElem1474Syn")}
+    UniPpeId InsertDzMRoughArrow InsertDzAssignment InsertDzInBinding MSemicolon -> PpeAssoc {cons("PpeAssoc1982Syn")}
+    CmpAssocDdefElem CmpAssocDdef -> CmpAssocDdef {cons("CmpAssocDdef1477Syn")}
+    ModesSubclause -> CmpImplAssocDdefElem {}
+    MMinus -> Sign {}
+    FlowPathImpl -> FlowSourceSinkPathImplementAssocDdef {}
+    "," -> MComma {cons("MComma12330Syn")}
+    Msubprogram -> SoftwareCategory {}
+    AccessConnection -> SomeConnections {}
+    ExpressionList InsertDzMSemicolon ExpressionLists -> ExpressionLists {cons("ExpressionLists1680Syn")}
+    PpeListValue -> PpeValue {}
+    FlowSourceSinkPathImplementAssocDdef MSemicolon -> FlowImpl {cons("FlowImpl12072Syn")}
+    "to" -> Mto {cons("Mto12203Syn")}
+    Id InsertDzMcolon InsertDzMrefined InsertDzMto InsertDzMprovides InsertDzMsubprogram InsertDzMaccess UniCmpClassifierRef -> SubPgmAccessRefinement {cons("SubPgmAccessRefinement1824Syn")}
+    Id InsertDzMcolon InsertDzMflow InsertDzMsink InsertDzId ConnectionSubcompenentFlowAssocDdef -> FlowSinkImpl {cons("FlowSinkImpl12078Syn")}
+    IntegerTerm InsertDzMDdoubleDdiont IntegerTerm -> IntegerRangeTerm {cons("IntegerRangeTerm12025Syn")}
+    AccessConnectionRefinement -> SomeRefinements {}
+    Minherit InsertDzSingleValuedPpe InsertDzMapplies InsertDzMto InsertDzMBracketLeft InsertDzPpeOwnerList MBracketRight -> PpeDdefDdeclAssocDdef {cons("PpeDdefDdeclAssocDdef1963Syn")}
+    Id InsertDzMcolon InsertDzMprovides InsertDzMdata InsertDzMaccess DdataUniCmpClassifierRef -> DdataAccessSpec {cons("DdataAccessSpec1837Syn")}
+    MBraceLeft InsertDzPpeAssocList MBraceRight -> EndToEndSpecRefinementDdefault {cons("EndToEndSpecRefinementDdefault1905Syn")}
+    Id InsertDzMcolon InsertDzMrefined InsertDzMto InsertDzMin InsertDzMout PortType -> PortRefinement {cons("PortRefinement1803Syn")}
+    AnnexSubclause -> CmpImplExtAssocDdefElem {}
+    EnumerationId -> EnumerationTerm {}
+    "units" -> Munits {cons("Munits12298Syn")}
+    "not" -> Mnot {cons("Mnot12280Syn")}
+    PpeDdefDdecl PpeTempDdecls -> PpeTempDdecls {cons("PpeTempDdecls1920Syn")}
+    Id InsertDzMcolon InsertDzMrefined InsertDzMto InsertDzSomeRefinements InsertDzPpeInMode MSemicolon -> ConnectionRefinement {cons("ConnectionRefinement1859Syn")}
+    UniCmpClassifierRef -> SubPgmUniCmpClassifierRef {}
+    Sign RealLiteral -> SignedAadlreal {cons("SignedAadlreal1945Syn")}
+    MArrows -> DdirectionalConnectionSymbol {}
+    "features" -> Mfeatures {cons("Mfeatures12234Syn")}
+    Id -> CalledSubPgm {}
+    Min InsertDzMmodes InsertDzMBracketLeft InsertDzModeNameList MBracketRight -> CmpInModes {cons("CmpInModes12065Syn")}
+    MBraceLeft InsertDzPpeAssocList InsertDzMBraceRight InModesAndTransitions -> EndToEndFlowSpecAssocDdefault {cons("EndToEndFlowSpecAssocDdefault1900Syn")}
+    ".+" -> MPointAdd {cons("MPointAdd12408Syn")}
+    Equations EquationList -> EquationList {cons("EquationList1623Syn")}
+    SubCmpAccessRefinement -> AbstractFetRefinement {}
+    ForIndex InsertDzMComma ForIndices -> ForIndices {cons("ForIndices1647Syn")}
+    "connections" -> Mconnections {cons("Mconnections12229Syn")}
+    MArrows InsertDzSubCmpFlowId InsertDzMArrows SubCmpFlowId -> ConnectionIdFlowPathList {cons("ConnectionIdFlowPathList1898Syn")}
+    CmpCategory InsertDzId InsertDzMextends InsertDzUniCmpTypeRef InsertDzProtoTypeBindings InsertDzMend InsertDzId MSemicolon -> CmpTypeExt {cons("CmpTypeExt1492Syn")}
+    Mcomposite InsertDzMhistory InsertDzMstates InsertDzBehaviorStateList InsertDzMtranstitions InsertDzBehaviorStateTransitionList InsertDzCompositeDdeclList InsertDzMend InsertDzId MSemicolon -> CompositeDdecl {cons("CompositeDdecl1709Syn")}
+    ModePpeAssoc -> ModePpeAssocList {}
+    Primary -> Factor {}
+    Expression InsertDzMComma ExpressionList -> ExpressionList {cons("ExpressionList1690Syn")}
+    LogicalFactor InsertDzMand LogicalTerm -> LogicalTerm {cons("LogicalTerm1665Syn")}
+    ParameterConnection -> SomeConnections {}
+    NoneStatement -> AnnexSubclauseAssocDdef {}
+    Mflows -> CmpImplExtAssocDdefElem {}
+    UniPpeId InsertDzMPlusRoughArrow InsertDzMconstant InsertDzAssignment MSemicolon -> PpeAssoc {cons("PpeAssoc1985Syn")}
+    FunctionArgument InsertDzMComma FunctionArguments -> FunctionArguments {cons("FunctionArguments1684Syn")}
+    Mcomposite InsertDzMhistory InsertDzMmode InsertDzId InsertDzMstates InsertDzBehaviorStateList InsertDzMtranstitions InsertDzBehaviorStateTransitionList InsertDzCompositeDdeclList InsertDzMend InsertDzId MSemicolon -> CompositeDdecl {cons("CompositeDdecl1722Syn")}
+    ProtoTypeBinding InsertDzMComma ProtoTypeBinding -> ProtoTypeBinding {cons("ProtoTypeBinding1573Syn")}
+    ModesSubclause -> CmpAssocDdefElem {}
+    "refined" -> Mrefined {cons("Mrefined12202Syn")}
+    ProtoTypeRefinementList ProtoTypeList -> ProtoTypeList {cons("ProtoTypeList1479Syn")}
+    Mprocess -> SoftwareCategory {}
+    SigleValuedPpeConstant -> PpeConstant {}
+    ":" -> Mcolon {cons("Mcolon12304Syn")}
+    ModesSubclause -> CmpImplExtAssocDdefElem {}
+    StringLiteral -> StringTerm {}
+    Id InsertDzMcolon InsertDzMrefined InsertDzMto InsertDzMflow InsertDzMsink InsertDzFlowSinkSpecRefinementAssocDdef MSemicolon -> FlowSinkSpecRefinement {cons("FlowSinkSpecRefinement1893Syn")}
+    MBracketLeft InsertDzProtoTypeBinding MBracketRight -> ProtoTypeBindings {cons("ProtoTypeBindings1572Syn")}
+    BooleanTerm InsertDzMand BooleanTerm -> BooleanTerm {cons("BooleanTerm12023Syn")}
+    UniPpeId InsertDzMRoughArrow InsertDzPpeValue MSemicolon -> BasicPpeAssoc {cons("BasicPpeAssoc12008Syn")}
+    "port" -> Mport {cons("Mport12272Syn")}
+    Mfeatures -> CmpAssocDdefElem {}
+    EnumerationTerm -> PpeExpression {}
+    Mprocessor InsertDzMPoint Id -> PortConnectionRefence {cons("PortConnectionRefence1865Syn")}
+    CompositeCategory -> CmpCategory {}
+    "constant" -> Mconstant {cons("Mconstant12274Syn")}
+    FlowSinkSpecRefinement -> FlowSpecRefinement {}
+    FlowImplListElem FlowImplList -> FlowImplList {cons("FlowImplList1523Syn")}
+    Relation -> LogicalFactor {}
+    Mtrue -> BooleanValue {}
+    Mfeature InsertDzSrcFetRef InsertDzConnectionSymbol DdestFetRef -> FetConnection {cons("FetConnection1860Syn")}
+    ProcessorUniCmpClassifierRef -> PlatformClassifierRef {}
+    RangeType -> PpeType {}
+    Mrenames InsertDzMfeature InsertDzMgroup InsertDzUniFetGroupTypeRef MSemicolon -> AliasDdecl {cons("AliasDdecl1468Syn")}
+    "aadlinterger" -> Maadlinterger {cons("Maadlinterger12300Syn")}
+    Msubcomponents SubCmpList -> CmpImplAssocDdefElem {cons("CmpImplAssocDdefElem1500Syn")}
+    FetRefinement FetRefinementList -> FetRefinementList {cons("FetRefinementList1788Syn")}
+    Mproperties -> CmpImplExtAssocDdefElem {}
+    Id InsertDzMSpecalArrows1 InsertDzModeTransitionTriggerList InsertDzMSpecalArrows2 InsertDzId InsertDzModeTransitionPpeAssocList MSemicolon -> ModeTransition {cons("ModeTransition12055Syn")}
+    "<" -> MLessThan {cons("MLessThan12402Syn")}
+    Mmemory -> ExecPlateformCategory {}
+    Mfunction InsertDzName "(" InsertDzNamedArguments ")" -> FunctionArgument {cons("FunctionArgument1689Syn")}
+    Mflows FlowImplList -> CmpImplAssocDdefElem {cons("CmpImplAssocDdefElem1504Syn")}
+    Mprocessor InsertDzMPoint Id -> CalledSubPgm {cons("CalledSubPgm1734Syn")}
+    InteEntityCmpCategory -> CPSNewCmpCategory {}
+    Mpublic PkgDdeclations -> PkgDdecls {cons("PkgDdecls1447Syn")}
+    NODdEF -> CmpTypePpeAssoc {}
+    Id InsertDzMPoint Id -> PortConnectionRefence {cons("PortConnectionRefence1864Syn")}
+    "-[" -> MSpecalArrows1 {cons("MSpecalArrows112328Syn")}
+    UniPortId -> ModeTransitionTrigger {}
+    Factor InsertDzMulOp Term -> Term {cons("Term1670Syn")}
+    Id InsertDzMcolon InsertDzMprovides InsertDzMnet InsertDzMaccess NetUniCmpClassifierRef -> NetAccessSpec {cons("NetAccessSpec12342Syn")}
+    Id InsertDzMSpecalArrows1 InsertDzMSpecalArrows2 InsertDzId MSemicolon -> BehaviorStateTransition {cons("BehaviorStateTransition1697Syn")}
+    "aadlreal" -> Maadlreal {cons("Maadlreal12299Syn")}
+    RealLiteral -> NumericLiteral {}
+    ")" -> MBracketRight {cons("MBracketRight12327Syn")}
+    ImportDdecls PpeTempDdecls -> PpeSetAssocDdef {cons("PpeSetAssocDdef1907Syn")}
+    DzBool -> Bool {}
+    Minitially EquationList -> AnnexSpecLangConstructsElem {cons("AnnexSpecLangConstructsElem1606Syn")}
+    Mclassifier InsertDzMBracketLeft InsertDzUniCmpTypeRef MBracketRight -> CmpClassifierTerm {cons("CmpClassifierTerm12032Syn")}
+    Mwhen InsertDzMBracketLeft InsertDzExpression InsertDzMBracketRight InsertDzMBraceLeft InsertDzEquationList InsertDzMBraceRight InsertDzMend Mwhen -> WhenEquation {cons("WhenEquation1649Syn")}
+    CmpCategory MDdoubleBracket -> CmpProtoType {cons("CmpProtoType1558Syn")}
+    ContainedModelElementPath -> ContainedModelElementPathList {}
+    Msubprogram Mgroup -> AccessConnectionKeyword {cons("AccessConnectionKeyword1872Syn")}
+    Mproperties NoneStatement -> PpeDdecls {cons("PpeDdecls1453Syn")}
+    FetGroupTypeProtoType -> ProtoTypeDdef {}
+    Id InsertDzMcolon InsertDzMrefined InsertDzMto FetGroupSpecAssocDdef -> FetGroupRefinement {cons("FetGroupRefinement1795Syn")}
+    "parameter" -> Mparameter {cons("Mparameter12269Syn")}
+    "path" -> Mpath {cons("Mpath12248Syn")}
+    AnnexSubclauseList -> FetGroupTypeAssocDdefElem {}
+    ModeTransition -> ModeTransitionList {}
+    CmpCategory InsertDzId InsertDzMextends InsertDzUniCmpTypeRef InsertDzCmpAssocDdef InsertDzMend InsertDzId MSemicolon -> CmpTypeExt {cons("CmpTypeExt1493Syn")}
+    EndToEndFlowSpecRefinement -> FlowImplListElem {}
+    MAsteriskBrace1 InsertDzAnnexSpecLangConstructs InsertDzMAsteriskBrace2 InModes -> AnnexSubclauseAssocDdef {cons("AnnexSubclauseAssocDdef1599Syn")}
+    MBraceLeft InsertDzPpeContainedPpeAssocList MBraceRight -> SubCmpAssocDdefElem {cons("SubCmpAssocDdefElem1543Syn")}
+    MArrows InsertDzSubCmpFlowId InsertDzMArrows InsertDzSubCmpFlowId ConnectionIdFlowPathList -> ConnectionIdFlowPathList {cons("ConnectionIdFlowPathList1899Syn")}
+    Melseif InsertDzMBracketLeft InsertDzExpression InsertDzMBracketRight InsertDzMBraceLeft InsertDzEquationList MBraceRight -> ElseIf {cons("ElseIf1644Syn")}
+    Id InsertDzMComma RefCategoryList -> RefCategoryList {cons("RefCategoryList1954Syn")}
+    Id InsertDzMcolon InsertDzMrefined InsertDzMto InsertDzMrequires InsertDzMnet InsertDzMaccess Id -> NetAccessRefinement {cons("NetAccessRefinement12349Syn")}
+    "-" -> MSub {cons("MSub12405Syn")}
+    SubCmpRefinement -> SubCmpList {}
+    CmpImplExt -> CmpClassifierDdecl {}
+    FetGroupClassifierDdecl -> ClassifierDdecl {}
+    Id InsertDzMRoughArrow CmpProtoTypeActual -> ProtoTypeBinding {cons("ProtoTypeBinding1574Syn")}
+    MComma PkgName -> ImportDdeclPlus {cons("ImportDdeclPlus1460Syn")}
+    "flows" -> Mflows {cons("Mflows12230Syn")}
+    PpeConstant PpeTempDdecls -> PpeTempDdecls {cons("PpeTempDdecls1922Syn")}
+    Mflows FlowImplList -> CmpImplExtAssocDdefElem {cons("CmpImplExtAssocDdefElem1532Syn")}
+    Numeral PositiveExponent -> DdecimalIntegerLiteral {cons("DdecimalIntegerLiteral12090Syn")}
+    PpeConstantTerm -> IntegerRangePpeConstantTerm {}
+    Expression -> Expressions {}
+    BehaviorState -> BehaviorStateList {}
+    AADdLDdeclList PkgDdeclations -> PkgDdeclations {cons("PkgDdeclations1456Syn")}
+    Id InsertDzMcolon InsertDzMprovides InsertDzMsubprogram Maccess -> SubPgmAccessSpec {cons("SubPgmAccessSpec1822Syn")}
+    Id InsertDzMcolon InsertDzId InsertDzMSpecalArrows1 InsertDzModeTransitionTriggerList InsertDzMSpecalArrows2 InsertDzId InsertDzModeTransitionPpeAssocList MSemicolon -> ModeTransition {cons("ModeTransition12053Syn")}
+    Msubprogram -> AccessConnectionKeyword {}
+    CmpImpl -> CmpClassifierDdecl {}
+    Id InsertDzMcolon InsertDzMprovides InsertDzMsubprogram InsertDzMaccess UniCmpClassifierRef -> SubPgmAccessSpec {cons("SubPgmAccessSpec1809Syn")}
+    ExpressionList -> OutputExpressionList {}
+    "[]" -> MDdoubleBracket {cons("MDdoubleBracket12338Syn")}
+    Mmode InsertDzMtranstitions BehaviorStateTransitionList -> AnnexSpecLangConstructsElem {cons("AnnexSpecLangConstructsElem1608Syn")}
+    Mreference InsertDzMBracketLeft InsertDzContainedModelElementPath MBracketRight -> RefTerm {cons("RefTerm12034Syn")}
+    MBraceLeft InsertDzPpeAssocList InsertDzMBraceRight InModesAndTransitions -> EndToEndSpecRefinementDdefault {cons("EndToEndSpecRefinementDdefault1904Syn")}
+    ArrayElementImplListTmp InsertDzMComma ArrayElementImplListTmps -> ArrayElementImplListTmps {cons("ArrayElementImplListTmps1553Syn")}
+    CmpCategory InsertDzId InsertDzMextends InsertDzUniCmpTypeRef InsertDzMend InsertDzId MSemicolon -> CmpTypeExt {cons("CmpTypeExt1490Syn")}
+    Id InsertDzMPoint Id -> PlatformClassifierRef {cons("PlatformClassifierRef12006Syn")}
+    Expression InsertDzMQuestion BehaviorParameterBindings -> Communication {cons("Communication1637Syn")}
+    Mexists InsertDzMBracketLeft InsertDzId InsertDzMin InsertDzExpression InsertDzMBracketRight InsertDzMcolon Expression -> Primary {cons("Primary1679Syn")}
+    "(" ")" -> FunctionCallArgs {cons("FunctionCallArgs1682Syn")}
+    ImportDdecl ImportDdecls -> ImportDdecls {cons("ImportDdecls1908Syn")}
+    Mcalls SubPgmCallSeqList -> CmpImplExtAssocDdefElem {cons("CmpImplExtAssocDdefElem1529Syn")}
+    AbstractFetRefinement InsertDzArrayDdimensionFeatrueContrained MSemicolon -> FetRefinement {cons("FetRefinement1752Syn")}
+    Id InsertDzMcolon InsertDzMconstant InsertDzListOf InsertDzPpeTypeDdesignator InsertDzMRoughArrow InsertDzConstantPpeListValue MSemicolon -> MultiValuedPpeConstant {cons("MultiValuedPpeConstant1977Syn")}
+    InModesAndTransitions -> PpeInMode {}
+    Id -> UnitTerm {}
+    FlowSourceSpecAssocDdef -> FlowSinkSpecAssocDdef {}
+    MBraceLeft InsertDzId InsertDzMAsteriskBrace3 MetaModelClassId -> QualifiedMetaModelId {cons("QualifiedMetaModelId1950Syn")}
+    ModePpeAssoc ModePpeAssocList -> ModePpeAssocList {cons("ModePpeAssocList12052Syn")}
+    BehaviorStateTransition BehaviorStateTransitionList -> BehaviorStateTransitionList {cons("BehaviorStateTransitionList1624Syn")}
+    Id InsertDzMcolon InsertDzMrequires InsertDzMsubprogram InsertDzMgroup InsertDzMaccess UniCmpClassifierRef -> SubPgmGroupAccessSpec {cons("SubPgmGroupAccessSpec1827Syn")}
+    Id -> PortConnectionRefence {}
+    PpeAssoc -> ProtoTypePpeAssocList {}
+    "out" -> Mout {cons("Mout12200Syn")}
+    Mdata -> EventDdata {}
+    BusAccessSpec -> SubCmpAccessSpec {}
+    Id InsertDzMcolon InsertDzSomeConnections MSemicolon -> Connection {cons("Connection1848Syn")}
+    PpeConstantTerm -> StringPpeConstantTerm {}
+    Id InsertDzMPoint Id -> SubCmpFlowId {cons("SubCmpFlowId12087Syn")}
+    FlowPathSpecRefinement -> FlowSpecRefinement {}
+    MSub -> AddOp {}
+    "none" -> BehaviorStateTransition {cons("BehaviorStateTransition1625Syn")}
+    FunctionArgument InsertDzMfor ForIndices -> FunctionArguments {cons("FunctionArguments1685Syn")}
+    CmpProtoTypeActual -> CmpProtoTypeActuralListTmp {}
+    Mbus -> AccessConnectionKeyword {}
+    Minverse InsertDzMof UniFetGroupTypeRef -> FetGroupTypeAssocDdefElem {cons("FetGroupTypeAssocDdefElem1767Syn")}
+    BehaviorState BehaviorStateList -> BehaviorStateList {cons("BehaviorStateList1622Syn")}
+    Term -> ArithmeticExpression {}
+    RealRangePpeConstantTerm -> RealRangeTerm {}
+    Mbus -> BusDdataSubPgm {}
+    Mdata -> BusDdataSubPgm {}
+    PpeConstantTerm -> RealPpeConstantTerm {}
+    ImportDdecl -> NameVisDdecl {}
+    Id InsertDzMcolon InsertDzMin InsertDzMparameter DdataUniCmpClassifierRef -> ParameterSpec {cons("ParameterSpec1830Syn")}
+    "reference" -> Mreference {cons("Mreference12288Syn")}
+    MBraceLeft InsertDzPpeAssocList MBraceRight -> PpeAssocInModes {cons("PpeAssocInModes12089Syn")}
+    FlowSourceSpec -> FlowSpec {}
+    Id InsertDzMcolon InsertDzMin InsertDzMout InsertDzMparameter DdataUniCmpClassifierRef -> ParameterSpec {cons("ParameterSpec1833Syn")}
+    NODdEF -> AnnexSpecificPath {}
+    FlowSourceSpecRefinementAssocDdef -> FlowSinkSpecRefinementAssocDdef {}
+    Expression InsertDzMArrows Id -> BehaviorParameterBindings {cons("BehaviorParameterBindings1704Syn")}
+    FlowSinkSpec -> FlowSpec {}
+    Id InsertDzMcolon InsertDzMrefined InsertDzMto InsertDzMprovides InsertDzMbus InsertDzMaccess BusUniCmpClassifierRef -> BusAccessRefinement {cons("BusAccessRefinement1846Syn")}
+    Maadlreal -> RealInteger {}
+    ArrayDdimension ArrayDdimensions -> ArrayDdimensions {cons("ArrayDdimensions1547Syn")}
+    Mclassifier InsertDzMBracketLeft InsertDzClassifierCategoryRefList MBracketRight -> ClassifierType {cons("ClassifierType1949Syn")}
+    Id InsertDzMcolon InsertDzMrequires InsertDzMsubprogram InsertDzMaccess UniCmpClassifierRef -> SubPgmAccessSpec {cons("SubPgmAccessSpec1820Syn")}
+    SubPgmAccessRefinement -> SubCmpAccessRefinement {}
+    MBraceLeft InsertDzPpeAssocList InsertDzMBraceRight InModesAndTransitions -> FlowSourceSpecRefinementAssocDdef {cons("FlowSourceSpecRefinementAssocDdef1890Syn")}
+    RealTerm -> PpeExpression {}
+    "sensor" -> Msensor {cons("Msensor12352Syn")}
+    UniPpeId InsertDzMRoughArrow InsertDzMconstant InsertDzAssignment InsertDzInBinding MSemicolon -> PpeAssoc {cons("PpeAssoc1979Syn")}
+    MBracketLeft InsertDzPpeListValueMidSymbol MBracketRight -> PpeListValue {cons("PpeListValue12002Syn")}
+    Mflows -> CmpAssocDdefElem {}
+    MBraceLeft InsertDzPpeAssocList InsertDzMBraceRight InsertDzInModes MSemicolon -> FlowSourceSpecAssocDdef {cons("FlowSourceSpecAssocDdef1882Syn")}
+    "->" -> MArrows {cons("MArrows12323Syn")}
+    MBraceLeft InsertDzPpeAssocList MBraceRight -> EndToEndFlowSpecAssocDdefault {cons("EndToEndFlowSpecAssocDdefault1902Syn")}
+    Mparamenter -> ParameterConnectionRefinement {}
+    ConnectionRefinement -> ConnectionList {}
+    Expression -> ExpressionList {}
+    UnitsType -> PpeType {}
+    "=>" -> MRoughArrow {cons("MRoughArrow12332Syn")}
+    "hybrid" -> Mhybrid {cons("Mhybrid12390Syn")}
+    UniPpeConstantId -> ArrayDdimensionSize {}
+    Mclassifier InsertDzMBracketLeft InsertDzUniCmpImplRef MBracketRight -> CmpClassifierTerm {cons("CmpClassifierTerm12033Syn")}
+    "(" -> MBracketLeft {cons("MBracketLeft12326Syn")}
+    PpeConstantTerm -> EnumerationPpeConstantTerm {}
+    ForEquation -> Equation {}
+    Me InsertDzMPlus Numeral -> Exponent {cons("Exponent12097Syn")}
+    ParameterRef -> DdestinationParameterRef {}
+    PpeExpression -> ConstantPpeExpression {}
+    Id InsertDzMPoint Id -> FetGroupRef {cons("FetGroupRef1878Syn")}
+    Msubcomponents -> CmpImplExtAssocDdefElem {}
+    FetRef -> SrcFetRef {}
+    SinglePpeValue -> PpeValue {}
+    "classifier" -> Mclassifier {cons("Mclassifier12287Syn")}
+    SubCmpAccessSpec InsertDzArrayDdimensionFeatrueContrained MSemicolon -> Feature {cons("Feature1744Syn")}
+    ArithmeticExpressionSymbol -> Relation {}
+    "aadlboolean" -> Maadlboolen {cons("Maadlboolen12295Syn")}
+    AccessRef -> SourceAccessRef {}
+    Sign InsertDzRealLiteral Id -> SignedAadlreal {cons("SignedAadlreal1944Syn")}
+    Mcontinuous -> CmpCategoryType {}
+    Equation MSemicolon -> Equations {cons("Equations1629Syn")}
+    Id InsertDzMcolon InsertDzMrefined InsertDzMto InsertDzMrequires InsertDzMdata InsertDzMaccess DdataUniCmpClassifierRef -> DdataAccessRefinement {cons("DdataAccessRefinement1840Syn")}
+    "-" -> MMinus {cons("MMinus12395Syn")}
+    "-" -> MMinus {cons("MMinus12336Syn")}
+    Mpackage InsertDzPkgName InsertDzPkgDdecls InsertDzMend InsertDzPkgName MSemicolon -> PkgSpec {cons("PkgSpec1443Syn")}
+    "compute" -> Mcompute {cons("Mcompute12289Syn")}
+    Mrenames InsertDzCmpCategory InsertDzUniCmpTypeRef MSemicolon -> AliasDdecl {cons("AliasDdecl1466Syn")}
+    ProtoTypeRefinement -> ProtoTypeRefinementList {}
+    Me Numeral -> Exponent {cons("Exponent12096Syn")}
+    CmpTypeExt -> CmpClassifierDdecl {}
+    "transtitions" -> Mtranstitions {cons("Mtranstitions12368Syn")}
+    "paramenter" -> Mparamenter {cons("Mparamenter12270Syn")}
+    NODdEF -> ProcessorUniCmpClassifierRef {}
+    UniPpeId InsertDzMRoughArrow InsertDzMconstant InsertDzAssignment InsertDzMapplies InsertDzMto InsertDzContainedModelElementPathList InsertDzInBinding MSemicolon -> ContainedPpeAssoc {cons("ContainedPpeAssoc1989Syn")}
+    PortSpec InsertDzArrayDdimensionFeatrueContrained MSemicolon -> Feature {cons("Feature1742Syn")}
+    "thread" -> Mthread {cons("Mthread12236Syn")}
+    "!" -> MSigh {cons("MSigh12426Syn")}
+    ElseExIf ElseExIfList -> ElseExIfList {cons("ElseExIfList1658Syn")}
+    Msubprogram Mgroup -> BusDdataSubPgm {cons("BusDdataSubPgm1596Syn")}
+    Id InsertDzMcolon InsertDzMrefined InsertDzMto InsertDzMin PortType -> PortRefinement {cons("PortRefinement1800Syn")}
+    PkgName InsertDzMDdoubleColon Id -> UniFetGroupTypeRef {cons("UniFetGroupTypeRef1796Syn")}
+    ElseIf ElseIfList -> ElseIfList {cons("ElseIfList1643Syn")}
+    ElseWhen ElseWhenList -> ElseWhenList {cons("ElseWhenList1652Syn")}
+    SignedAadlintegerOrConstant InsertDzMDdoubleDdiont SignedAadlintegerOrConstant -> IntegerRange {cons("IntegerRange1937Syn")}
+    RecordField RecordFieldList -> RecordFieldList {cons("RecordFieldList1957Syn")}
+    CmpCategory InsertDzMimplementation InsertDzCmpImplName InsertDzMend InsertDzCmpImplName MSemicolon -> CmpImpl {cons("CmpImpl1496Syn")}
+    Id InsertDzMcolon InsertDzMrefined InsertDzMto InsertDzProtoTypeDdef InsertDzMBraceLeft InsertDzProtoTypePpeAssoc InsertDzMBraceRight MSemicolon -> ProtoTypeRefinement {cons("ProtoTypeRefinement1570Syn")}
+    "list" -> Mlist {cons("Mlist12278Syn")}
+    Mcomposite InsertDzMhistory InsertDzMstate InsertDzId InsertDzMstates InsertDzBehaviorStateList InsertDzMtranstitions InsertDzBehaviorStateTransitionList InsertDzCompositeDdeclList InsertDzMend InsertDzId MSemicolon -> CompositeDdecl {cons("CompositeDdecl1720Syn")}
+    Id InsertDzMRoughArrow InsertDzPpeValue InsertDzMSemicolon RecordFieldIdIdList -> RecordFieldIdIdList {cons("RecordFieldIdIdList12037Syn")}
+    Mannex InsertDzId InsertDzMAsteriskBrace1 InsertDzAnnexSpecificPath MAsteriskBrace2 -> AnnexPath {cons("AnnexPath1997Syn")}
+    Mfalse -> BooleanValue {}
+    Msensor -> InteEntityCmpCategory {}
+    Min InsertDzMmodes InsertDzMBracketLeft InsertDzModeOrTransitionList MBracketRight -> InModesAndTransitions {cons("InModesAndTransitions12068Syn")}
+    Id -> Name {}
+    MPointSub -> AddOp {}
+    "function" -> Mfunction {cons("Mfunction12376Syn")}
+    SignedAadlrealOrConstant InsertDzMDdoubleDdiont SignedAadlrealOrConstant -> RealRange {cons("RealRange1936Syn")}
+    Id -> PkgName {}
+    AnnexLibrary -> AADdLDdecl {}
+    "continuous" -> Mcontinuous {cons("Mcontinuous12389Syn")}
+    SubCmp -> SubCmpList {}
+    PpeAssoc PpeAssocList -> PpeAssocList {cons("PpeAssocList1857Syn")}
+    Require InsertDzBusDdataSubPgm InsertDzMaccess UniCmpClassifierRef -> FetProtoTypeActual {cons("FetProtoTypeActual1590Syn")}
+    "+" -> MPlus {cons("MPlus12393Syn")}
+    "+" -> MPlus {cons("MPlus12325Syn")}
+    ">=" -> MGreaterThanEqual {cons("MGreaterThanEqual12399Syn")}
+    ConnectionRefinement ConnectionRefinementList -> ConnectionRefinementList {cons("ConnectionRefinementList1536Syn")}
+    PortConnectionRefence -> DdestPortConnectionRef {}
+    Mhybrid -> CmpCategoryType {}
+    ParameterConnection PpeInMode -> SomeConnections {cons("SomeConnections1852Syn")}
+    UniPpeTypeId -> PpeTypeDdesignator {}
+    "inherit" -> Minherit {cons("Minherit12277Syn")}
+    StateKeyword StateKeywordList -> StateKeywordList {cons("StateKeywordList1694Syn")}
+    Mrange InsertDzMof NumberType -> RangeType {cons("RangeType1947Syn")}
+    ConnectionRefinement -> ConnectionRefinementList {}
+    ModeTransition ModeTransitionList -> ModeTransitionList {cons("ModeTransitionList12042Syn")}
+    FlowPathSpec -> FlowSpec {}
+    PpeAssoc ProtoTypePpeAssocList -> ProtoTypePpeAssocList {cons("ProtoTypePpeAssocList1556Syn")}
+    Mout InsertDzMfeature InsertDzMgroup InverseOfUniProtoType -> FetGroupSpecAssocDdef {cons("FetGroupSpecAssocDdef1792Syn")}
+    SubPgmCallSeq SubPgmCallSeqList -> SubPgmCallSeqList {cons("SubPgmCallSeqList1509Syn")}
+    "<>" -> MNotEqual {cons("MNotEqual12400Syn")}
+    MComma InsertDzId InsertDzMRoughArrow InsertDzId InsertDzMBrace InsertDzNumericLiteral UnitIdList -> UnitIdList {cons("UnitIdList1930Syn")}
+    Mfeature InsertDzMgroup InverseOfUniProtoType -> FetGroupSpecAssocDdef {cons("FetGroupSpecAssocDdef1793Syn")}
+    "controlled" -> Mcontrolled {cons("Mcontrolled12356Syn")}
+    Id InsertDzMcolon InsertDzMrequires InsertDzMsubprogram Maccess -> SubPgmAccessSpec {cons("SubPgmAccessSpec1823Syn")}
+    Id InsertDzMcolon InsertDzMflow InsertDzMsource InsertDzSubcompentConnectionAssocDdef Id -> FlowSourceImpl {cons("FlowSourceImpl12073Syn")}
+    SubCmpAssocDdefElem SubCmpAssocDdef -> SubCmpAssocDdef {cons("SubCmpAssocDdef1544Syn")}
+    Id InsertDzMcolon InsertDzPpeDdefDdeclAssocDdef MSemicolon -> PpeDdefDdecl {cons("PpeDdefDdecl1962Syn")}
+    Mif InsertDzMBracketLeft InsertDzExpression InsertDzMBracketRight InsertDzMBraceLeft InsertDzEquationList InsertDzMBraceRight InsertDzElseIfList InsertDzElse InsertDzMend Mif -> IfEquation {cons("IfEquation1642Syn")}
+    "with" -> Mwith {cons("Mwith12266Syn")}
+    Mout -> InOut {}
+    Require InsertDzBusDdataSubPgm Maccess -> FetProtoTypeActual {cons("FetProtoTypeActual1589Syn")}
+    FlowImplListElem -> FlowImplList {}
+    PpeTypeDdecl PpeTempDdecls -> PpeTempDdecls {cons("PpeTempDdecls1909Syn")}
+    Minherit InsertDzMultiValuedPpe InsertDzMapplies InsertDzMto InsertDzMBracketLeft InsertDzPpeOwnerList MBracketRight -> PpeDdefDdeclAssocDdef {cons("PpeDdefDdeclAssocDdef1964Syn")}
+    Mfeature InsertDzMgroup InsertDzUniFetGroupTypeRef ProtoTypeBindings -> FetGroupTypeProtoTypeActual {cons("FetGroupTypeProtoTypeActual1585Syn")}
+    ".^" -> MPointExp {cons("MPointExp12424Syn")}
+    AddOp ArithmeticExpression -> ArithmeticExpressionSymbol {cons("ArithmeticExpressionSymbol1669Syn")}
+    Id InsertDzMSpecalArrows1 InsertDzMSpecalArrows2 InsertDzId InsertDzMBraceLeft InsertDzActionList InsertDzMBraceRight MSemicolon -> BehaviorStateTransition {cons("BehaviorStateTransition1695Syn")}
+    CmpInModes -> SubCmpAssocDdefElem {}
+    ArrayDdimensionFeatrueContrained -> InsertDzArrayDdimensionFeatrueContrained
+    Numeral -> InsertDzNumeral
+    Mlist -> InsertDzMlist
+    SubPgmCallPpeAssocList -> InsertDzSubPgmCallPpeAssocList
+    CmpProtoTypeActuralListTmp -> InsertDzCmpProtoTypeActuralListTmp
+    PkgName -> InsertDzPkgName
+    EventDdata -> InsertDzEventDdata
+    Mall -> InsertDzMall
+    Msink -> InsertDzMsink
+    PkgDdeclations -> InsertDzPkgDdeclations
+    Mnet -> InsertDzMnet
+    MDdoubleDdiont -> InsertDzMDdoubleDdiont
+    RecordFieldIdIdList -> InsertDzRecordFieldIdIdList
+    MSemicolon -> InsertDzMSemicolon
+    StartSubCmpFlowOrEtefId -> InsertDzStartSubCmpFlowOrEtefId
+    AnnexSpecLangConstructs -> InsertDzAnnexSpecLangConstructs
+    SrcPortConnectionRef -> InsertDzSrcPortConnectionRef
+    FetGroupTypeAssocDdef -> InsertDzFetGroupTypeAssocDdef
+    OutputExpressionList -> InsertDzOutputExpressionList
+    PpeOwnerList -> InsertDzPpeOwnerList
+    Min -> InsertDzMin
+    ArrayElementImplListTmps -> InsertDzArrayElementImplListTmps
+    Mis -> InsertDzMis
+    MPlusRoughArrow -> InsertDzMPlusRoughArrow
+    MAsteriskBrace1 -> InsertDzMAsteriskBrace1
+    Mcolon -> InsertDzMcolon
+    MAsteriskBrace2 -> InsertDzMAsteriskBrace2
+    Mport -> InsertDzMport
+    MAsteriskBrace3 -> InsertDzMAsteriskBrace3
+    ModeTransitionPpeAssocList -> InsertDzModeTransitionPpeAssocList
+    NumericLiteral -> InsertDzNumericLiteral
+    PpeListValueMidSymbol -> InsertDzPpeListValueMidSymbol
+    Mconstant -> InsertDzMconstant
+    Mand -> InsertDzMand
+    LogicalExpression -> InsertDzLogicalExpression
+    RealLiteral -> InsertDzRealLiteral
+    Mfeature -> InsertDzMfeature
+    PpeDdefDdeclAssocDdef -> InsertDzPpeDdefDdeclAssocDdef
+    FlowSourceSpecRefinementAssocDdef -> InsertDzFlowSourceSpecRefinementAssocDdef
+    Mhistory -> InsertDzMhistory
+    MDdoubleColon -> InsertDzMDdoubleColon
+    CmpImplExtAssocDdef -> InsertDzCmpImplExtAssocDdef
+    FetGroupTypeExtAssocDdef -> InsertDzFetGroupTypeExtAssocDdef
+    CompositeDdeclList -> InsertDzCompositeDdeclList
+    BusDdataSubPgm -> InsertDzBusDdataSubPgm
+    Mimplementation -> InsertDzMimplementation
+    PpeValue -> InsertDzPpeValue
+    ModeNameList -> InsertDzModeNameList
+    MSpecalArrows2 -> InsertDzMSpecalArrows2
+    MSpecalArrows1 -> InsertDzMSpecalArrows1
+    ExpressionLists -> InsertDzExpressionLists
+    UniFetGroupTypeRef -> InsertDzUniFetGroupTypeRef
+    Msubprogram -> InsertDzMsubprogram
+    Mstates -> InsertDzMstates
+    Mprovides -> InsertDzMprovides
+    RelOp -> InsertDzRelOp
+    InBinding -> InsertDzInBinding
+    Minitial -> InsertDzMinitial
+    PpeInMode -> InsertDzPpeInMode
+    EndToEndSpecRefinementDdefault -> InsertDzEndToEndSpecRefinementDdefault
+    Name -> InsertDzName
+    MArrows -> InsertDzMArrows
+    Mflow -> InsertDzMflow
+    ListOf -> InsertDzListOf
+    Mmodes -> InsertDzMmodes
+    Mtranstitions -> InsertDzMtranstitions
+    PpeDdecls -> InsertDzPpeDdecls
+    BooleanTerm -> InsertDzBooleanTerm
+    Mdelta -> InsertDzMdelta
+    SourceFetGroupRef -> InsertDzSourceFetGroupRef
+    PpeTypeDdesignator -> InsertDzPpeTypeDdesignator
+    SomeRefinements -> InsertDzSomeRefinements
+    UnitIdList -> InsertDzUnitIdList
+    MBracketRight -> InsertDzMBracketRight
+    ProtoTypeDdef -> InsertDzProtoTypeDdef
+    MExp -> InsertDzMExp
+    PpeAssocInModes -> InsertDzPpeAssocInModes
+    FlowPathSpecAssocDdef -> InsertDzFlowPathSpecAssocDdef
+    EndToEndFlowSpecAssocDdefault -> InsertDzEndToEndFlowSpecAssocDdefault
+    CallSequencePpeAssocList -> InsertDzCallSequencePpeAssocList
+    Mset -> InsertDzMset
+    ConstantPpeListValue -> InsertDzConstantPpeListValue
+    MulOp -> InsertDzMulOp
+    NamedArguments -> InsertDzNamedArguments
+    MBrace -> InsertDzMBrace
+    ModeTransitionList -> InsertDzModeTransitionList
+    SingleValuedPpe -> InsertDzSingleValuedPpe
+    RefCategoryList -> InsertDzRefCategoryList
+    Mof -> InsertDzMof
+    Mvariables -> InsertDzMvariables
+    MBraceLeft -> InsertDzMBraceLeft
+    Mapplies -> InsertDzMapplies
+    Mor -> InsertDzMor
+    ArrayDdimensionSize -> InsertDzArrayDdimensionSize
+    CalledSubPgm -> InsertDzCalledSubPgm
+    PkgDdecls -> InsertDzPkgDdecls
+    ContainedModelElementPathList -> InsertDzContainedModelElementPathList
+    Mmode -> InsertDzMmode
+    FunctionArguments -> InsertDzFunctionArguments
+    PlatformClassifierRefList -> InsertDzPlatformClassifierRefList
+    ModePpeAssocList -> InsertDzModePpeAssocList
+    SourceParameterRef -> InsertDzSourceParameterRef
+    PpeAssocList -> InsertDzPpeAssocList
+    ClassifierCategoryRefList -> InsertDzClassifierCategoryRefList
+    Assignment -> InsertDzAssignment
+    Mgroup -> InsertDzMgroup
+    FlowPathSpecRefinementAssocDdef -> InsertDzFlowPathSpecRefinementAssocDdef
+    SrcFetRef -> InsertDzSrcFetRef
+    FlowPathImplDdefault -> InsertDzFlowPathImplDdefault
+    Mdata -> InsertDzMdata
+    UniCmpTypeRef -> InsertDzUniCmpTypeRef
+    PpeContainedPpeAssocList -> InsertDzPpeContainedPpeAssocList
+    ModeOrTransitionList -> InsertDzModeOrTransitionList
+    InModes -> InsertDzInModes
+    AnnexSubclauseAssocDdef -> InsertDzAnnexSubclauseAssocDdef
+    MultiValuedPpe -> InsertDzMultiValuedPpe
+    FeatrueContrainedPpeAssoc -> InsertDzFeatrueContrainedPpeAssoc
+    SubCmpAssocDdef -> InsertDzSubCmpAssocDdef
+    ProtoTypeBinding -> InsertDzProtoTypeBinding
+    SubPgmCallList -> InsertDzSubPgmCallList
+    ElseExIfList -> InsertDzElseExIfList
+    ImportDdecls -> InsertDzImportDdecls
+    ProtoTypeBindings -> InsertDzProtoTypeBindings
+    MRoughArrow -> InsertDzMRoughArrow
+    Mbus -> InsertDzMbus
+    ModeIdList -> InsertDzModeIdList
+    Id -> InsertDzId
+    ActionList -> InsertDzActionList
+    AnnexSpecificPath -> InsertDzAnnexSpecificPath
+    ContainedModelElementPath -> InsertDzContainedModelElementPath
+    MPoint -> InsertDzMPoint
+    Mend -> InsertDzMend
+    Mextends -> InsertDzMextends
+    Munits -> InsertDzMunits
+    EquationList -> InsertDzEquationList
+    MBraceRight -> InsertDzMBraceRight
+    FlowSourceSpecAssocDdef -> InsertDzFlowSourceSpecAssocDdef
+    PpeSetAssocDdef -> InsertDzPpeSetAssocDdef
+    Expressions -> InsertDzExpressions
+    CmpImplAssocDdef -> InsertDzCmpImplAssocDdef
+    Mparameter -> InsertDzMparameter
+    Mprivate -> InsertDzMprivate
+    MBracketLeft -> InsertDzMBracketLeft
+    Mtype -> InsertDzMtype
+    Expression -> InsertDzExpression
+    Msource -> InsertDzMsource
+    Else -> InsertDzElse
+    Mfor -> InsertDzMfor
+    DdirectionalConnectionSymbol -> InsertDzDdirectionalConnectionSymbol
+    AddOp -> InsertDzAddOp
+    MEqual -> InsertDzMEqual
+    Mpath -> InsertDzMpath
+    SourceAccessRef -> InsertDzSourceAccessRef
+    ElseWhenList -> InsertDzElseWhenList
+    Mto -> InsertDzMto
+    Mstate -> InsertDzMstate
+    ModeTransitionTriggerList -> InsertDzModeTransitionTriggerList
+    CmpImplName -> InsertDzCmpImplName
+    SubcompentConnectionAssocDdef -> InsertDzSubcompentConnectionAssocDdef
+    Maccess -> InsertDzMaccess
+    UniCmpImplRef -> InsertDzUniCmpImplRef
+    BehaviorStateTransitionList -> InsertDzBehaviorStateTransitionList
+    RecordFieldList -> InsertDzRecordFieldList
+    IntegerLiteral -> InsertDzIntegerLiteral
+    MQuestion -> InsertDzMQuestion
+    IntegerTerm -> InsertDzIntegerTerm
+    CmpCategory -> InsertDzCmpCategory
+    ForIndices -> InsertDzForIndices
+    BehaviorGuard -> InsertDzBehaviorGuard
+    EnumerationLiteralIdList -> InsertDzEnumerationLiteralIdList
+    ConnectionIdFlowPathList -> InsertDzConnectionIdFlowPathList
+    MSigh -> InsertDzMSigh
+    MComma -> InsertDzMComma
+    FlowSinkSpecRefinementAssocDdef -> InsertDzFlowSinkSpecRefinementAssocDdef
+    Mrefined -> InsertDzMrefined
+    StateKeywordList -> InsertDzStateKeywordList
+    BehaviorStateList -> InsertDzBehaviorStateList
+    SomeConnections -> InsertDzSomeConnections
+    Mout -> InsertDzMout
+    Mpackage -> InsertDzMpackage
+    FlowSinkSpecAssocDdef -> InsertDzFlowSinkSpecAssocDdef
+    CmpAssocDdef -> InsertDzCmpAssocDdef
+    ProtoTypePpeAssoc -> InsertDzProtoTypePpeAssoc
+    UniCmpClassifierRef -> InsertDzUniCmpClassifierRef
+    ConstantPpeExpression -> InsertDzConstantPpeExpression
+    PpeType -> InsertDzPpeType
+    SubCmpFlowId -> InsertDzSubCmpFlowId
+    Mrequires -> InsertDzMrequires
+    Mrenames -> InsertDzMrenames
+    RealTerm -> InsertDzRealTerm
+    Mbinding -> InsertDzMbinding
+    MPlus -> InsertDzMPlus
+    ModeList -> InsertDzModeList
+    MPointExp -> InsertDzMPointExp
+    ConnectionSymbol -> InsertDzConnectionSymbol
+    ElseIfList -> InsertDzElseIfList
+    ProtoTypePpeAssocList -> InsertDzProtoTypePpeAssocList
+
+
+    DzDzString        -> DzString    {cons("DzString1Const")}
+    DzDzBool        -> DzBool    {cons("DzBool1Const")}
+    DzDzInt        -> DzInt    {cons("DzInt1Const")}
+    DzDzId        -> DzId    {cons("DzId1Const")}
+    DzDzFloat        -> DzFloat    {cons("DzFloat1Const")}
+
+
+
+%% start symbols subsorts
+    KItem        -> K
+    ArrayDdimensionFeatrueContrained        -> K
+    ArrayElementImplList        -> K
+    BehaviorVariableDdecl        -> K
+    ImportDdeclPlus        -> K
+    Mphyentity        -> K
+    Mmonitor        -> K
+    ModeName        -> K
+    ElseEx        -> K
+    String        -> K
+    IdentifierList        -> K
+    FetRefinement        -> K
+    EventDdata        -> K
+    ModesSubclause        -> K
+    Msink        -> K
+    MMul        -> K
+    PkgDdeclations        -> K
+    DdestFetRef        -> K
+    ExecPlateformCategory        -> K
+    UniPpeConstantId        -> K
+    SubPgmGroupAccessSpec        -> K
+    RecordFieldIdIdList        -> K
+    MSemicolon        -> K
+    Meffort        -> K
+    StartSubCmpFlowOrEtefId        -> K
+    SrcPortConnectionRef        -> K
+    SubPgmCallSeqList        -> K
+    Mcompute        -> K
+    OutputExpressionList        -> K
+    PpeOwnerList        -> K
+    PpeListValue        -> K
+    AnnexSubclauseList        -> K
+    AliasDdecl        -> K
+    DdefaultPpeListValue        -> K
+    AnnexSubclause        -> K
+    DzFloat        -> K
+    PortType        -> K
+    Mproperty        -> K
+    FlowImpl        -> K
+    Mdelay        -> K
+    DdataUniCmpClassifierRef        -> K
+    PpeListValueMidSymbol        -> K
+    ForEquation        -> K
+    FetGroupContainedPpeAssocList        -> K
+    Mconstant        -> K
+    RealLiteral        -> K
+    LogicalExpression        -> K
+    PpeDdefDdeclAssocDdef        -> K
+    BasicPpeAssocList        -> K
+    Mcomplete        -> K
+    RealPpeConstantTerm        -> K
+    BehaviorVariableDdeclList        -> K
+    FetGroupTypeExtAssocDdef        -> K
+    ArithmeticExpressionSymbol        -> K
+    MPointAdd        -> K
+    AnnexSpecLangConstructsElem        -> K
+    ModeNameList        -> K
+    MPointDdiv        -> K
+    FeatureList        -> K
+    MSpecalArrows2        -> K
+    BasicPpeAssoc        -> K
+    MSpecalArrows1        -> K
+    AnnexLibrary        -> K
+    RealRangeTerm        -> K
+    FlowSinkSpecRefinement        -> K
+    Mcontinuous        -> K
+    ExpressionLists        -> K
+    Mstates        -> K
+    SubPgmAccessRefinement        -> K
+    Mprovides        -> K
+    QualifiedMetaModelId        -> K
+    RelOp        -> K
+    ClassifierQualifiedMetaModelId        -> K
+    FetProtoType        -> K
+    InModesAndTransitions        -> K
+    Minitial        -> K
+    EndToEndSpecRefinementDdefault        -> K
+    Mrequirs        -> K
+    Menumeration        -> K
+    UniClassifierRef        -> K
+    ElseExIf        -> K
+    ListOf        -> K
+    PpeTerm        -> K
+    MultiValuedPpeConstant        -> K
+    BehaviorState        -> K
+    NamedArgument        -> K
+    Mvirtual        -> K
+    RefTerm        -> K
+    SourceFetGroupRef        -> K
+    FetGroupRef        -> K
+    SomeRefinements        -> K
+    SubPgmCallSeq        -> K
+    Term        -> K
+    Mcalls        -> K
+    NoneStatement        -> K
+    ProcessorUniCmpClassifierRef        -> K
+    Equations        -> K
+    Mabstract        -> K
+    Maadlstring        -> K
+    UnitIdList        -> K
+    DdataAccessRefinement        -> K
+    ProtoTypeDdef        -> K
+    PpeAssocInModes        -> K
+    FlowSourceSpec        -> K
+    PortSpec        -> K
+    FlowSinkSpec        -> K
+    ProtoTypeRefinementList        -> K
+    LogicalTerm        -> K
+    SignedAadlrealOrConstant        -> K
+    Mfeatures        -> K
+    FetGroupConnectionRefinement        -> K
+    Mrange        -> K
+    CmpImplAssocDdefElem        -> K
+    FlowPathSpec        -> K
+    Melsewhen        -> K
+    UniPortId        -> K
+    Mset        -> K
+    Relation        -> K
+    MGreaterThan        -> K
+    ConstantPpeListValue        -> K
+    IntegerRangeTerm        -> K
+    MulOp        -> K
+    Mproperties        -> K
+    DzInt        -> K
+    NameVisDdeclList        -> K
+    UnitsList        -> K
+    PortConnectionRefinement        -> K
+    Msystem        -> K
+    CmpImpl        -> K
+    EnumerationType        -> K
+    SignedAadlreal        -> K
+    MBraceLeft        -> K
+    Mapplies        -> K
+    ArrayDdimensionSize        -> K
+    CalledSubPgm        -> K
+    PkgDdecls        -> K
+    MetaModelClassId        -> K
+    PpeSet        -> K
+    MDdoubleBracket        -> K
+    FetGroupSpecAssocDdef        -> K
+    FlowSpecList        -> K
+    SourceParameterRef        -> K
+    Mhybrid        -> K
+    ConnectionSubcompenentFlowAssocDdef        -> K
+    Msensor        -> K
+    AccessRef        -> K
+    SimpleExpression        -> K
+    ModePpeAssoc        -> K
+    Assignment        -> K
+    FetConnection        -> K
+    IfEquation        -> K
+    CmpType        -> K
+    SrcFetRef        -> K
+    BooleanValue        -> K
+    RealRangePpeConstantTerm        -> K
+    Minitially        -> K
+    Mdata        -> K
+    EndToEndSpecRefinement        -> K
+    SoftwareCategory        -> K
+    MDdiv        -> K
+    Mcomentity        -> K
+    DdefaultPpeExpression        -> K
+    PpeContainedPpeAssocList        -> K
+    ModeOrTransitionList        -> K
+    ComputedTerm        -> K
+    SubPgmGroupAccessRefinement        -> K
+    InModes        -> K
+    FeatrueContrainedPpeAssoc        -> K
+    BidirectConnectSymb        -> K
+    SubCmpAssocDdef        -> K
+    ProtoTypeBinding        -> K
+    MAdd        -> K
+    ImportDdecls        -> K
+    NumberType        -> K
+    StringTerm        -> K
+    FlowSourceSpecRefinement        -> K
+    UnitPpeConstantTerm        -> K
+    Id        -> K
+    ActionList        -> K
+    MPoint        -> K
+    ModeTransition        -> K
+    Mdevice        -> K
+    Mend        -> K
+    Munits        -> K
+    SubCmpAssocDdefElem        -> K
+    EquationList        -> K
+    Mcontrolled        -> K
+    FlowImplRefinement        -> K
+    PpeSetAssocDdef        -> K
+    Expressions        -> K
+    SignedAadlinteger        -> K
+    MLessThanEqual        -> K
+    CmpImplAssocDdef        -> K
+    Melseif        -> K
+    LogicalFactor        -> K
+    Mself        -> K
+    EndToEndFlowSpec        -> K
+    Mwhen        -> K
+    Mtype        -> K
+    Expression        -> K
+    ParameterConnection        -> K
+    Mfor        -> K
+    Else        -> K
+    Msource        -> K
+    ModeTransitionPpeAssoc        -> K
+    Maadlreal        -> K
+    AddOp        -> K
+    MEqual        -> K
+    SourceAccessRef        -> K
+    Mpath        -> K
+    FetGroupTypeProtoTypeActual        -> K
+    VirtualProcessorUniCmpClassifierRef        -> K
+    DdestinationParameterRef        -> K
+    Mstate        -> K
+    ModeTransitionTriggerList        -> K
+    RefType        -> K
+    PpeConstant        -> K
+    FormatEffector        -> K
+    Factor        -> K
+    Primary        -> K
+    UniCmpImplRef        -> K
+    IntegerLiteral        -> K
+    DzString        -> K
+    MQuestion        -> K
+    PositiveExponent        -> K
+    IntegerTerm        -> K
+    CmpAssocDdefElem        -> K
+    CmpInModes        -> K
+    ForIndices        -> K
+    SubCmpAccessRefinement        -> K
+    Ma        -> K
+    Mb        -> K
+    Mc        -> K
+    Mthread        -> K
+    Md        -> K
+    Me        -> K
+    Mf        -> K
+    ConnectionIdFlowPathList        -> K
+    FlowSinkSpecRefinementAssocDdef        -> K
+    Mfunction        -> K
+    Mprototypes        -> K
+    SinglePpeValue        -> K
+    MComma        -> K
+    Require        -> K
+    SomeConnections        -> K
+    BehaviorStateList        -> K
+    StateKeywordList        -> K
+    Mrefined        -> K
+    MPointSub        -> K
+    Mprocess        -> K
+    Mfalse        -> K
+    Mpackage        -> K
+    CmpAssocDdef        -> K
+    ProtoTypePpeAssoc        -> K
+    Minverse        -> K
+    Mconnections        -> K
+    RecordType        -> K
+    EnumerationTerm        -> K
+    ClassifierDdecl        -> K
+    Mbinding        -> K
+    SubCmpPpeAssocList        -> K
+    FetRef        -> K
+    Mode        -> K
+    Equation        -> K
+    MPointExp        -> K
+    Mflows        -> K
+    ElseIfList        -> K
+    Sign        -> K
+    NetUniCmpClassifierRef        -> K
+    PhyEntityCmpCategory        -> K
+    CmpCategoryType        -> K
+    Numeral        -> K
+    FetGroupTypeProtoType        -> K
+    Mlist        -> K
+    SubPgmCallPpeAssocList        -> K
+    FlowSourceImpl        -> K
+    CompositeDdecl        -> K
+    CmpProtoTypeActuralListTmp        -> K
+    Mpublic        -> K
+    ArrayElementImplListTmp        -> K
+    Feature        -> K
+    PkgName        -> K
+    CmpProtoType        -> K
+    PpeExpression        -> K
+    CmpImplExtAssocDdefElem        -> K
+    Mall        -> K
+    ContainedPpeAssoc        -> K
+    ConnectionRefinement        -> K
+    Mnet        -> K
+    FetProtoTypeActual        -> K
+    MLeftBracket        -> K
+    MDdoubleDdiont        -> K
+    CmpClassifierTerm        -> K
+    FlowSinkImpl        -> K
+    AnnexSpecLangConstructs        -> K
+    FetGroupRefinement        -> K
+    UnitsUniPpeTypeId        -> K
+    FetGroupTypeAssocDdef        -> K
+    Mif        -> K
+    Mclassifier        -> K
+    Float        -> K
+    CompositeCategory        -> K
+    DdecimalRealLiteral        -> K
+    Mreturn        -> K
+    PortRefinement        -> K
+    Mprocessor        -> K
+    Min        -> K
+    ArrayElementImplListTmps        -> K
+    Mis        -> K
+    MPlusRoughArrow        -> K
+    BooleanPpeConstantTerm        -> K
+    MAsteriskBrace1        -> K
+    Mcolon        -> K
+    MAsteriskBrace2        -> K
+    Mport        -> K
+    MAsteriskBrace3        -> K
+    ClassifierType        -> K
+    ModeTransitionPpeAssocList        -> K
+    EnumerationId        -> K
+    NumericLiteral        -> K
+    FunctionCallArgs        -> K
+    Mcomputation        -> K
+    Mand        -> K
+    EndToEndFlowSpecRefinement        -> K
+    AnnexPath        -> K
+    NamedElementArraySelectionName        -> K
+    Mfeature        -> K
+    UnitTerm        -> K
+    FlowSourceSpecRefinementAssocDdef        -> K
+    Mhistory        -> K
+    Communication        -> K
+    MDdoubleColon        -> K
+    CmpImplExtAssocDdef        -> K
+    Statement        -> K
+    Mparamenter        -> K
+    Connection        -> K
+    ModalPpeValue        -> K
+    BusDdataSubPgm        -> K
+    CompositeDdeclList        -> K
+    Mimplementation        -> K
+    InverseOfUniProtoType        -> K
+    FlowSourceSinkPathImplementAssocDdef        -> K
+    Mcomposite        -> K
+    ParameterRef        -> K
+    EnumerationPpeConstantTerm        -> K
+    PpeTypeDdecl        -> K
+    PpeValue        -> K
+    ParameterRefinement        -> K
+    ClassifierCategoryRef        -> K
+    UniFetGroupTypeRef        -> K
+    Msubprogram        -> K
+    DdestPortConnectionRef        -> K
+    Mexit        -> K
+    BehaviorParameterBindings        -> K
+    InBinding        -> K
+    Mexists        -> K
+    Mmemory        -> K
+    PpeInMode        -> K
+    CmpProtoTypeActualList        -> K
+    Name        -> K
+    ProtoType        -> K
+    MArrows        -> K
+    Murgent        -> K
+    Mflow        -> K
+    MSub        -> K
+    Mdiscrete        -> K
+    Mtranstitions        -> K
+    UniPpeTypeId        -> K
+    AADdLDdeclList        -> K
+    Mmodes        -> K
+    AbstractCmpCategory        -> K
+    PpeDdecls        -> K
+    BooleanTerm        -> K
+    Mdelta        -> K
+    SubCmpRefinementList        -> K
+    BusAccessRefinement        -> K
+    InteEntityCmpCategory        -> K
+    SignedAadlintegerOrConstant        -> K
+    AccessConnectionRefinement        -> K
+    PpeTypeDdesignator        -> K
+    PlatformClassifierRef        -> K
+    MDdoubleEqual        -> K
+    DdecimalIntegerLiteral        -> K
+    MBracketRight        -> K
+    MExp        -> K
+    AbstractFetSpec        -> K
+    RealInteger        -> K
+    MLessThan        -> K
+    FlowPathSpecAssocDdef        -> K
+    EndToEndFlowSpecAssocDdefault        -> K
+    CallSequencePpeAssocList        -> K
+    Mannex        -> K
+    NameVisDdecl        -> K
+    Minherit        -> K
+    BusAccessSpec        -> K
+    ContainedModelElementList        -> K
+    PortConnectionRefence        -> K
+    SubCmpAccessSpec        -> K
+    PpeConstantTerm        -> K
+    SigleValuedPpeConstant        -> K
+    NamedArguments        -> K
+    MBrace        -> K
+    DdataAccessSpec        -> K
+    ExpressionList        -> K
+    ModeTransitionList        -> K
+    SingleValuedPpe        -> K
+    FetGroupTypeExt        -> K
+    RecordTerm        -> K
+    RefCategoryList        -> K
+    FlowSpecRefinement        -> K
+    Maadlboolen        -> K
+    Mof        -> K
+    Mvariables        -> K
+    Mwith        -> K
+    ParameterConnectionRefinement        -> K
+    Mon        -> K
+    ProtoTypeRefinement        -> K
+    FetGroupTypeAssocDdefElem        -> K
+    SubPgmAccessSpec        -> K
+    Mor        -> K
+    NODdEF        -> K
+    ElseWhen        -> K
+    FlowSpec        -> K
+    ContainedModelElementPathList        -> K
+    AbstractFetRefinement        -> K
+    Mmode        -> K
+    FunctionArguments        -> K
+    PlatformClassifierRefList        -> K
+    ModePpeAssocList        -> K
+    UniPpeId        -> K
+    ClassifierCategoryRefList        -> K
+    PpeAssocList        -> K
+    FetGroupClassifierDdecl        -> K
+    MGreaterThanEqual        -> K
+    Mgroup        -> K
+    FlowPathSpecRefinementAssocDdef        -> K
+    FetGroupTypeExtAssocDdefElem        -> K
+    Bool        -> K
+    CmpProtoTypeActual        -> K
+    FlowPathImplDdefault        -> K
+    NetAccessRefinement        -> K
+    SubCmpList        -> K
+    FunctionArgument        -> K
+    UniCmpTypeRef        -> K
+    ConnectIdSubcompenentFlowIdnetifierList        -> K
+    MultiValuedPpe        -> K
+    AnnexSubclauseAssocDdef        -> K
+    Mtrue        -> K
+    MemoryUniCmpClassifierRef        -> K
+    SubPgmCallList        -> K
+    ElseExIfList        -> K
+    PortConnection        -> K
+    MRightBracket        -> K
+    ProtoTypeBindings        -> K
+    StringLiteral        -> K
+    MRoughArrow        -> K
+    Mbus        -> K
+    CmpImplExt        -> K
+    ModeIdList        -> K
+    PpeTempDdecls        -> K
+    AnnexSpecificPath        -> K
+    CPSNewCmpCategory        -> K
+    ContainedModelElementPath        -> K
+    FetConnectionRefinement        -> K
+    Mnot        -> K
+    ConnectionList        -> K
+    SubCmp        -> K
+    FetGroupType        -> K
+    Mevent        -> K
+    MDdArrows        -> K
+    Mextends        -> K
+    FlowPathImpl        -> K
+    FlowSourceSpecAssocDdef        -> K
+    MBraceRight        -> K
+    VirtualBusUniCmpClassifierRef        -> K
+    RequiresModesSubclause        -> K
+    ProtoTypeList        -> K
+    ArraySelectionName        -> K
+    RangeType        -> K
+    FlowPathSpecRefinement        -> K
+    ComEntityCmpCategory        -> K
+    ArrayDdimensions        -> K
+    Mrecord        -> K
+    Mvirtrual        -> K
+    FetRefinementList        -> K
+    IntegerRange        -> K
+    FlowImplList        -> K
+    SubCmpRefinement        -> K
+    MDdoubleArrows        -> K
+    Mparameter        -> K
+    Melse        -> K
+    PpeOwner        -> K
+    FlowImplListElem        -> K
+    Mreference        -> K
+    ArithmeticExpression        -> K
+    Mprivate        -> K
+    DdestinationAccessRef        -> K
+    MBracketLeft        -> K
+    MNotEqual        -> K
+    ImportDdecl        -> K
+    DdirectionalConnectionSymbol        -> K
+    ArrayDdimension        -> K
+    ModeTransitionTrigger        -> K
+    UnitsType        -> K
+    OtherControlCharacter        -> K
+    Maadlinterger        -> K
+    RecordField        -> K
+    ElseWhenList        -> K
+    AADdLDdecl        -> K
+    ContainedModelElement        -> K
+    Mto        -> K
+    Msubcomponents        -> K
+    SubPgmCall        -> K
+    DdestinationFetGroupRef        -> K
+    ForIndex        -> K
+    CmpImplName        -> K
+    SubcompentConnectionAssocDdef        -> K
+    Maccess        -> K
+    BehaviorStateTransitionList        -> K
+    RecordFieldList        -> K
+    DzBool        -> K
+    BehaviorEvent        -> K
+    CmpCategory        -> K
+    DdirecConnectSymb        -> K
+    StateKeyword        -> K
+    BehaviorGuard        -> K
+    ElseIf        -> K
+    PpeDdefDdecl        -> K
+    Mcontext        -> K
+    MPointMul        -> K
+    EnumerationLiteralIdList        -> K
+    CmpTypePpeAssoc        -> K
+    CmpTypeExt        -> K
+    MSigh        -> K
+    Exponent        -> K
+    Mout        -> K
+    FlowSinkSpecAssocDdef        -> K
+    FetGroupSpec        -> K
+    Mactuator        -> K
+    UniCmpClassifierRef        -> K
+    FetGroupConnection        -> K
+    Int        -> K
+    ConstantPpeExpression        -> K
+    BusUniCmpClassifierRef        -> K
+    ConnectionRefinementList        -> K
+    CmpClassifierDdecl        -> K
+    StringPpeConstantTerm        -> K
+    PpeType        -> K
+    SubCmpFlowId        -> K
+    PkgSpec        -> K
+    Mrequires        -> K
+    Mrenames        -> K
+    RealTerm        -> K
+    FlowFetIdentifer        -> K
+    MPlus        -> K
+    RealRange        -> K
+    ParameterSpec        -> K
+    IntegerRangePpeConstantTerm        -> K
+    ModeList        -> K
+    WhenEquation        -> K
+    PpeAssoc        -> K
+    AccessConnectionKeyword        -> K
+    ConnectionSymbol        -> K
+    IntegerPpeConstantTerm        -> K
+    MMinus        -> K
+    SelectionRange        -> K
+    UnitsDdesignator        -> K
+    SubPgmUniCmpClassifierRef        -> K
+    AccessConnection        -> K
+    ProtoTypePpeAssocList        -> K
+    SubCmpFlowOrEtefId        -> K
+    NetAccessSpec        -> K
+    InOut        -> K
+    BehaviorStateTransition        -> K
+lexical syntax
+    "false" -> DzDzBool
+    "true" -> DzDzBool
+
+
+    "modes" -> IdDz {reject}
+    "prototypes" -> IdDz {reject}
+    "elsewhen" -> IdDz {reject}
+    "delta" -> IdDz {reject}
+    "binding" -> IdDz {reject}
+    "none" -> IdDz {reject}
+    "type" -> IdDz {reject}
+    "when" -> IdDz {reject}
+    "path" -> IdDz {reject}
+    "actuator" -> IdDz {reject}
+    "aadlstring" -> IdDz {reject}
+    "else" -> IdDz {reject}
+    "composite" -> IdDz {reject}
+    "record" -> IdDz {reject}
+    "context" -> IdDz {reject}
+    "classifier" -> IdDz {reject}
+    "property" -> IdDz {reject}
+    "comentity" -> IdDz {reject}
+    "state" -> IdDz {reject}
+    "aadlreal" -> IdDz {reject}
+    "if" -> IdDz {reject}
+    "flow" -> IdDz {reject}
+    "in" -> IdDz {reject}
+    "aadlinterger" -> IdDz {reject}
+    "is" -> IdDz {reject}
+    "processor" -> IdDz {reject}
+    "transtitions" -> IdDz {reject}
+    "exit" -> IdDz {reject}
+    "delay" -> IdDz {reject}
+    "system" -> IdDz {reject}
+    "applies" -> IdDz {reject}
+    "refined" -> IdDz {reject}
+    "device" -> IdDz {reject}
+    "paramenter" -> IdDz {reject}
+    "requires" -> IdDz {reject}
+    "subprogram" -> IdDz {reject}
+    "access" -> IdDz {reject}
+    "range" -> IdDz {reject}
+    "out" -> IdDz {reject}
+    "feature" -> IdDz {reject}
+    "urgent" -> IdDz {reject}
+    "event" -> IdDz {reject}
+    "a" -> IdDz {reject}
+    "variables" -> IdDz {reject}
+    "b" -> IdDz {reject}
+    "c" -> IdDz {reject}
+    "set" -> IdDz {reject}
+    "d" -> IdDz {reject}
+    "initial" -> IdDz {reject}
+    "e" -> IdDz {reject}
+    "f" -> IdDz {reject}
+    "abstract" -> IdDz {reject}
+    "computation" -> IdDz {reject}
+    "controlled" -> IdDz {reject}
+    "calls" -> IdDz {reject}
+    "exists" -> IdDz {reject}
+    "self" -> IdDz {reject}
+    "to" -> IdDz {reject}
+    "complete" -> IdDz {reject}
+    "phyentity" -> IdDz {reject}
+    "return" -> IdDz {reject}
+    "bus" -> IdDz {reject}
+    "constant" -> IdDz {reject}
+    "data" -> IdDz {reject}
+    "source" -> IdDz {reject}
+    "mode" -> IdDz {reject}
+    "reference" -> IdDz {reject}
+    "compute" -> IdDz {reject}
+    "features" -> IdDz {reject}
+    "aadlboolean" -> IdDz {reject}
+    "elseif" -> IdDz {reject}
+    "function" -> IdDz {reject}
+    "continuous" -> IdDz {reject}
+    "net" -> IdDz {reject}
+    "enumeration" -> IdDz {reject}
+    "connections" -> IdDz {reject}
+    "group" -> IdDz {reject}
+    "all" -> IdDz {reject}
+    "package" -> IdDz {reject}
+    "sink" -> IdDz {reject}
+    "history" -> IdDz {reject}
+    "list" -> IdDz {reject}
+    "discrete" -> IdDz {reject}
+    "hybrid" -> IdDz {reject}
+    "extends" -> IdDz {reject}
+    "port" -> IdDz {reject}
+    "true" -> IdDz {reject}
+    "sensor" -> IdDz {reject}
+    "subcomponents" -> IdDz {reject}
+    "virtual" -> IdDz {reject}
+    "private" -> IdDz {reject}
+    "memory" -> IdDz {reject}
+    "for" -> IdDz {reject}
+    "effort" -> IdDz {reject}
+    "units" -> IdDz {reject}
+    "states" -> IdDz {reject}
+    "not" -> IdDz {reject}
+    "public" -> IdDz {reject}
+    "flows" -> IdDz {reject}
+    "provides" -> IdDz {reject}
+    "and" -> IdDz {reject}
+    "of" -> IdDz {reject}
+    "parameter" -> IdDz {reject}
+    "end" -> IdDz {reject}
+    "annex" -> IdDz {reject}
+    "on" -> IdDz {reject}
+    "inverse" -> IdDz {reject}
+    "process" -> IdDz {reject}
+    "or" -> IdDz {reject}
+    "implementation" -> IdDz {reject}
+    "false" -> IdDz {reject}
+    "monitor" -> IdDz {reject}
+    "thread" -> IdDz {reject}
+    "renames" -> IdDz {reject}
+    "with" -> IdDz {reject}
+    "inherit" -> IdDz {reject}
+    "initially" -> IdDz {reject}
+    "properties" -> IdDz {reject}
+
+lexical restrictions
+    %% follow restrictions
+
+
+lexical syntax
+    [\-\+]?[0-9]+ -> DzIntDz
+    "\"" ((~[\"\n\r\\])|(((([\\][nrtf\"\\])|([\\][x][0-9a-fA-F][0-9a-fA-F]))|([\\][u][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F]))|([\\][U][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F])))*"\"" -> DzStringDz
+    [\+\-]?[0-9]+"."[0-9]+([eE][\+\-]?[0-9]+)?[fFdD]? -> DzFloatDz
+    [A-Za-z\_][A-Za-z0-9\_]* -> IdDz
+    "modes" -> DzStringDz {reject}
+    "prototypes" -> DzStringDz {reject}
+    "elsewhen" -> DzStringDz {reject}
+    "delta" -> DzStringDz {reject}
+    "binding" -> DzStringDz {reject}
+    "none" -> DzStringDz {reject}
+    "type" -> DzStringDz {reject}
+    "+=>" -> DzStringDz {reject}
+    "when" -> DzStringDz {reject}
+    "path" -> DzStringDz {reject}
+    "actuator" -> DzStringDz {reject}
+    "aadlstring" -> DzStringDz {reject}
+    "else" -> DzStringDz {reject}
+    "composite" -> DzStringDz {reject}
+    "record" -> DzStringDz {reject}
+    "context" -> DzStringDz {reject}
+    "classifier" -> DzStringDz {reject}
+    "property" -> DzStringDz {reject}
+    "comentity" -> DzStringDz {reject}
+    "state" -> DzStringDz {reject}
+    "aadlreal" -> DzStringDz {reject}
+    "if" -> DzStringDz {reject}
+    "flow" -> DzStringDz {reject}
+    "!" -> DzStringDz {reject}
+    "in" -> DzStringDz {reject}
+    "aadlinterger" -> DzStringDz {reject}
+    "(" -> DzStringDz {reject}
+    ")" -> DzStringDz {reject}
+    "*" -> DzStringDz {reject}
+    "is" -> DzStringDz {reject}
+    "+" -> DzStringDz {reject}
+    "," -> DzStringDz {reject}
+    "-" -> DzStringDz {reject}
+    "processor" -> DzStringDz {reject}
+    "." -> DzStringDz {reject}
+    "transtitions" -> DzStringDz {reject}
+    "/" -> DzStringDz {reject}
+    "exit" -> DzStringDz {reject}
+    "delay" -> DzStringDz {reject}
+    "system" -> DzStringDz {reject}
+    "applies" -> DzStringDz {reject}
+    "refined" -> DzStringDz {reject}
+    ":" -> DzStringDz {reject}
+    ";" -> DzStringDz {reject}
+    "<" -> DzStringDz {reject}
+    "=" -> DzStringDz {reject}
+    "device" -> DzStringDz {reject}
+    "**}" -> DzStringDz {reject}
+    ">" -> DzStringDz {reject}
+    "paramenter" -> DzStringDz {reject}
+    "?" -> DzStringDz {reject}
+    "requires" -> DzStringDz {reject}
+    "::" -> DzStringDz {reject}
+    "subprogram" -> DzStringDz {reject}
+    "access" -> DzStringDz {reject}
+    "range" -> DzStringDz {reject}
+    "out" -> DzStringDz {reject}
+    "feature" -> DzStringDz {reject}
+    "[" -> DzStringDz {reject}
+    "urgent" -> DzStringDz {reject}
+    "event" -> DzStringDz {reject}
+    "]" -> DzStringDz {reject}
+    "^" -> DzStringDz {reject}
+    "a" -> DzStringDz {reject}
+    "variables" -> DzStringDz {reject}
+    "b" -> DzStringDz {reject}
+    "[]" -> DzStringDz {reject}
+    "c" -> DzStringDz {reject}
+    "set" -> DzStringDz {reject}
+    "d" -> DzStringDz {reject}
+    "initial" -> DzStringDz {reject}
+    "e" -> DzStringDz {reject}
+    "f" -> DzStringDz {reject}
+    "abstract" -> DzStringDz {reject}
+    "computation" -> DzStringDz {reject}
+    "controlled" -> DzStringDz {reject}
+    "calls" -> DzStringDz {reject}
+    "exists" -> DzStringDz {reject}
+    "self" -> DzStringDz {reject}
+    "to" -> DzStringDz {reject}
+    "{" -> DzStringDz {reject}
+    "complete" -> DzStringDz {reject}
+    "}**" -> DzStringDz {reject}
+    "}" -> DzStringDz {reject}
+    "phyentity" -> DzStringDz {reject}
+    "return" -> DzStringDz {reject}
+    "<=" -> DzStringDz {reject}
+    "bus" -> DzStringDz {reject}
+    "<>" -> DzStringDz {reject}
+    "constant" -> DzStringDz {reject}
+    "data" -> DzStringDz {reject}
+    "source" -> DzStringDz {reject}
+    "mode" -> DzStringDz {reject}
+    "reference" -> DzStringDz {reject}
+    "compute" -> DzStringDz {reject}
+    "features" -> DzStringDz {reject}
+    "aadlboolean" -> DzStringDz {reject}
+    "elseif" -> DzStringDz {reject}
+    "function" -> DzStringDz {reject}
+    "continuous" -> DzStringDz {reject}
+    "net" -> DzStringDz {reject}
+    "enumeration" -> DzStringDz {reject}
+    "-->" -> DzStringDz {reject}
+    "connections" -> DzStringDz {reject}
+    "group" -> DzStringDz {reject}
+    "==" -> DzStringDz {reject}
+    "all" -> DzStringDz {reject}
+    "=>" -> DzStringDz {reject}
+    "package" -> DzStringDz {reject}
+    "sink" -> DzStringDz {reject}
+    "history" -> DzStringDz {reject}
+    "list" -> DzStringDz {reject}
+    "discrete" -> DzStringDz {reject}
+    "->" -> DzStringDz {reject}
+    "hybrid" -> DzStringDz {reject}
+    "extends" -> DzStringDz {reject}
+    "port" -> DzStringDz {reject}
+    "true" -> DzStringDz {reject}
+    "sensor" -> DzStringDz {reject}
+    "subcomponents" -> DzStringDz {reject}
+    ".*" -> DzStringDz {reject}
+    ".+" -> DzStringDz {reject}
+    ">=" -> DzStringDz {reject}
+    ".-" -> DzStringDz {reject}
+    ".." -> DzStringDz {reject}
+    "./" -> DzStringDz {reject}
+    "virtual" -> DzStringDz {reject}
+    "private" -> DzStringDz {reject}
+    "memory" -> DzStringDz {reject}
+    "not define" -> DzStringDz {reject}
+    "for" -> DzStringDz {reject}
+    "effort" -> DzStringDz {reject}
+    "units" -> DzStringDz {reject}
+    "-[" -> DzStringDz {reject}
+    "states" -> DzStringDz {reject}
+    "]->" -> DzStringDz {reject}
+    "not" -> DzStringDz {reject}
+    "public" -> DzStringDz {reject}
+    "flows" -> DzStringDz {reject}
+    "provides" -> DzStringDz {reject}
+    "and" -> DzStringDz {reject}
+    "of" -> DzStringDz {reject}
+    "parameter" -> DzStringDz {reject}
+    "end" -> DzStringDz {reject}
+    "annex" -> DzStringDz {reject}
+    "on" -> DzStringDz {reject}
+    "inverse" -> DzStringDz {reject}
+    "process" -> DzStringDz {reject}
+    "or" -> DzStringDz {reject}
+    "implementation" -> DzStringDz {reject}
+    "false" -> DzStringDz {reject}
+    "monitor" -> DzStringDz {reject}
+    "thread" -> DzStringDz {reject}
+    "<->" -> DzStringDz {reject}
+    "renames" -> DzStringDz {reject}
+    ".^" -> DzStringDz {reject}
+    "with" -> DzStringDz {reject}
+    "inherit" -> DzStringDz {reject}
+    "initially" -> DzStringDz {reject}
+    "{**" -> DzStringDz {reject}
+    "properties" -> DzStringDz {reject}
+    "modes" -> IdDz {reject}
+    "prototypes" -> IdDz {reject}
+    "elsewhen" -> IdDz {reject}
+    "delta" -> IdDz {reject}
+    "binding" -> IdDz {reject}
+    "none" -> IdDz {reject}
+    "type" -> IdDz {reject}
+    "+=>" -> IdDz {reject}
+    "when" -> IdDz {reject}
+    "path" -> IdDz {reject}
+    "actuator" -> IdDz {reject}
+    "aadlstring" -> IdDz {reject}
+    "else" -> IdDz {reject}
+    "composite" -> IdDz {reject}
+    "record" -> IdDz {reject}
+    "context" -> IdDz {reject}
+    "classifier" -> IdDz {reject}
+    "property" -> IdDz {reject}
+    "comentity" -> IdDz {reject}
+    "state" -> IdDz {reject}
+    "aadlreal" -> IdDz {reject}
+    "if" -> IdDz {reject}
+    "flow" -> IdDz {reject}
+    "!" -> IdDz {reject}
+    "in" -> IdDz {reject}
+    "aadlinterger" -> IdDz {reject}
+    "(" -> IdDz {reject}
+    ")" -> IdDz {reject}
+    "*" -> IdDz {reject}
+    "is" -> IdDz {reject}
+    "+" -> IdDz {reject}
+    "," -> IdDz {reject}
+    "-" -> IdDz {reject}
+    "processor" -> IdDz {reject}
+    "." -> IdDz {reject}
+    "transtitions" -> IdDz {reject}
+    "/" -> IdDz {reject}
+    "exit" -> IdDz {reject}
+    "delay" -> IdDz {reject}
+    "system" -> IdDz {reject}
+    "applies" -> IdDz {reject}
+    "refined" -> IdDz {reject}
+    ":" -> IdDz {reject}
+    ";" -> IdDz {reject}
+    "<" -> IdDz {reject}
+    "=" -> IdDz {reject}
+    "device" -> IdDz {reject}
+    "**}" -> IdDz {reject}
+    ">" -> IdDz {reject}
+    "paramenter" -> IdDz {reject}
+    "?" -> IdDz {reject}
+    "requires" -> IdDz {reject}
+    "::" -> IdDz {reject}
+    "subprogram" -> IdDz {reject}
+    "access" -> IdDz {reject}
+    "range" -> IdDz {reject}
+    "out" -> IdDz {reject}
+    "feature" -> IdDz {reject}
+    "[" -> IdDz {reject}
+    "urgent" -> IdDz {reject}
+    "event" -> IdDz {reject}
+    "]" -> IdDz {reject}
+    "^" -> IdDz {reject}
+    "a" -> IdDz {reject}
+    "variables" -> IdDz {reject}
+    "b" -> IdDz {reject}
+    "[]" -> IdDz {reject}
+    "c" -> IdDz {reject}
+    "set" -> IdDz {reject}
+    "d" -> IdDz {reject}
+    "initial" -> IdDz {reject}
+    "e" -> IdDz {reject}
+    "f" -> IdDz {reject}
+    "abstract" -> IdDz {reject}
+    "computation" -> IdDz {reject}
+    "controlled" -> IdDz {reject}
+    "calls" -> IdDz {reject}
+    "exists" -> IdDz {reject}
+    "self" -> IdDz {reject}
+    "to" -> IdDz {reject}
+    "{" -> IdDz {reject}
+    "complete" -> IdDz {reject}
+    "}**" -> IdDz {reject}
+    "}" -> IdDz {reject}
+    "phyentity" -> IdDz {reject}
+    "return" -> IdDz {reject}
+    "<=" -> IdDz {reject}
+    "bus" -> IdDz {reject}
+    "<>" -> IdDz {reject}
+    "constant" -> IdDz {reject}
+    "data" -> IdDz {reject}
+    "source" -> IdDz {reject}
+    "mode" -> IdDz {reject}
+    "reference" -> IdDz {reject}
+    "compute" -> IdDz {reject}
+    "features" -> IdDz {reject}
+    "aadlboolean" -> IdDz {reject}
+    "elseif" -> IdDz {reject}
+    "function" -> IdDz {reject}
+    "continuous" -> IdDz {reject}
+    "net" -> IdDz {reject}
+    "enumeration" -> IdDz {reject}
+    "-->" -> IdDz {reject}
+    "connections" -> IdDz {reject}
+    "group" -> IdDz {reject}
+    "==" -> IdDz {reject}
+    "all" -> IdDz {reject}
+    "=>" -> IdDz {reject}
+    "package" -> IdDz {reject}
+    "sink" -> IdDz {reject}
+    "history" -> IdDz {reject}
+    "list" -> IdDz {reject}
+    "discrete" -> IdDz {reject}
+    "->" -> IdDz {reject}
+    "hybrid" -> IdDz {reject}
+    "extends" -> IdDz {reject}
+    "port" -> IdDz {reject}
+    "true" -> IdDz {reject}
+    "sensor" -> IdDz {reject}
+    "subcomponents" -> IdDz {reject}
+    ".*" -> IdDz {reject}
+    ".+" -> IdDz {reject}
+    ">=" -> IdDz {reject}
+    ".-" -> IdDz {reject}
+    ".." -> IdDz {reject}
+    "./" -> IdDz {reject}
+    "virtual" -> IdDz {reject}
+    "private" -> IdDz {reject}
+    "memory" -> IdDz {reject}
+    "not define" -> IdDz {reject}
+    "for" -> IdDz {reject}
+    "effort" -> IdDz {reject}
+    "units" -> IdDz {reject}
+    "-[" -> IdDz {reject}
+    "states" -> IdDz {reject}
+    "]->" -> IdDz {reject}
+    "not" -> IdDz {reject}
+    "public" -> IdDz {reject}
+    "flows" -> IdDz {reject}
+    "provides" -> IdDz {reject}
+    "and" -> IdDz {reject}
+    "of" -> IdDz {reject}
+    "parameter" -> IdDz {reject}
+    "end" -> IdDz {reject}
+    "annex" -> IdDz {reject}
+    "on" -> IdDz {reject}
+    "inverse" -> IdDz {reject}
+    "process" -> IdDz {reject}
+    "or" -> IdDz {reject}
+    "implementation" -> IdDz {reject}
+    "false" -> IdDz {reject}
+    "monitor" -> IdDz {reject}
+    "thread" -> IdDz {reject}
+    "<->" -> IdDz {reject}
+    "renames" -> IdDz {reject}
+    ".^" -> IdDz {reject}
+    "with" -> IdDz {reject}
+    "inherit" -> IdDz {reject}
+    "initially" -> IdDz {reject}
+    "{**" -> IdDz {reject}
+    "properties" -> IdDz {reject}
+    "modes" -> DzIntDz {reject}
+    "prototypes" -> DzIntDz {reject}
+    "elsewhen" -> DzIntDz {reject}
+    "delta" -> DzIntDz {reject}
+    "binding" -> DzIntDz {reject}
+    "none" -> DzIntDz {reject}
+    "type" -> DzIntDz {reject}
+    "+=>" -> DzIntDz {reject}
+    "when" -> DzIntDz {reject}
+    "path" -> DzIntDz {reject}
+    "actuator" -> DzIntDz {reject}
+    "aadlstring" -> DzIntDz {reject}
+    "else" -> DzIntDz {reject}
+    "composite" -> DzIntDz {reject}
+    "record" -> DzIntDz {reject}
+    "context" -> DzIntDz {reject}
+    "classifier" -> DzIntDz {reject}
+    "property" -> DzIntDz {reject}
+    "comentity" -> DzIntDz {reject}
+    "state" -> DzIntDz {reject}
+    "aadlreal" -> DzIntDz {reject}
+    "if" -> DzIntDz {reject}
+    "flow" -> DzIntDz {reject}
+    "!" -> DzIntDz {reject}
+    "in" -> DzIntDz {reject}
+    "aadlinterger" -> DzIntDz {reject}
+    "(" -> DzIntDz {reject}
+    ")" -> DzIntDz {reject}
+    "*" -> DzIntDz {reject}
+    "is" -> DzIntDz {reject}
+    "+" -> DzIntDz {reject}
+    "," -> DzIntDz {reject}
+    "-" -> DzIntDz {reject}
+    "processor" -> DzIntDz {reject}
+    "." -> DzIntDz {reject}
+    "transtitions" -> DzIntDz {reject}
+    "/" -> DzIntDz {reject}
+    "exit" -> DzIntDz {reject}
+    "delay" -> DzIntDz {reject}
+    "system" -> DzIntDz {reject}
+    "applies" -> DzIntDz {reject}
+    "refined" -> DzIntDz {reject}
+    ":" -> DzIntDz {reject}
+    ";" -> DzIntDz {reject}
+    "<" -> DzIntDz {reject}
+    "=" -> DzIntDz {reject}
+    "device" -> DzIntDz {reject}
+    "**}" -> DzIntDz {reject}
+    ">" -> DzIntDz {reject}
+    "paramenter" -> DzIntDz {reject}
+    "?" -> DzIntDz {reject}
+    "requires" -> DzIntDz {reject}
+    "::" -> DzIntDz {reject}
+    "subprogram" -> DzIntDz {reject}
+    "access" -> DzIntDz {reject}
+    "range" -> DzIntDz {reject}
+    "out" -> DzIntDz {reject}
+    "feature" -> DzIntDz {reject}
+    "[" -> DzIntDz {reject}
+    "urgent" -> DzIntDz {reject}
+    "event" -> DzIntDz {reject}
+    "]" -> DzIntDz {reject}
+    "^" -> DzIntDz {reject}
+    "a" -> DzIntDz {reject}
+    "variables" -> DzIntDz {reject}
+    "b" -> DzIntDz {reject}
+    "[]" -> DzIntDz {reject}
+    "c" -> DzIntDz {reject}
+    "set" -> DzIntDz {reject}
+    "d" -> DzIntDz {reject}
+    "initial" -> DzIntDz {reject}
+    "e" -> DzIntDz {reject}
+    "f" -> DzIntDz {reject}
+    "abstract" -> DzIntDz {reject}
+    "computation" -> DzIntDz {reject}
+    "controlled" -> DzIntDz {reject}
+    "calls" -> DzIntDz {reject}
+    "exists" -> DzIntDz {reject}
+    "self" -> DzIntDz {reject}
+    "to" -> DzIntDz {reject}
+    "{" -> DzIntDz {reject}
+    "complete" -> DzIntDz {reject}
+    "}**" -> DzIntDz {reject}
+    "}" -> DzIntDz {reject}
+    "phyentity" -> DzIntDz {reject}
+    "return" -> DzIntDz {reject}
+    "<=" -> DzIntDz {reject}
+    "bus" -> DzIntDz {reject}
+    "<>" -> DzIntDz {reject}
+    "constant" -> DzIntDz {reject}
+    "data" -> DzIntDz {reject}
+    "source" -> DzIntDz {reject}
+    "mode" -> DzIntDz {reject}
+    "reference" -> DzIntDz {reject}
+    "compute" -> DzIntDz {reject}
+    "features" -> DzIntDz {reject}
+    "aadlboolean" -> DzIntDz {reject}
+    "elseif" -> DzIntDz {reject}
+    "function" -> DzIntDz {reject}
+    "continuous" -> DzIntDz {reject}
+    "net" -> DzIntDz {reject}
+    "enumeration" -> DzIntDz {reject}
+    "-->" -> DzIntDz {reject}
+    "connections" -> DzIntDz {reject}
+    "group" -> DzIntDz {reject}
+    "==" -> DzIntDz {reject}
+    "all" -> DzIntDz {reject}
+    "=>" -> DzIntDz {reject}
+    "package" -> DzIntDz {reject}
+    "sink" -> DzIntDz {reject}
+    "history" -> DzIntDz {reject}
+    "list" -> DzIntDz {reject}
+    "discrete" -> DzIntDz {reject}
+    "->" -> DzIntDz {reject}
+    "hybrid" -> DzIntDz {reject}
+    "extends" -> DzIntDz {reject}
+    "port" -> DzIntDz {reject}
+    "true" -> DzIntDz {reject}
+    "sensor" -> DzIntDz {reject}
+    "subcomponents" -> DzIntDz {reject}
+    ".*" -> DzIntDz {reject}
+    ".+" -> DzIntDz {reject}
+    ">=" -> DzIntDz {reject}
+    ".-" -> DzIntDz {reject}
+    ".." -> DzIntDz {reject}
+    "./" -> DzIntDz {reject}
+    "virtual" -> DzIntDz {reject}
+    "private" -> DzIntDz {reject}
+    "memory" -> DzIntDz {reject}
+    "not define" -> DzIntDz {reject}
+    "for" -> DzIntDz {reject}
+    "effort" -> DzIntDz {reject}
+    "units" -> DzIntDz {reject}
+    "-[" -> DzIntDz {reject}
+    "states" -> DzIntDz {reject}
+    "]->" -> DzIntDz {reject}
+    "not" -> DzIntDz {reject}
+    "public" -> DzIntDz {reject}
+    "flows" -> DzIntDz {reject}
+    "provides" -> DzIntDz {reject}
+    "and" -> DzIntDz {reject}
+    "of" -> DzIntDz {reject}
+    "parameter" -> DzIntDz {reject}
+    "end" -> DzIntDz {reject}
+    "annex" -> DzIntDz {reject}
+    "on" -> DzIntDz {reject}
+    "inverse" -> DzIntDz {reject}
+    "process" -> DzIntDz {reject}
+    "or" -> DzIntDz {reject}
+    "implementation" -> DzIntDz {reject}
+    "false" -> DzIntDz {reject}
+    "monitor" -> DzIntDz {reject}
+    "thread" -> DzIntDz {reject}
+    "<->" -> DzIntDz {reject}
+    "renames" -> DzIntDz {reject}
+    ".^" -> DzIntDz {reject}
+    "with" -> DzIntDz {reject}
+    "inherit" -> DzIntDz {reject}
+    "initially" -> DzIntDz {reject}
+    "{**" -> DzIntDz {reject}
+    "properties" -> DzIntDz {reject}
+    "modes" -> DzFloatDz {reject}
+    "prototypes" -> DzFloatDz {reject}
+    "elsewhen" -> DzFloatDz {reject}
+    "delta" -> DzFloatDz {reject}
+    "binding" -> DzFloatDz {reject}
+    "none" -> DzFloatDz {reject}
+    "type" -> DzFloatDz {reject}
+    "+=>" -> DzFloatDz {reject}
+    "when" -> DzFloatDz {reject}
+    "path" -> DzFloatDz {reject}
+    "actuator" -> DzFloatDz {reject}
+    "aadlstring" -> DzFloatDz {reject}
+    "else" -> DzFloatDz {reject}
+    "composite" -> DzFloatDz {reject}
+    "record" -> DzFloatDz {reject}
+    "context" -> DzFloatDz {reject}
+    "classifier" -> DzFloatDz {reject}
+    "property" -> DzFloatDz {reject}
+    "comentity" -> DzFloatDz {reject}
+    "state" -> DzFloatDz {reject}
+    "aadlreal" -> DzFloatDz {reject}
+    "if" -> DzFloatDz {reject}
+    "flow" -> DzFloatDz {reject}
+    "!" -> DzFloatDz {reject}
+    "in" -> DzFloatDz {reject}
+    "aadlinterger" -> DzFloatDz {reject}
+    "(" -> DzFloatDz {reject}
+    ")" -> DzFloatDz {reject}
+    "*" -> DzFloatDz {reject}
+    "is" -> DzFloatDz {reject}
+    "+" -> DzFloatDz {reject}
+    "," -> DzFloatDz {reject}
+    "-" -> DzFloatDz {reject}
+    "processor" -> DzFloatDz {reject}
+    "." -> DzFloatDz {reject}
+    "transtitions" -> DzFloatDz {reject}
+    "/" -> DzFloatDz {reject}
+    "exit" -> DzFloatDz {reject}
+    "delay" -> DzFloatDz {reject}
+    "system" -> DzFloatDz {reject}
+    "applies" -> DzFloatDz {reject}
+    "refined" -> DzFloatDz {reject}
+    ":" -> DzFloatDz {reject}
+    ";" -> DzFloatDz {reject}
+    "<" -> DzFloatDz {reject}
+    "=" -> DzFloatDz {reject}
+    "device" -> DzFloatDz {reject}
+    "**}" -> DzFloatDz {reject}
+    ">" -> DzFloatDz {reject}
+    "paramenter" -> DzFloatDz {reject}
+    "?" -> DzFloatDz {reject}
+    "requires" -> DzFloatDz {reject}
+    "::" -> DzFloatDz {reject}
+    "subprogram" -> DzFloatDz {reject}
+    "access" -> DzFloatDz {reject}
+    "range" -> DzFloatDz {reject}
+    "out" -> DzFloatDz {reject}
+    "feature" -> DzFloatDz {reject}
+    "[" -> DzFloatDz {reject}
+    "urgent" -> DzFloatDz {reject}
+    "event" -> DzFloatDz {reject}
+    "]" -> DzFloatDz {reject}
+    "^" -> DzFloatDz {reject}
+    "a" -> DzFloatDz {reject}
+    "variables" -> DzFloatDz {reject}
+    "b" -> DzFloatDz {reject}
+    "[]" -> DzFloatDz {reject}
+    "c" -> DzFloatDz {reject}
+    "set" -> DzFloatDz {reject}
+    "d" -> DzFloatDz {reject}
+    "initial" -> DzFloatDz {reject}
+    "e" -> DzFloatDz {reject}
+    "f" -> DzFloatDz {reject}
+    "abstract" -> DzFloatDz {reject}
+    "computation" -> DzFloatDz {reject}
+    "controlled" -> DzFloatDz {reject}
+    "calls" -> DzFloatDz {reject}
+    "exists" -> DzFloatDz {reject}
+    "self" -> DzFloatDz {reject}
+    "to" -> DzFloatDz {reject}
+    "{" -> DzFloatDz {reject}
+    "complete" -> DzFloatDz {reject}
+    "}**" -> DzFloatDz {reject}
+    "}" -> DzFloatDz {reject}
+    "phyentity" -> DzFloatDz {reject}
+    "return" -> DzFloatDz {reject}
+    "<=" -> DzFloatDz {reject}
+    "bus" -> DzFloatDz {reject}
+    "<>" -> DzFloatDz {reject}
+    "constant" -> DzFloatDz {reject}
+    "data" -> DzFloatDz {reject}
+    "source" -> DzFloatDz {reject}
+    "mode" -> DzFloatDz {reject}
+    "reference" -> DzFloatDz {reject}
+    "compute" -> DzFloatDz {reject}
+    "features" -> DzFloatDz {reject}
+    "aadlboolean" -> DzFloatDz {reject}
+    "elseif" -> DzFloatDz {reject}
+    "function" -> DzFloatDz {reject}
+    "continuous" -> DzFloatDz {reject}
+    "net" -> DzFloatDz {reject}
+    "enumeration" -> DzFloatDz {reject}
+    "-->" -> DzFloatDz {reject}
+    "connections" -> DzFloatDz {reject}
+    "group" -> DzFloatDz {reject}
+    "==" -> DzFloatDz {reject}
+    "all" -> DzFloatDz {reject}
+    "=>" -> DzFloatDz {reject}
+    "package" -> DzFloatDz {reject}
+    "sink" -> DzFloatDz {reject}
+    "history" -> DzFloatDz {reject}
+    "list" -> DzFloatDz {reject}
+    "discrete" -> DzFloatDz {reject}
+    "->" -> DzFloatDz {reject}
+    "hybrid" -> DzFloatDz {reject}
+    "extends" -> DzFloatDz {reject}
+    "port" -> DzFloatDz {reject}
+    "true" -> DzFloatDz {reject}
+    "sensor" -> DzFloatDz {reject}
+    "subcomponents" -> DzFloatDz {reject}
+    ".*" -> DzFloatDz {reject}
+    ".+" -> DzFloatDz {reject}
+    ">=" -> DzFloatDz {reject}
+    ".-" -> DzFloatDz {reject}
+    ".." -> DzFloatDz {reject}
+    "./" -> DzFloatDz {reject}
+    "virtual" -> DzFloatDz {reject}
+    "private" -> DzFloatDz {reject}
+    "memory" -> DzFloatDz {reject}
+    "not define" -> DzFloatDz {reject}
+    "for" -> DzFloatDz {reject}
+    "effort" -> DzFloatDz {reject}
+    "units" -> DzFloatDz {reject}
+    "-[" -> DzFloatDz {reject}
+    "states" -> DzFloatDz {reject}
+    "]->" -> DzFloatDz {reject}
+    "not" -> DzFloatDz {reject}
+    "public" -> DzFloatDz {reject}
+    "flows" -> DzFloatDz {reject}
+    "provides" -> DzFloatDz {reject}
+    "and" -> DzFloatDz {reject}
+    "of" -> DzFloatDz {reject}
+    "parameter" -> DzFloatDz {reject}
+    "end" -> DzFloatDz {reject}
+    "annex" -> DzFloatDz {reject}
+    "on" -> DzFloatDz {reject}
+    "inverse" -> DzFloatDz {reject}
+    "process" -> DzFloatDz {reject}
+    "or" -> DzFloatDz {reject}
+    "implementation" -> DzFloatDz {reject}
+    "false" -> DzFloatDz {reject}
+    "monitor" -> DzFloatDz {reject}
+    "thread" -> DzFloatDz {reject}
+    "<->" -> DzFloatDz {reject}
+    "renames" -> DzFloatDz {reject}
+    ".^" -> DzFloatDz {reject}
+    "with" -> DzFloatDz {reject}
+    "inherit" -> DzFloatDz {reject}
+    "initially" -> DzFloatDz {reject}
+    "{**" -> DzFloatDz {reject}
+    "properties" -> DzFloatDz {reject}
+context-free syntax
+    DzStringDz -> DzString {cons("DzString1Const")}
+    IdDz -> Id {cons("Id1Const")}
+    DzIntDz -> DzInt {cons("DzInt1Const")}
+    DzFloatDz -> DzFloat {cons("DzFloat1Const")}
+
+
+context-free restrictions
+    DzInt -/- [0-9]
+    Id -/- [A-Za-z0-9\_]

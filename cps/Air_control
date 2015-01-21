@@ -1,0 +1,85 @@
+system Air_Control
+end Air_Contral;
+
+system implementation Air_Control.impl
+	subcomponents
+	Data_acquistion : hybrid sensor Sensor.impl;
+	Semaphore : continuous actuator Actuator.impl;
+	Control_centre : system Control.impl;
+	Data_transimission : hybrid net Net.impl;
+	connections
+	C1:port Data_acquistion.Data_out -> Data_transimission.Data_Port ;
+	C2:port Data_Data_transimission.Data_Port -> Control_centre.Data_in;
+	C3:port Control_centre.Command_out -> Data_transimission.Command_Port;
+	C4:port Data_transimission.Command_Port -> Semaphore.Command_in;
+	annex Air_BA
+	{**
+		state variables
+		accelerate : real;
+		mass : real;
+		altitude : real;
+		thrust : real;
+		gravity : real; 
+		states
+		s0 : initial state;
+		s2 : return state;
+		transtitions 
+		s0 -[]-> s2 {(thrust-mass*gravity)/mass = accelerate;};
+		s2 -[]-> s2 ;
+              
+	**};
+	
+end Air_Control.impl;
+
+system implementation Control.impl
+	subcomponents
+	Data_Handle : thread Handle_Process.impl;
+	Control_Handle : thread Control_Process.impl;
+end Control.impl;
+
+system Control
+	features
+	Data_in : requires net access Net.Data_Port;
+	Command_out : provides net access Net.Command_Port;
+end Control;
+
+thread Handle_Process
+end Handle_Process;
+thread implementation Handle_Process.impl
+end Handle_Process.impl;
+
+thread Control_Process
+end Control_Process;
+thread implementation Control_Process.impl
+end Control_Process.impl;
+
+system implementation Control.imp
+end Control.imp;
+
+
+hybrid net Net
+	features
+	Data_Port : in out data port;
+	Command_Port : in out event port;
+end Net;
+
+hybrid net implementation Net.impl
+end Net.impl;
+
+hybrid sensor Sensor
+	features		
+	Data_out : out data port
+	{Output_Time => (Time=>Completion;Offset=>10 Ms .. 15 Ms;) applies to jjj;};
+end Sensor;
+
+hybrid sensor implementation Sensor.impl
+end Sensor.impl;
+
+continuous actuator Actuator
+	features
+	Command_in : in event port	
+	{Input_Time => (Time=>Start;Offset=>5 Ms .. 25 Ms;) applies to jjj;};
+end Actuator;
+
+continuous actuator implementation Actuator.impl
+end Actuator.impl;

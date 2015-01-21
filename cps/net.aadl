@@ -1,0 +1,10 @@
+hybrid net Hybrid_Net
+features
+  Sensor1: in data port 
+    {Input_Time => (Time=>Start;Offset=>10 us .. 15 us;) applies to Hybrid_Net;};
+  Actuator1: out data port 
+{Output_Time => (Time=>Completion;Offset=>10 us .. 11 us;) applies to Hybrid_Net;};
+properties
+Max_Size => 1024 Bit;
+Min_Size => 32 Bit;
+end Hybrid_Net;

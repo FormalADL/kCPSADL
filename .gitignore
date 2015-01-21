@@ -1,0 +1,6 @@
+####### files ######
+*.k~
+/src/AADL-kompiled/
+AADL-kompiled/
+*.bak
+*.aadl~

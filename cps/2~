@@ -1,0 +1,20 @@
+system Air_Control
+end Air_Contral;
+
+system implementation Air_Control.impl
+	subcomponents
+		Data_acquistion : hybrid sensor Sensor.impl;
+		Semaphore : continuous actuator Actuator.impl;
+		Control_centre : system Control.impl;
+end Air_Control.impl;
+
+hybrid sensor Sensor
+	features
+	Data_in : in data port	
+	{Input_Time => (Time=>Start;Offset=>10 us .. 15 us;) applies to Sensor;};
+	Data_out : out data port
+	{Output_Time => (Time=>Completion;Offset=>10 us .. 11 us;) applies to Sensor;};
+	properties
+end Sensor;
+
+
