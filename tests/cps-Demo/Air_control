@@ -69,7 +69,7 @@ end Net.impl;
 hybrid sensor Sensor
 	features		
 	Data_out : out data port
-	{Output_Time => (Time=>Completion;Offset=>10 Ms .. 15 Ms;) applies to jjj;};
+	{Output_Time => (Time=>Completion;Offset=>10 Ms .. 15 Ms;) applies to Data_out;};
 end Sensor;
 
 hybrid sensor implementation Sensor.impl
@@ -78,7 +78,7 @@ end Sensor.impl;
 continuous actuator Actuator
 	features
 	Command_in : in event port	
-	{Input_Time => (Time=>Start;Offset=>5 Ms .. 25 Ms;) applies to jjj;};
+	{Input_Time => (Time=>Start;Offset=>5 Ms .. 25 Ms;) applies to Command_in;};
 end Actuator;
 
 continuous actuator implementation Actuator.impl
