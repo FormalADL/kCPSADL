@@ -45,8 +45,10 @@ module ANNEXSUBCLAUSELIBRARY-SYNTAX
   syntax CompositeDeclList ::= CompositeDecl                                   
                              | CompositeDecl CompositeDeclList 
   
-  syntax BehaviorVariableDecl ::= Id Mcolon Id MSemicolon
-                                | Id Mcolon Id MPoint Id MSemicolon   
+  syntax BehaviorVariableDecl ::= Id Mcolon DataType Datafeature MSemicolon
+                                | Id Mcolon Id MPoint Id MSemicolon 
+  syntax DataType ::= Mint | Mreal | Mboolean | Mfloat | Mdouble
+  syntax Datafeature ::= Mdiscrete | Mcontant | Mcontinuous | Mparameter 
    
   syntax Equations ::= Equation  MSemicolon
                      | Statement MSemicolon
@@ -216,11 +218,13 @@ module ANNEXSUBCLAUSELIBRARY-SYNTAX
                                    | Id MSpecalArrows1  BehaviorGuard MSpecalArrows2 Id MSemicolon
 
   syntax BehaviorGuard ::= BehaviorEvent
-/*                       | Mon Expression MDArrows BehaviorEvent
-                         | BehaviorEvent Mwhen Expression
-                         | Mon Expression MDArrows BehaviorEvent Mwhen Expression
+
+                      | Mon Expression MDArrows BehaviorEvent
+ //                        | BehaviorEvent Mwhen Expression
+ //                        | Mon Expression MDArrows BehaviorEvent Mwhen Expression
                          | Expression
-*/
+                         | Mwhen Expression
+
 
  // syntax BehaviorGuard ::= "none"
 

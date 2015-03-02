@@ -24,7 +24,7 @@ module CONFIGURATION
 		  <port multiplicity="*"> 
 			  <portid> .Map </portid>  
 			  <portdata> .Map </portdata>
-			  <portitemcount> .Map </portitemcount> // head |-> tail , tail entry, head out
+			  <portitemcount> 0 |-> 0 </portitemcount> // head |-> tail , tail entry, head out
 			  <portfresh> 0 </portfresh>
 			  <portdest> .Map </portdest> // dest-com-id |-> dest-port-id
 		  </port>
@@ -47,7 +47,7 @@ module CONFIGURATION
    
          
           <comclock> 0 </comclock> 
-		  <comstate> .Map  </comstate> // current state |-> time left
+		  <comstate> 0 |-> 0 </comstate> // current state |-> time left
 										// state: 0 idle, 1 maybe idle, 2 waiting, 3 running, 4 want to run
 		  <executions> .Map </executions> // number executions: act |-> time
          
@@ -57,14 +57,13 @@ module CONFIGURATION
              <statevariables> .Map </statevariables>
 		     <store> .Map </store> 
 		     <automata>
-		        <automataid> .Map </automataid>
+		        <automataid> $NotInitialized |-> 0 </automataid>
 			    <automataclock> 0 </automataclock>
-			    <status> .Map </status>
-			    <curstate> .Map </curstate>
+			    <status> $Minitial |-> 0 </status>
+			    <curstate> 0 </curstate>
 			    <eventcount> 0 </eventcount> 
 			    <processingevent> .Map </processingevent> // number |-> state
 			    <event> .Map </event>
-                            <automatatable> .Map </automatatable>
 			    <action> .Map </action> 	// match action
 		     </automata> 
           </behavior>  
@@ -73,23 +72,21 @@ module CONFIGURATION
       
        <cpu> 
 		  <id> 0 </id> 
-		  <state> .Map  </state> // running thread: thread name |-> current priority
+		  <state> 0 |-> 0 </state> // running thread: thread name |-> current priority
 		  <threads> 
-			//   $SyncThreads |-> 0  // for sync [2]
-			//   $RadyThreadse |-> 0 // for sync [1]
-			//   $SchedulingThreads |-> 0 // Scheduling Threads.
-			//   $PeriodicThreads |-> 0
-			//   $AperiodicThreads |-> 0
-			//   $SporadicThreads |-> 0
-			//   $TotalThreads |-> 0
-                        .Map
-
+			   $SyncThreads |-> 0  // for sync [2]
+			   $ReadyThreads |-> 0 // for sync [1]
+			   $SchedulingThreads |-> 0 // Scheduling Threads.
+			   $PeriodicThreads |-> 0
+			   $AperiodicThreads |-> 0
+			   $SporadicThreads |-> 0
+			   $TotalThreads |-> 0
 		  </threads> 
 	   </cpu>
 	          
        <globalclock> 
           <globaltime> 0 </globaltime> 
-		  <subclockcount> .Map   </subclockcount> // Total number |-> Current number ; Clear number
+		  <subclockcount> 0 |-> 0  $Mreturn |-> 0 </subclockcount> // Total number |-> Current number ; Clear number
 		  <subclock> .Map </subclock> // serial number |-> subautomata id
        </globalclock>
 	  
@@ -102,11 +99,5 @@ module CONFIGURATION
  
 
   syntax KBEGIN ::= "none"
-  syntax Id ::= "SyncThreads"
-  syntax Id ::= "RadyThreadse "
-  syntax Id ::= "PeriodicThreads"
-  syntax Id ::= "AperiodicThreads"
-  syntax Id ::= "TotalThreads"
-  
      
 endmodule  

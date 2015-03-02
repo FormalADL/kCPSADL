@@ -33,6 +33,7 @@ require "FlowImplementation.k"
 require "LexicalElement.k"
 require "macro.k"
 require "NetComponentAccess.k"
+//require "Configuration.k"
 ///////////////////////////////////////
 
  require "CPS.k"
@@ -73,19 +74,22 @@ module AADL-SYNTAX
   imports PROPERTYTYPE-SYNTAX
   imports PROPERTYDEFINATION-SYNTAX
   imports PROPERTYEXPRESSION-SYNTAX
+  
 
   imports MACRO
   imports NETCOMPONENTACCESS-SYNTAX
 
 ///////////////////////////////////////////
 
- imports CPS
+imports CPS
 
 endmodule
 
 
 module AADL
   imports AADL-SYNTAX
+ // imports CONFIGURATION
+
 
   syntax AADLSpecification ::= PkgSpecPpeSetList
   syntax PkgSpecPpeSetList ::= PkgSpecPpeSetListElem 

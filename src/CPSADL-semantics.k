@@ -1,22 +1,20 @@
-//require "AADL.k"
+require "AADL.k"
 require "Configuration.k"
-require "CPS.k"
 
 module CPSADL-SEMANTICS
 
-//   imports AADL
+   imports AADL
    imports CONFIGURATION
-   imports CPS
 
 
    syntax KResult ::= #Int | #Bool | StateKeyword
    
    rule ComPrev:CmpClassifierDecl ComNext:CmpClassifierDecl => ComPrev ~> ComNext  [structural]
-  // syntax Mend ::= "end"
- //  syntax MSemicolon ::= ";"
- //  syntax CmpCategory ::= "system"
- //  syntax CmpType ::= CmpCategory Id Mend Id MSemicolon 
-//		   | CmpCategory Id CmpAssocDef Mend Id MSemicolon
+   //syntax Mend ::= "end"
+  // syntax MSemicolon ::= ";"
+  // syntax CmpCategory ::= "system"
+   //syntax CmpType ::= CmpCategory Id Mend Id MSemicolon 
+//			| CmpCategory Id CmpAssocDef Mend Id MSemicolon
    syntax Id ::= "id"  
               | "category" 
               | "type" 
@@ -30,8 +28,6 @@ module CPSADL-SEMANTICS
               | "idles"
               | "novalue"
               | "krunning"
-              | "states"
-              | "curstate"
 
    rule <system>
              ...

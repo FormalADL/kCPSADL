@@ -1,73 +1,57 @@
-//require "CPSADL-semantics.k"
-require "AnnexSubclauseLibrary.k"  
-require "Configuration.k"
-require "CPS.k"
-module CPSADLBA-SEMANTICS
-//   imports CPSADL-SEMANTICS
-   imports ANNEXSUBCLAUSELIBRARY-SYNTAX
-   imports CONFIGURATION
-   imports CPS
-   syntax Id ::= "id"  
-              | "category" 
-              | "type" 
-              | "TotalTheads" 
-              | "name" 
-              | "ScheduledTimes" 
-              | "kpending" 
-              | "kclear" 
-              | "direction" 
-              | "datatype" 
-              | "idles"
-              | "novalue"
-              | "krunning"
-              | "astates"
-              | "curstate"
-              | "reenter_clock"
-              | "run_globalclock"
-              | "run_subclock"
-              | "reenter_clock"
-              | "reenter_clock"
-              | "kidle"
-              | "aid"
-              | "cpsvariable"
+require "CPSADL-semantics.k"
 
+module CPSADLBA-SEMANTICS
+   imports CPSADL-SEMANTICS
    // behavior
       rule <system>
              ...
-             <component>.../*<componentid> id |-> Componentid:Id </componentid>*/ <k> annex  Annextid:Id {** Aslc:AnnexSpecLangConstructs **} ; => Aslc ...</k> 
-              (. =>  <behavior>...
-			 <automata>
-			    //<automataid> aid |-> Componentid </automataid>	
-			    <automataclock> 0 </automataclock>
-		            <status> astates |-> kpending </status> 
-		            <curstate> curstate |-> kidle </curstate>	
-			    <eventcount> 0 </eventcount> 
-		            <processingevent> 0 |-> kclear </processingevent>	
-			     ...
-			</automata>
-                    </behavior>)
-             </component>
+             <component><componentid> id |-> Componentid:Id </componentid> <k> annex  Annextid:Id {** Aslc:AnnexSpecLangConstructs **} ; => . ...</k> ...</component>
+             ...
+        </system>
+        (. => <system>
+            ...
+            <component>
+               ...
+               <k> Aslc </k>
+               <behavior>
+                  <states> .Map </states>
+			      <statevariables> .Map </statevariables>	
+			      <store> .Map </store>
+			      <automata>
+			      	 <automataid> Componentid </automataid>	
+			      	 <automataclock> 0 </automataclock>
+				     <states> kpending </states> 
+				     <curstate> idles </curstate>	
+				     <eventcount> 0 </eventcount> 
+				     <processingevent> 0 |-> kclear </processingevent>	
+				     <event> .Map </event>
+				     <automatatable> .Map </automatatable>
+			      </automata>
+               </behavior>
+               ...
+            </component>
             <globalclock> 
 				<subclockcount> (Tnum:Int => Tnum +Int 1) |-> 0 kclear|->_ </subclockcount>
-				<subclock> ... Tnum |-> Componentid </subclock> 
+				<subclock> ... . => Tnum |-> Comid </subclock> 
 				...
 			</globalclock>
             ...
         </system>
+        )
 
 	rule Aslc1:AnnexSpecLangConstructsElem Aslc2:AnnexSpecLangConstructsElem => Aslc1 ~> Aslc2 [structural] 
 	
 	rule BType1:Mstate BType2:Mvariables BT:BehaviorVariableDeclList => BT [structural]
-	rule BType:Mstates BT:BehaviorStateList => BT [structural]
+	rule BType:Mstate BT:BehaviorStateList => BT [structural]
 	rule BType:Minitially BT:EquationList => BT [structural]
 	rule BType:Mtranstitions BT:BehaviorStateTransitionList => BT [structural]
 	rule BType1:Mmode BType2:Mtranstitions BT:BehaviorStateTransitionList => BT [structural]
 	
-	rule BTPrev:BehaviorVariableDecl BTNext:BehaviorVariableDecl => BTPrev ~> BTNext [structural]
-	rule BTPrev:BehaviorState BTNext:BehaviorState => BTPrev ~> BTNext [structural]
-	rule BTPrev:Equations BTNext:Equations => BTPrev ~> BTNext [structural]
-	rule BTPrev:BehaviorStateTransition BTNext:BehaviorStateTransition => BTPrev ~> BTNext [structural]
-	rule BTPrev:CompositeDecl BTNext:CompositeDecl => BTPrev ~> BTNext [structural]
+	rule BTPrev:BehaviorVariableDecl BTNext:BehaviorVariableDecl => PTPrev ~> PTNext [structural]
+	rule BTPrev:BehaviorState BTNext:BehaviorState => PTPrev ~> PTNext [structural]
+	rule BTPrev:Equations BTNext:Equations => PTPrev ~> PTNext [structural]
+	rule BTPrev:BehaviorStateTransition BTNext:BehaviorStateTransition => PTPrev ~> PTNext [structural]
+	rule BTPrev:CompositeDecl BTNext:CompositeDecl => PTPrev ~> PTNext [structural]
 //----------------------------------------------------------------------------------------------------------------------------------------------------------------
 	// behavior state variables
 	rule <system>
@@ -110,24 +94,29 @@ module CPSADLBA-SEMANTICS
 			   <k> Value </k>
 			   <behavior>
 			      ...
-			      <store> cpsvariable |-> Variable </store>
+			      <store>... Variable |-> (_=>Value)... </store>
 			      ...
 			   </behavior>
-                         ...		   
+            ...		   
 			</component>
 			...
 		</system> 
 		) 	
 //---------------------------------------------------------------------------------------------------------------------------------------------------------------		
 	// transitions
-        syntax Syz ::= "(" Id "," Id "," ActionList ")"
 	rule <system>
           ...
-            <component>.../*<componentid>id|->Comid ...</componentid>*/<k> CurState:Id -[ BG:BehaviorGuard ]-> NextState:Id { Act:ActionList } ; => BG ...</k>
+            <component><componentid>id|->Comid ...</componentid><k>CurState:Id -[ BG:BehaviorGuard ]-> NextState:Id { Act:ActionList } ; => . ...</k>... </component>
+          ...
+        </system>
+        (. => <system> 
+			<component>
+			   ... 
+			   <k> BG </k>
 			   <behavior>
 			      ...
 			      <automata>
-			          //<automataid> aid |-> Comid:Id</automataid>	
+			          <automataid>Comid:Id</automataid>	
 			          <eventcount> EvSn:Int => (EvSn +Int 1) </eventcount>
 				      <event> ...  EvSn |-> BG </event>
 				      <automatatable> ...  EvSn |-> (CurState, NextState, Act)...  </automatatable>
@@ -139,14 +128,21 @@ module CPSADLBA-SEMANTICS
 			</component>
 			...
 		</system> 
+		) 
 
 	rule <system>
           ...
-            <component>.../*<componentid> id|->Comid ...</componentid>*/<k> CurState:Id -[]-> NextState:Id { Act:ActionList } ; => true ...</k>
+            <component><componentid> id|->Comid ...</componentid><k>CurState:Id -[]-> NextState:Id { Act:ActionList } ; => . ...</k>... </component>
+          ...
+        </system>
+        (. => <system> 
+			<component>
+			   ... 
+			   <k> . </k>
 			   <behavior>
 			      ...
 			      <automata>
-			          //<automataid> aid |-> Comid:Id</automataid>	
+			          <automataid>Comid:Id</automataid>	
 			          <eventcount> EvSn:Int => (EvSn +Int 1) </eventcount>
 				      <event> ...  EvSn |-> True </event>
 				      <automatatable> ...  EvSn |-> (CurState, NextState, Act)...  </automatatable>
@@ -157,18 +153,19 @@ module CPSADLBA-SEMANTICS
             ...		   
 			</component>
 			...
-		</system> 			
+		</system> 
+		) 			
 //----------------------------------------------------------------------------------------------------------------------------------------------------------------	
     //从自动机中取出当前执行的判定事件
 	rule <system>
           ...
-            <component>.../*<componentid>id|->Comid ...</componentid>*/ <k>. => BG  ...</k>
+            <component><componentid>id|->Comid ...</componentid> <k>. => BG  ...</k>
 			   <behavior>
 			      ...
 			      <automata>
-                     //<automataid>aid |-> Comid:Id</automataid>
+                     <automataid>Comid:Id</automataid>
                      <processingevent> EvSn:Int |-> (kclear=>kpending) </processingevent>
-			         <status> astates |-> krunning </status>
+			         <status> krunning </status>
 			         <event> EvSn|-> BG:BehaviorGuard </event>
 			         ... 
 			      </automata> //when (EvSn >=Int 0)
@@ -181,13 +178,13 @@ module CPSADLBA-SEMANTICS
 	// 如果当前判定事件失败，从自动机中删除该事件
 	rule <system>
           ...
-            <component>.../*<componentid>id|->Comid ...</componentid>*/ <k> false => . ...</k>
+            <component><componentid>id|->Comid ...</componentid> false => . ...</k>
 			   <behavior>
 			      ...
 			      <automata>
-                     //<automataid> aid |-> Comid:Id</automataid>
-                     <processingevent> (EvSn:Int => EvSn -Int 1)  |-> (kpending=>kclear) </processingevent>
-			         <status> astates |-> krunning </status>
+                     <automataid>Comid:Id</automataid>
+                     <processingevent> (EvSn:Int => EvSn -Int 1  |-> (kpending=>kclear) </processingevent>
+			         <status> krunning </status>
 			         ... 
 			      </automata> //when (EvSn >=Int 0)
 			     ...
@@ -199,48 +196,49 @@ module CPSADLBA-SEMANTICS
 	//判定事件成功，则执行相应的动作
 	rule <system>
           ...
-            <component>.../*<componentid>id|->Comid ...</componentid>*/<k> true => Act ...</k>... </component>
+            <component><componentid>id|->Comid ...</componentid><k> true => Act ...</k>... </component>
           ...
         </system>
-        <system> 
+        (Act => <system> 
 			<component>
-			   <componentid> .Map </componentid>
+			   <comid> .Map </comid>...</component> 
 			   <k> _ => reenter_clock </k>
 			   <behavior>
 			      ...
 			      <automata>
-			          //<automataid>aid |-> Comid:Id</automataid>	
-			          <status> astates |-> krunning </status>
+			          <automataid>Comid:Id</automataid>	
+			          <status> krunning </status>
 			          <processingevent> Cur:Int |-> (kpending=>krunning) </processingevent>
-			          <curstate> curstate |-> (CurState => NextState) </curstate>
-			          <automatatable> Cur|-> (CurState:Id, NextState:Id, Act:ActionList) </automatatable>
+			          <curstate> CurState => NextState </curstate>
+			          <automatatable> Cur|->(CurState:Id, NextState:Id, Act:ActionList) </automatatable>
 			                                    ...
 			      </automata>  
 			      ...
 			   </behavior>
-                            ...		   
+            ...		   
 			</component>
 			...
 		</system> 
+		) 
 
     //动作执行完
 	rule <system>
           ...
-            <component>.../*<componentid>id|->Comid ...</componentid>*/<k> . </k>... </component>
+            <component><componentid>id|->Comid ...</componentid><k> 。</k>... </component>
           ...
         </system>
-        <system> 
+        (Act => <system> 
 			<component>
-			   <componentid> .Map </componentid> 
+			   <comid> .Map </comid> 
 			   <k> _ => reenter_clock </k>
 			   <behavior>
 			      ...
 			      <automata>
-			          //<automataid> aid |-> Comid:Id </automataid>	
-			          <status> astates |-> (krunning => kidle) </status>
+			          <automataid>Comid:Id</automataid>	
+			          <status> krunning => kidle </status>
 			          <processingevent> Cur:Int |-> (krunning=>kclear) </processingevent>
-			          <curstate> curstate |-> (CurState => NextState) </curstate>
-			          <automatatable> Cur|-> (CurState:Id, NextState:Id, Act:ActionList) </automatatable>
+			          <curstate> CurState => NextState </curstate>
+			          <automatatable> Cur|->(CurState:Id, NextState:Id, Act:ActionList) </automatatable>
 			         ...
 			      </automata>  
 			      ...
@@ -249,12 +247,13 @@ module CPSADLBA-SEMANTICS
 			</component>
 			...
 		</system> 
+		) 
 //---------------------------------------------------------------------------------------------------------------------------------------------------------------
-   //p?(e) , transfer to true or false
+    //p?(e) , transfer to true or false
 	rule <system>
           ...
             <component>
-               <componentid> id |-> Comid:Id ...</componentid>            
+               <componentid> id|->Comid ...</componentid>            
                <k> Portid:Id?( Var:Expression) => true </k>
                <port> 
                   <portid> id |-> Portid ... </portid> 
@@ -262,6 +261,7 @@ module CPSADLBA-SEMANTICS
                   <portdata> Head |-> Val:Id => . ...</portdata>... 
                 </port>
 			   <behavior>
+			      <componentid> Comid </componentid> 
 			      <store> Var |-> (_ => Val) ...</store> 
 			      ...
 			   </behavior>//when(Head <Int Tail) 
@@ -273,14 +273,14 @@ module CPSADLBA-SEMANTICS
           ...
             <component>
                <componentid>id|->Comid ...</componentid>            
-               <k> Portid:Id?( Var:Expression ) => false </k>
+               <k> Portid:Id?( Var:Expression) => false </k>
                <port> 
                   <portid> id |-> Portid ... </portid> 
                   <portitemcount> Head:Int |-> Tail:Int </portitemcount>
                   ... 
                 </port>
             ...		   
-			</component>//when (Head <Int Tail)
+			</component>>//when (Head <Int Tail)
 			...
 		</system>     
 
@@ -288,10 +288,10 @@ module CPSADLBA-SEMANTICS
           ...
             <component>
                <componentid>id|->Comid ...</componentid>            
-               <k> Portid:CalledSubPgm ! ( Var:Expression ) => . </k>
+               <k> Portid:Id ! ( Var:Expression) => . </k>
                <port> 
                   <portid> id |-> Portid ... </portid> 
-                  <portdest> DComid:Id |-> DPortid:Id </portdest>	
+                  <portdest> DComid:Identifier |-> DPortid:Identifier </portdest>	
                   ... 
                 </port>
             ...		   
@@ -304,7 +304,7 @@ module CPSADLBA-SEMANTICS
 	rule <system>
           ...
             <component>
-                <componentid> .Map </componentid>            
+                <comid> .Map </comid>            
                 <k>. => run_globalclock</k>
                 ...
             </component>
@@ -321,7 +321,7 @@ module CPSADLBA-SEMANTICS
 	rule <system>
           ...
             <component>
-                <componentid> .Map </componentid>            
+                <comid> .Map </comid>            
                 <k>run_globalclock => run_subclock </k>
                 ...
             </component>
@@ -337,7 +337,7 @@ module CPSADLBA-SEMANTICS
 	rule <system>
           ...
             <component>
-                <componentid> .Map </componentid>           
+                <comid> .Map </comid>            
                 <k>reenter_clock => run_subclock</k>
                 ...
             </component>
@@ -352,17 +352,17 @@ module CPSADLBA-SEMANTICS
 	rule <system>
           ...
             <component>
-                <componentid> .Map </componentid>            
+               <comid> .Map </comid>            
                <k>run_subclock</k>
 			   <behavior>
 			      ...
 			      <automata>
-                     <automataid> aid |-> Scid </automataid> 
+                     <automataid> Scid </automataid> 
                      <automataclock> Cv:Int => Cv +Int 1 </automataclock> 
 			         <eventcount> EvSn:Int </eventcount> 
 			         <processingevent> (_ => EvSn -Int 1) |-> kclear </processingevent>
-			         <status> astates |-> (kidle => krunning) </status>
-			         ...
+			         <status> kidle => krunning </status>
+			                                    。。。
 			      </automata>  
 			      ...
 			   </behavior>
@@ -379,15 +379,15 @@ module CPSADLBA-SEMANTICS
 	rule <system>
           ...
             <component>
-               <componentid> .Map </componentid>           
+               <comid> .Map </comid>            
                <k>run_subclock</k>
 			   <behavior>
 			      ...
 			      <automata>
-                     <automataid> aid |-> Scid </automataid> 
+                     <automataid> Scid </automataid> 
 			         <eventcount> EvSn:Int </eventcount> 
 			         <processingevent> EvSnP:Int |-> kclear </processingevent>
-			         <status> astates |-> (krunning => kidle) </status>
+			         <status> krunning => kidle </status>
 			         ...
 			      </automata>//when (EvSnP <Int 0)  
 			      ...
@@ -403,29 +403,32 @@ module CPSADLBA-SEMANTICS
 		</system>
 //----------------------------------------------------------------------------------------------------------------------------------------------------------------
     //SimpleExpression
+    
     rule  SE1:Int < SE2:Int => (SE1 <Int SE2)   [structural]
     rule  SE1:Int > SE2:Int => (SE1 >Int SE2)   [structural]
     rule  SE1:Int == SE2:Int => (SE1 ==Int SE2) [structural]
     
-    rule  SE1:Int + SE2:Int => SE1 +Int SE2 [structural]
-    rule  SE1:Int - SE2:Int => SE1 -Int SE2 [structural]
-    rule  SE1:Int * SE2:Int => SE1 *Int SE2 [structural]
-    rule  SE1:Int / SE2:Int => SE1 /Int SE2 [structural]
+    rule  SE1:Int Add SE2:Int => SE1 +Int SE2 [structural]
+    rule  SE1:Int Sub SE2:Int => SE1 -Int SE2 [structural]
+    rule  SE1:Int Mul SE2:Int => SE1 *Int SE2 [structural]
+    rule  SE1:Int Div SE2:Int => SE1 /Int SE2 [structural]
     
-	rule true or E:LogicalExpression => true					            [structural]
+	rule true or _ => true					            [structural]
 	rule false or E:LogicalExpression => E				[structural]
-	rule true and E:LogicalTerm => E				[structural]
-	rule false and E:LogicalTerm => false				            [structural]
+	rule true and E:LogicalExpression => E				[structural]
+	rule false and _ => false				            [structural]
 	rule not true => false					            [structural]
 	rule not false => true					            [structural]
 
-	rule if (true) {S:Expression} => S											[structural]
-	rule if (false) {S:Expression} => .											[structural]
-	rule if (true) {S1:Expression} else {S2:Expression} => S1					[structural]
-	rule if (false) {S1:Expression} else {S2:Expression} => S2					[structural] 
+	rule if (true) {S:EquationList} => S											[structural]
+	rule if (false) {S:EquationList} => .											[structural]
+	rule if (true) {S1:EquationList} else {S2:EquationList} => S1					[structural]
+	rule if (false) {S1:EquationList} else {S2:EquationList} => S2					[structural]
+	rule if (true) {S1:EquationList} else {S2:EquationList} => S1					[structural]
+	rule if (false) {S1:EquationList} else {S2:EquationList} => S2					[structural] 
 	
 	//FunctionCall
-/*	syntax Id ::= "sqtr"
+	syntax Id ::= "sqtr"
 	syntax Id ::= "log"
 	syntax Id ::= "exp"
 	syntax Id ::= "atan"
@@ -435,7 +438,7 @@ module CPSADLBA-SEMANTICS
 	syntax Id ::= "cos"
 	syntax Id ::= "mod"
 	syntax Id ::= "sin"
-	rule [sqtr] : sqtr(F:Float) => sqtrFloat(F:Float)
+	rule [sqtr] : sqtr(F:Float) => sqrtFloat(F:Float)
 	rule [log] : log(F:Float ) => logFloat(F:Float)
 	rule [exp] : exp(F:Float ) => expFloat(F:Float)
 	rule [atan] :  atan(F:Float ) => atanFloat(F:Float)
@@ -443,9 +446,9 @@ module CPSADLBA-SEMANTICS
 	rule [tan] : tan(F:Float ) => tanFloat(F:Float)
 	rule [floor] : floor(F:Float ) => floorFloat(F:Float)
 	rule [cos] : cos(F:Float ) => cosFloat(F:Float)
-	//rule [mod] : mod(F1:Float , F2:Float) =>  F1:Float % F2:Float
-	rule [sin] : sin(F:Float ) => sinFloat(F:Float)*/
+	rule [mod] : mod(F1:Float , F2:Float ) =>  F1:Float % F2:Float
+	rule [sin] : sin(F:Float ) => sinFloat(F:Float)
 	       
 //---------------------------------------------------------------------------------------------------------------------------------------------------------------    
-   
+        
 endmodule

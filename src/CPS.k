@@ -42,6 +42,8 @@ module CPS
 	syntax Mdiscrete ::= "discrete"
 	syntax Mcontinuous ::= "continuous"
 	syntax Mhybrid ::= "hybrid"
+        syntax Mcontant ::= "contant"
+        syntax Mparameter ::= "parameter"
 	syntax Mhistory ::= "history"
 	syntax MPlus ::= "+"
 	syntax MBrace ::= "*"

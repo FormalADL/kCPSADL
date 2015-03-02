@@ -1,8 +1,8 @@
 module FEATURECONNECTION-SYNTAX
 
-syntax FetConnection ::= Mfeature SrcFetRef ConnectionSymbol DestFetRef 
-syntax SrcFetRef ::= FetRef 
-syntax DestFetRef ::= FetRef 
+syntax FetConnection ::= Mfeature FetRef ConnectionSymbol FetRef 
+//syntax SrcFetRef ::= FetRef 
+//syntax DestFetRef ::= FetRef 
 syntax ConnectionSymbol ::= DirecConnectSymb 
 			| BidirectConnectSymb 
 syntax DirecConnectSymb ::= MArrows 
